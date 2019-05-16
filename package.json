@@ -1,0 +1,27 @@
+{
+  "name": "blog-vuepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UvDream/blog-vuepress.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "wzj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UvDream/blog-vuepress/issues"
+  },
+  "homepage": "https://github.com/UvDream/blog-vuepress#readme"
+}
