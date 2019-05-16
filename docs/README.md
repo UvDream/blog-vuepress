@@ -1,6 +1,6 @@
 ---
 home: true
-actionText: 快速开始 →
+actionText: 快速阅读→
 actionLink: /guide/
 features:
 - title: Simplicity First
