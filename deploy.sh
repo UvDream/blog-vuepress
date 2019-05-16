@@ -10,7 +10,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'update docs'
+git commit -m 'update555'
 
 git push -f git@github.com:UvDream/blog-vuepress.git master:gh-pages
 
