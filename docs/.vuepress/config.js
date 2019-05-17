@@ -35,5 +35,14 @@ module.exports = {
     },
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: './components'
+      }
+    ]
+  ]
+
 }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
     "deploy": "bash deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
