@@ -1,7 +1,7 @@
 ---
 home: true
-actionText: 快速开始 →
-actionLink: /guide/
+actionText: 快速阅读→
+actionLink: /web/
 features:
 - title: Simplicity First
   details: Minimal setup with markdown-centered project structure helps you focus on writing.
