@@ -47,7 +47,7 @@ module.exports = {
           collapsable: false,
           children:[
             "",
-            "js1",
+            ['js1','手写代码'],
           ]
         }
       ]
