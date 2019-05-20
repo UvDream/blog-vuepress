@@ -67,6 +67,7 @@ module.exports = {
     lastUpdated: 'Last Updated',
   },
   plugins: [
+    'flowchart',
     [
       '@vuepress/register-components',
       {
