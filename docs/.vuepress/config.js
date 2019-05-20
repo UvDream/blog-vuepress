@@ -15,6 +15,7 @@ module.exports = {
         items:[
           { text: 'Web', link: '/web/' },
           { text: 'JavaScript', link: '/javascript/' },
+          { text: 'Vue', link: '/vue/' },
         ]
       },
       {
@@ -48,6 +49,15 @@ module.exports = {
           children:[
             "",
             ['js1','手写代码'],
+          ]
+        }
+      ],
+      '/vue/':[
+        {
+          title:"Vue",
+          collapsable:false,
+          children:[
+            ""
           ]
         }
       ]
