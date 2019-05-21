@@ -68,6 +68,13 @@ module.exports = {
         lastUpdated: 'Last Updated',
     },
     plugins: [
-        "flowchart"
+        "flowchart",
+        ['@vssue/vuepress-plugin-vssue', {
+            platform: 'github',
+            owner: 'UvDream',
+            repo: 'blog-vuepress',
+            clientId: 'd75a9c8894c2a2034aa2',
+            clientSecret: '0d3500776dd388c9af6c96a0179648fbf69394d1',
+        }],
     ]
 }

@@ -606,6 +606,7 @@ var func = new Function(arg1, arg2, ..., functionBody)
 var jsonStr = '{ "age": 20, "name": "jack" }'
 var json = (new Function('return ' + jsonStr))();
 ```
+ <Vssue title="js1" />
 
 
  
