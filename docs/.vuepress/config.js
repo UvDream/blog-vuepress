@@ -69,6 +69,8 @@ module.exports = {
     },
     plugins: [
         "flowchart",
+        "@vuepress/back-to-top",
+        "@vuepress/nprogress",
         ['@vssue/vuepress-plugin-vssue', {
             platform: 'github',
             owner: 'UvDream',

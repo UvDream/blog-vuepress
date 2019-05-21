@@ -2,6 +2,63 @@
 # yarn lockfile v1
 
 
+"@vssue/api-github-v3@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@vssue/api-github-v3/-/api-github-v3-0.9.0.tgz#7ccd5f712d2dc432c0bd23c9a998a9e81a1ebb9a"
+  integrity sha512-bxVVjDidjOn0BdXF9leQerEcZUl1mVvXLVaS7uMGGUOQrezgYP3Qizu/CpzCug/aMFKESAWuoJp9viyR5kPwlw==
+  dependencies:
+    "@vssue/utils" "^0.9.0"
+    axios "^0.18.0"
+
+"@vssue/utils@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-0.9.0.tgz#c6bae099c8129a9b3d092969b12ef8035ac0e510"
+  integrity sha512-657fy0WN0VyVzRZWGwzNnAJS04vQkEBAC1mEZ3k0mQCVm8qtUAJrfvvCdrR/fAKg0x/VtjBCwPhFywksTwAyBQ==
+  dependencies:
+    date-fns "^1.29.0"
+    qs "^6.6.0"
+
+"@vssue/vuepress-plugin-vssue@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-0.9.1.tgz#8bc55acabf7e10253761e1099244745a30610ecb"
+  integrity sha512-K69Wtg+eJuNBn3Afd8AuT8EEAHmHTf2ScbMO5y52DksKuIdsC+TNpYEyQ9BPlrMaqo1BJDfuZknESC7ZZVpv+w==
+  dependencies:
+    vssue "^0.9.1"
+
+"@vuepress/plugin-back-to-top@^1.0.0-alpha.48":
+  version "1.0.0-alpha.48"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.48.tgz#27ce281cd2ad3eafb1fe820156ae483af731c509"
+  integrity sha512-rJYBtl7QNjLmNMNZOa4BMTlU4m76koNSQEjLZlVyTLYrGDqP5yY7Stv5QcNeJrDfsHO9ZjJEIvwKHUjE6u/0zg==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
+"@vuepress/plugin-nprogress@^1.0.0-alpha.48":
+  version "1.0.0-alpha.48"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.0.0-alpha.48.tgz#b0f8459d518b8f8b1fdd58b9e8e3aa195bb94604"
+  integrity sha512-18F1TToseOpukH8auniVI5rW1i8pUw6hCFj7RurUM2whgt9y4rF8qDVuZeBAhs3/cTmdvxZwpP+W1GyL+EXMiw==
+  dependencies:
+    nprogress "^0.2.0"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
+
+date-fns@^1.29.0:
+  version "1.30.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
+  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+
+debug@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
+  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+  dependencies:
+    ms "^2.1.1"
+
 eve-raphael@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/eve-raphael/-/eve-raphael-0.5.0.tgz#17c754b792beef3fa6684d79cf5a47c63c4cda30"
@@ -14,12 +71,82 @@ flowchart.js@^1.11.3:
   dependencies:
     raphael "2.2.7"
 
+follow-redirects@^1.3.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
+  integrity sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==
+  dependencies:
+    debug "^3.2.6"
+
+github-markdown-css@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-2.10.0.tgz#0612fed22816b33b282f37ef8def7a4ecabfe993"
+  integrity sha512-RX5VUC54uX6Lvrm226M9kMzsNeOa81MnKyxb3J0G5KLjyoOySOZgwyKFkUpv6iUhooiUZdogk+OTwQPJ4WttYg==
+
+is-buffer@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+  integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
+qs@^6.6.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
+  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+
 raphael@2.2.7:
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/raphael/-/raphael-2.2.7.tgz#231b19141f8d086986d8faceb66f8b562ee2c810"
   integrity sha1-IxsZFB+NCGmG2PrOtm+LVi7iyBA=
   dependencies:
     eve-raphael "0.5.0"
+
+vssue@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-0.9.1.tgz#c2269dc2d71b2838f8547694474a01f4febd8b8b"
+  integrity sha512-x02eqnkABFqrMhKK8Ja347MOxCMk+7AzZaW/t5NydK9/kl6M9xa5ViRE2TPVL13yvWZrx8IJyA2DZyCcaKFF/Q==
+  dependencies:
+    "@vssue/utils" "^0.9.0"
+    github-markdown-css "^2.10.0"
+    vue "^2.5.21"
+    vue-i18n "^8.7.0"
+    vue-property-decorator "^7.2.0"
+
+vue-class-component@^6.2.0:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.3.2.tgz#e6037e84d1df2af3bde4f455e50ca1b9eec02be6"
+  integrity sha512-cH208IoM+jgZyEf/g7mnFyofwPDJTM/QvBNhYMjqGB8fCsRyTf68rH2ISw/G20tJv+5mIThQ3upKwoL4jLTr1A==
+
+vue-i18n@^8.7.0:
+  version "8.11.2"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.11.2.tgz#92827fc42449f4602d2a0ddb437dfc4e3370d9d7"
+  integrity sha512-STcpmxqBrG77SyWi7e0Yn/B3DjKR6mSDwYS4F/V7zoi+e/+CPbVb2TaBqFwnrkoDcPmRfjM7nTwsiRQQOGdifw==
+
+vue-property-decorator@^7.2.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.3.0.tgz#d50d67f0b0f1c814f9f2fba36d6eeccbcc62dbb6"
+  integrity sha512-HarXfTQ/Nxm4s/APpAaGIGHq5ZzslApImQy8ZrtkfGamw8rUFAVgMS5C50/AQ80+wfw3Wpnf4bNzbmj75m/k2Q==
+  dependencies:
+    vue-class-component "^6.2.0"
+
+vue@^2.5.21:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 vuepress-plugin-flowchart@^1.4.3:
   version "1.4.3"

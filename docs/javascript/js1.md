@@ -1,5 +1,5 @@
 # 面试之手写代码
-![avatar](../public/img/js1.png)
+![img](../public/img/js1.png)
 ## 数组去重
 
 ### 双层循环

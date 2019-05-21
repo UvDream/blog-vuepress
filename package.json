@@ -11,6 +11,8 @@
   "author": "wzj",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.48",
     "vuepress-plugin-flowchart": "^1.4.3"
   },
   "dependencies": {
