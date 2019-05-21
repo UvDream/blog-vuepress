@@ -3,30 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
-    "deploy": "bash deploy.sh",
+    "docs:build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UvDream/blog-vuepress.git"
-  },
-  "keywords": [
-    "blog"
-  ],
   "author": "wzj",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/UvDream/blog-vuepress/issues"
-  },
-  "homepage": "https://github.com/UvDream/blog-vuepress#readme",
-  "dependencies": {
-    "leancloud-storage": "^3.13.2",
-    "valine": "^1.3.6"
+  "devDependencies": {
+    "vuepress-plugin-flowchart": "^1.4.3"
   }
 }
