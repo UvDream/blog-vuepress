@@ -23,6 +23,10 @@ module.exports = {
                         text: 'Vue',
                         link: '/vue/'
                     },
+                    {
+                        text: 'React',
+                        link: '/react/'
+                    },
                 ]
             },
             {
@@ -57,6 +61,13 @@ module.exports = {
             }],
             '/vue/': [{
                 title: "Vue",
+                collapsable: false,
+                children: [
+                    ""
+                ]
+            }],
+            '/react/': [{
+                title: "React",
                 collapsable: false,
                 children: [
                     ""
