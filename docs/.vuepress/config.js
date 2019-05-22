@@ -79,7 +79,6 @@ module.exports = {
         lastUpdated: 'Last Updated',
     },
     plugins: [
-        "flowchart",
         "@vuepress/back-to-top",
         "@vuepress/nprogress",
         ['@vssue/vuepress-plugin-vssue', {
