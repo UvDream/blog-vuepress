@@ -70,7 +70,8 @@ module.exports = {
                 title: "React",
                 collapsable: false,
                 children: [
-                    ""
+                    "",
+                    "props"
                 ]
             }]
 
