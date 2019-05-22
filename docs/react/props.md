@@ -5,16 +5,71 @@
 ## 验证props
 数据类型验证
 - 1.JavaScript基本数据类型,包括数组,布尔,函数,数字,对象,字符串
+```
+    React.PropType.array
+
+    React.PropType.bool
+
+    React.PropType.func
+
+    React.PropType.number
+
+    React.PropType.object
+
+    React.PropType.string
+
+```
 - 2.可以被渲染为子节点的对象,包括数组,字符串,ReactElement(指jsx闭合标签)或数组
+```
+React.PropType.node
+```
 - 3.ReactElement
+```
+React.PropType.element
+```
 - 4.指定类的实例
+```
+React.PropType.instanceOf(Message)
+```
 - 5.只接受指定的值
+```
+React.PropType.oneOf(["News","Photos])
+```
 - 6.多个对象类型中的一个
+```
+React.PropType.oneOfType([
+    React.PropType.string,
+    React.PropType.number,
+    React.PropType.instanceOf(Message)
+])
+```
 - 7.指定类型组成的数组
+```
+React.PropType.arrayOf(React.PropType.number)
+```
 - 8.指定类型的属性构成的对象
+```
+React.PropType.objectOf(React.PropType.number)
+```
 - 9.符合指定格式的对象
+```
+React.PropType.shape(
+    color:React.PropType.string,
+    fontSize:React.PropType.number
+)
+```
 - 10.任意类型加上isRequire使其不可为空
+```
+React.PropType.func.isRequired
+```
 - 11.自定义验证器,如果验证失败了需要返回一个Error对象.不要直接使用conosle.error或抛异常,因为这样的话oneOfType会失效
+```
+function(props,propName,componentName){
+    if(!/matchme/.test(props[propName])){
+        return new Error("Validation failed!")
+    }
+}
+```
 ## 组合使用props和state
 使用Counter组件更新state的value,然后将更新的state.value通过props传递给Content组件
 ![img](../public/img/props&state.png)
