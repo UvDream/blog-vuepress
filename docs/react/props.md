@@ -165,4 +165,13 @@ function MessageList(){
 }
 export default MessageList;
 ```
+
+通过getChildContext()方法将color放在context中,并声明了childContxtTypes,如果不声明chilContextTypes,将无法在组件中使用getChildContext()方法
+
+:::tip
+
+1.state内部状态或者局部状态
+
+2.Props与context则用于组件之间传递数据,使用props传递数据简单清晰,但是跨级传递非常麻烦,使用context可以跨级传递数据,但是降低组件的复用性,因为这些组件依赖上下文,所以近况使用context传递登陆的状态,颜色主题等全局数据
+:::
  <Vssue title="props" />
