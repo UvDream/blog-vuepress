@@ -71,7 +71,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     "",
-                    "props"
+                    "props",
+                    "vscode"
                 ]
             }]
 
