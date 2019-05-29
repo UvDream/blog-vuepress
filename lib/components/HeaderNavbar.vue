@@ -1,6 +1,16 @@
 <template>
   <nav class="nav">
-    <div class="nav-content">导航栏</div>
+    <div class="nav-content">
+        导航栏
+        <!-- 名称 -->
+        <div class="nav-content-title">
+
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav-content-bar">
+            
+        </div>
+    </div>
   </nav>
 </template>
 <script>
