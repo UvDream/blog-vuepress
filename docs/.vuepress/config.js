@@ -31,6 +31,10 @@ module.exports = {
                         text: 'React',
                         link: '/react/'
                     },
+                    {
+                        text:'面试',
+                        link: '/interview/'
+                    }
                 ]
             },
             {
