@@ -5,6 +5,7 @@ module.exports = {
     title: '汪中杰',
     description: '一切皆有可能!',
     base: "/blog-vuepress/",
+    port:"2222",
     // theme: path.resolve(__dirname, '../../lib'),
     themeConfig: {
         //   导航栏
