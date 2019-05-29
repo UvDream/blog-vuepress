@@ -1,10 +1,16 @@
 <template>
     <div>
-        头部
+        <HeaderNavbar />
     </div>
 </template>
 <script>
+import HeaderNavbar from "./HeaderNavbar"
 export default {
-    
+    components:{
+        HeaderNavbar
+    },
+    mounted(){
+        console.log(this.$themeConfig)
+    }
 }
 </script>
