@@ -10,7 +10,12 @@ export default {
         HeaderNavbar
     },
     mounted(){
-        console.log(this.$themeConfig)
     }
 }
 </script>
+<style>
+*{
+    margin: 0;
+}
+</style>
+
