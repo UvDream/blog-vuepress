@@ -186,7 +186,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 ## javascript 设计模式
 
 ```
-创建型
+创建型:
 
 
 1.抽象工厂模式（Abstract Factory）
