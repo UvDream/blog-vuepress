@@ -1,5 +1,5 @@
-
-# 代码1
+# 常见代码
+## 代码1
 
 ```
 (function(){
@@ -20,7 +20,7 @@ var a=b
 如果在严格模式的话会报错,b未定义
 ```
 
-# 代码2
+## 代码2
 
 ```
 var myObject = {
@@ -45,7 +45,7 @@ outer func: self.foo = bar
 inner func: this.foo = undefined
 inner func: self.foo = bar
 ```
-# 代码3
+## 代码3
 ```
 function foo1(){
     return {
@@ -70,7 +70,7 @@ foo2()=undefined
 原因与JavaScript中分号在技术上是可选的事实有关（尽管忽略它们通常是非常糟糕的形式）。因此，在foo2()中遇到包含return语句的行（没有其他内容）时，会在return语句之后立即自动插入分号。
 ```
 
-# 代码4
+## 代码4
 ```
 (function() {
     console.log(1);
@@ -83,7 +83,7 @@ foo2()=undefined
 ```
 1,4,3,2
 ```
-# 代码5
+## 代码5
 ```
 console.log(1 + "2" + "2");
 console.log(1 + +"2" + "2");
@@ -113,7 +113,7 @@ NaN
 
 例6：“A” - “B”+2输出：NaN说明：在前面的例子中，“A” - “B”产生NaN。但是任何运算符应用于NaN和其他数字操作数仍然会产生NaN。
 ```
-# 代码6
+## 代码6
 ```
 var b = 1;
 function outer(){
@@ -130,7 +130,7 @@ outer();
 以上代码输出什么
 3
 
-# 代码7
+## 代码7
 ```
 var x = 21;
 var girl = function () {
@@ -142,7 +142,7 @@ girl ();
 以上代码输入什么?
 undefined
 为什么它不显示21的全局值？原因是当函数执行时，它检查是否存在本地x变量但尚未声明它，因此它不会查找全局变量。
-# 代码8
+## 代码8
 ```
 (function () {
     try {

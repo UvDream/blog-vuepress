@@ -93,7 +93,8 @@ module.exports = {
                     "vue",
                     "code",
                     "type",
-                    "http"
+                    "http",
+                    "catch"
                 ]
             }]
 

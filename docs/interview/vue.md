@@ -1,5 +1,5 @@
-
-# Vue的MVVM
+# vue
+## Vue的MVVM
 ```
 MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数据更新dom也就跟着更新
 1、M就是Model模型层，存的一个数据对象。
@@ -31,11 +31,11 @@ MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数�
 
 
 
-# keep-live
+## keep-live
 ```
 把切换出去的组件保留在缓存中，可以保留组件的状态或者避免重新渲染
 ```
-# 组件之间通讯
+## 组件之间通讯
 ```
 1.父子组件
 prop  $emit
@@ -45,7 +45,7 @@ eventBus
 
 
 ```
-# vue生命周期的理解
+## vue生命周期的理解
 
 创建前/后，载入前/后，更新前/后，销毁前/后
 它的生命周期中有多个事件钩子，让我们在控制整个Vue实例的过程时更容易形成好的逻辑。
@@ -58,9 +58,9 @@ eventBus
 - updated() 数据已经更改完成，dom 也重新 render 完成,更改数据会陷入死循环
 - beforeDestory() 和 destoryed() 前者是销毁前执行（实例仍然完全可用），后者则是销毁后执行
 
-# vue响应式原理
+## vue响应式原理
 
-## Object.defineProperty
+### Object.defineProperty
 首先我们想到的是Object.defineProperty,这是es5新增的一个api,它可以允许我们为对象的属性来设定getter和setter,从而我们可以劫持用户对对象属性的取值和赋值。比如以下代码:
 ```cgo
 const obj = {
@@ -83,7 +83,7 @@ obj.name = 'cwc';
 console.log(obj.name);
 ```
 我们通过Object.defineProperty劫持了obj[name]的取值和赋值操作，因此我们就可以在这里做一些手脚啦，比如说，我们可以在obj[name]被赋值的时候触发更新页面操作。
-## 发布订阅模式
+### 发布订阅模式
 发布订阅模式是设计模式中比较常见的一种，其中有两个角色：发布者和订阅者。多个订阅者可以向同一发布者订阅一个事件，当事件发生的时候，发布者通知所有订阅该事件的订阅者。我们来看一个例子了解下。
 ```cgo
 class Dep {
@@ -127,23 +127,23 @@ dep.notify(); //
 - 通过订阅发布模式，我们可以为对象的每个属性都创建一个发布者，当有其他订阅者依赖于这个属性的时候，则将订阅者加入到发布者的队列中。利用Object.defineProperty的数据劫持，在属性的setter调用的时候，该属性的发布者通知所有订阅者更新内容。
 
 
-# vuex几大属性
+## vuex几大属性
 ```
 有五种，分别是 State、 Getter、Mutation 、Action、 Module
 ```
-# state
+## state
 ```
 1、Vuex就是一个仓库，仓库里面放了很多对象。其中state就是数据源存放地，对应于与一般Vue对象里面的data
 2、state里面存放的数据是响应式的，Vue组件从store中读取数据，若是store中的数据发生改变，依赖这个数据的组件也会发生更新
 3、它通过mapState把全局的 state 和 getters 映射到当前组件的 computed 计算属性中
 ```
-# getter
+## getter
 ```
 1、getters 可以对State进行计算操作，它就是Store的计算属性
 2、 虽然在组件内也可以做计算属性，但是getters 可以在多组件之间复用
 3、 如果一个状态只在一个组件内使用，是可以不用getters
 ```
-# mutation
+## mutation
 ```
 sequenceDiagram
 A->>B: How are you?
@@ -154,18 +154,18 @@ Action 类似于 mutation，不同在于：
  - Action 提交的是 mutation，而不是直接变更状态。
  - Action 可以包含任意异步操作
 ```
-# vue优点
+## vue优点
 ```
 低耦合。视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的"View"上，当View变化的时候Model可以不变，当Model变化的时候View也可以不变。
 可重用性。你可以把一些视图逻辑放在一个ViewModel里面，让很多view重用这段视图逻辑。
 独立开发。开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xml代码。
 ```
-# vue常用指令
+## vue常用指令
 ```
 v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
 ```
 
-# nextTick
+## nextTick
 
 在下次dom更新循环结束之后执行延迟回调，可用于获取更新后的dom状态
 
@@ -178,7 +178,7 @@ v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
     - setImmediate / MessageChannel / setTimeout
 
 
-# 数据响应(数据劫持)
+## 数据响应(数据劫持)
 
 看完生命周期后，里面的watcher等内容其实是数据响应中的一部分。数据响应的实现由两部分构成: 观察者( watcher ) 和 依赖收集器( Dep )，其核心是 defineProperty这个方法，它可以 重写属性的 get 与 set 方法，从而完成监听数据的改变。
 
@@ -288,7 +288,7 @@ class Watcher {
 
 ```
 
-# virtual dom 原理实现
+## virtual dom 原理实现
 
 - 创建 dom 树
 
@@ -440,11 +440,11 @@ function diffList(oldList, newList, index, pathchs) {
 }
 
 ```
-# Proxy 相比于 defineProperty 的优势
+## Proxy 相比于 defineProperty 的优势
 - 数组变化也能监听到
 - 不需要深度遍历监听
 
-# 写 React / Vue 项目时为什么要在组件中写 key，其作用是什么
+## 写 React / Vue 项目时为什么要在组件中写 key，其作用是什么
 ```
 key的作用是为了在diff算法执行时更快的找到对应的节点，提高diff速度
 ```

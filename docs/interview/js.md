@@ -1,5 +1,5 @@
-
-# 前端安全,理解 xss 和 csrf
+# js
+## 前端安全,理解 xss 和 csrf
 
 XSS：跨站脚本（Cross-site scripting，通常简称为XSS）是一种网站应用程序的安全漏洞攻击，是代码注入的一种。它允许恶意用户将代码注入到网页上，其他用户在观看网页时就会受到影响。这类攻击通常包含了HTML以及用户端脚本语言。
 CSRF:跨站请求伪造（Cross-site request forgery），也被称为 one-click attack 或者 session riding，通常缩写为 CSRF 或者 XSRF， 是一种挟制用户在当前已登录的Web应用程序上执行非本意的操作的攻击方法。
@@ -9,7 +9,7 @@ XSS： 通过客户端脚本语言（最常见如：JavaScript）在一个论坛
 XSS更偏向于代码实现（即写一段拥有跨站请求功能的JavaScript脚本注入到一条帖子里，然后有用户访问了这个帖子，这就算是中了XSS攻击了），CSRF更偏向于一个攻击结果，只要发起了冒牌请求那么就算是CSRF了。
 
 
-# 数组快速排序
+## 数组快速排序
 
 ```
 function quickSort(arr){
@@ -36,7 +36,7 @@ function quickSort(arr){
         }
 ```
 
-# cookie,sessionStorage 和 localStorage 的区别
+## cookie,sessionStorage 和 localStorage 的区别
 
 ```
 cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会
@@ -47,7 +47,7 @@ sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可
 localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据
 ```
 
-# javascript 中= =和= = =的区别
+## javascript 中= =和= = =的区别
 
 一言以蔽之：==先转换类型再比较，===先判断类型，如果不是同一类型直接为false。
 
@@ -98,7 +98,7 @@ d、如果一个是对象，另一个是数值或字符串，把对象转换成�
 e、任何其他组合（array数组等），都[不相等]。
 
 
-# 闭包
+## 闭包
 
 闭包是指在 JavaScript 中，内部函数总是可以访问其所在的外部函数中声明的参数和变量，即使在其外部函数被返回了之后。然后闭包可以把一个局部变量传递到外部供其他函数或是变量使用,也可以把一个变量长时间的保留在系统的内存中
 
@@ -118,7 +118,7 @@ e、任何其他组合（array数组等），都[不相等]。
 4. 用闭包模拟私有方法
 
 
-# 哪些操作会导致内存泄漏
+## 哪些操作会导致内存泄漏
 
 
 1. setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
@@ -135,19 +135,19 @@ e、任何其他组合（array数组等），都[不相等]。
 可用 chrome 中的 timeline 进行内存标记，可视化查看内存的变化情况，找出异常点。
 
 
-# 面向对象过程的三大基本特征
+## 面向对象过程的三大基本特征
 
 ```
 继承,多态,封装
 ```
 
-# 如何判断一个变量是对象还是数组
+## 如何判断一个变量是对象还是数组
 
 ```
 prototype.toString.call(),这个方法兼容性最好,千万不要使用typeof,都会返回object
 ```
 
-# ES5 和 ES6 中继承有啥区别
+## ES5 和 ES6 中继承有啥区别
 
 ES5的继承时通过prototype或构造函数机制来实现。ES5的继承实质上是先创建子类的实例对象，然后再将父类的方法添加到this上（Parent.apply(this)）。
 
@@ -157,7 +157,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 
 
-# 值类型和引用类型的区别
+## 值类型和引用类型的区别
 
 
 （1）值类型：
@@ -184,7 +184,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 
 
-# javascript 设计模式
+## javascript 设计模式
 
 ```
 创建型
@@ -244,7 +244,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 ```
 
-# 前端如何对页面性能进行优化
+## 前端如何对页面性能进行优化
 
 ```
 1.减少http请求
@@ -266,7 +266,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 17.避免使用CSSimport引用加载CSS
 ```
 
-# 使用 typeof bar ===“object”来确定 bar,是否是一个对象时有什么潜在的缺陷？这个陷阱如何避免？
+## 使用 typeof bar ===“object”来确定 bar,是否是一个对象时有什么潜在的缺陷？这个陷阱如何避免？
 
 ```
 如果bar的值为null的话,这样的话判断依旧成立,故错误
@@ -279,11 +279,11 @@ ES5
 console.log(Array.isArray(bar));
 ```
 
-# 什么是NaN
+## 什么是NaN
 ```
 Number.isNaN()
 ```
-# 原型/构造函数/实例
+## 原型/构造函数/实例
 
 - 原型(prototype): 一个简单的对象，用于实现对象的 属性继承。可以简单的理解成对象的爹。在 Firefox 和 Chrome 中，每个JavaScript对象中都包含一个__proto__ (非标准)的属性指向它爹(该对象的原型)，可obj.__proto__进行访问。
 - 构造函数: 可以通过new来 新建一个对象 的函数。
@@ -309,7 +309,7 @@ const prototype = Object.prototype
 ```
 ![image](https://user-gold-cdn.xitu.io/2019/2/14/168e9d9b940c4c6f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-# 原型链
+## 原型链
 
 原型链是由原型对象组成，每个对象都有 __proto__ 属性，指向了创建该对象的构造函数的原型，__proto__ 将对象连接起来组成了原型链。是一个用来实现继承和共享属性的有限的对象链。
 
@@ -317,7 +317,7 @@ const prototype = Object.prototype
 - 属性查找机制: 当查找对象的属性时，如果实例对象自身不存在该属性，则沿着原型链往上一级查找，找到时则输出，不存在时，则继续沿着原型链往上一级查找，直至最顶级的原型对象Object.prototype，如还是没找到，则输出undefined；
 - 属性修改机制: 只会修改实例对象本身的属性，如果不存在，则进行添加该属性，如果需要修改原型的属性时，则可以用: b.prototype.x = 2；但是这样会造成所有继承于该对象的实例的属性发生改变。
 
-# 数组
+## 数组
 - map: 遍历数组，返回回调返回值组成的新数组
 - forEach: 无法break，可以用try/catch中throw new Error来停止
 - filter: 过滤
@@ -345,7 +345,7 @@ arr.prototype.flat = function() {
     this.toString().split(',').map(item => +item )
 }
 ```
-# 从输入url到展示
+## 从输入url到展示
 
 - DNS 解析
 - TCP 三次握手
@@ -363,7 +363,7 @@ arr.prototype.flat = function() {
     - layout: 布局
     - GPU painting: 像素绘制页面
     
-# promise
+## promise
 
 Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大.
 Promise对象有以下两个特点。
