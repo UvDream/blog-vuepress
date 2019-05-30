@@ -82,6 +82,17 @@ module.exports = {
                     "props",
                     "vscode"
                 ]
+            }],
+            '/interview/':[{
+                title:"面试",
+                collapsable:false,
+                children:[
+                    "",
+                    "js",
+                    "vue",
+                    "code",
+                    "http"
+                ]
             }]
 
         },
