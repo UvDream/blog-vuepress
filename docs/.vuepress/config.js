@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
     base: 'blog',
-    title: '汪中杰',
+    title: 'U世界的V梦想',
     description: '一切皆有可能!',
     base: "/blog-vuepress/",
     port:"2222",
