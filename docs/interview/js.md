@@ -382,3 +382,5 @@ timeout(100).then((value) => {
   console.log(value);
 });
 ```
+
+ <Vssue title="interview-js" />

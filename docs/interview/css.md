@@ -110,3 +110,5 @@ p{font-size:10px;-webkit-transform:scale(0.8);} //0.8是缩放比例
 ### style标签写在body后与body前有什么区别？
 页面加载自上而下 当然是先加载样式。
 写在body标签后由于浏览器以逐行方式对HTML文档进行解析，当解析到写在尾部的样式表（外联或写在style标签）会导致浏览器停止之前的渲染，等待加载且解析样式表完成之后重新渲染，在windows的IE下可能会出现FOUC现象（即样式失效导致的页面闪烁问题）
+
+ <Vssue title="interview-css" />

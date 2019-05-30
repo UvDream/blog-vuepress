@@ -112,3 +112,4 @@ alert(a instanceof Array); //true
 alert(a instanceof RegExp); //false
 
 ```
+ <Vssue title="interview-type" />

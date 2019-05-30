@@ -176,3 +176,5 @@ var语句被挂起（没有它们的值初始化）到它所属的全局或函�
     console.log(y);
 })();
 ```
+
+ <Vssue title="interview-code" />
