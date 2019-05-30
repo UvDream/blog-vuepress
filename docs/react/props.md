@@ -194,6 +194,7 @@ export default MessageList;
 :::
 
 ## setState
+![img](../public/img/setState.png)
 
 ```js
 import React, { Component, Fragment } from "react";
