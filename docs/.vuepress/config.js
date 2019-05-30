@@ -88,9 +88,11 @@ module.exports = {
                 collapsable:false,
                 children:[
                     "",
+                    "css",
                     "js",
                     "vue",
                     "code",
+                    "type",
                     "http"
                 ]
             }]
