@@ -3,7 +3,7 @@
 ## 数组去重
 
 ### 双层循环
-```
+```js
 var array = [1, 1, '1', '1'];
 
 function unique(array) {
@@ -25,7 +25,7 @@ console.log(unique(array)); // [1, "1"]
 
 ```
 ### 利用indexOf
-```
+```js
 var array = [1, 1, '1'];
 
 function unique(array) {
@@ -43,7 +43,7 @@ console.log(unique(array));
 
 ```
 ### 排序后去重
-```
+```js
 var array = [1, 1, '1'];
 
 function unique(array) {
@@ -66,7 +66,7 @@ console.log(unique(array));
 ### filter
 filter可以用来简化外层循环
 #### 使用indexOf
-```
+```js
 var array = [1, 2, 1, 1, '1'];
 
 function unique(array) {
@@ -79,7 +79,7 @@ function unique(array) {
 console.log(unique(array));
 ```
 #### 排序去重
-```
+```js
 var array = [1, 2, 1, 1, '1'];
 
 function unique(array) {
@@ -92,7 +92,7 @@ console.log(unique(array));
 ```
 ### ES6方法
 #### Set
-```
+```js
 var array = [1, 2, 1, 1, '1'];
 
 function unique(array) {
@@ -103,7 +103,7 @@ console.log(unique(array)); // [1, 2, "1"]
 ```
 简化
 
-```
+```js
 function unique(array) {
     return [...new Set(array)];
 }
@@ -112,7 +112,7 @@ function unique(array) {
 var unique = (a) => [...new Set(a)]
 ```
 #### Map
-```
+```js
 function unique (arr) {
     const seen = new Map()
     return arr.filter((a) => !seen.has(a) && seen.set(a, 1))
@@ -130,7 +130,7 @@ undefined、object、boolean、number、string、object（小写），可以看�
 - Object.prototype.toString的作用非常强大，它能检测出基本数据类型以及Object下的细分类型，甚至像
 Math,JSON,arguments它都能检测出它们的具体类型，它返回结果形式例如[object Number](注意最后的数据类型是大写).所以，Object.prototype.toString基本上能检测出所有的类型了，只不过有时需要考虑到兼容性低版本浏览器的问题。
 ### 通用API
-```
+```js
     
 // 该类型判断函数可以判断六种基本数据类型以及Boolean Number String Function Array Date RegExp Object Error，
 // 其他类型因为遇到类型判断的情况较少所以都会返回object,不在进行详细的判断
@@ -159,7 +159,7 @@ function type(obj) {
 ```
 ### 判断空对象
 判断是否有属性，for循环一旦执行，就说明有属性，此时返回false
-```
+```js
 function isEmptyObject( obj ) {
         var name;
         for ( name in obj ) {
@@ -180,14 +180,14 @@ console.log(isEmptyObject(true)); // true
 
 ### 判断Window对象
 Window对象有一个window属性指向自身，可以利用这个特性来判断是否是Window对象
-```
+```js
 function isWindow( obj ) {
     return obj != null && obj === obj.window;
 }
 ```
 ### 判断数组
 isArray是数组类型内置的数据类型判断函数，但是会有兼容性问题，一个polyfill如下
-```
+```js
 isArray = Array.isArray || function(array){
   return Object.prototype.toString.call(array) === '[object Array]';
 }
@@ -201,14 +201,14 @@ jquery实现的isArrayLike,数组和类数组都会返回true。所如果isArray
 
 - 长度为 0
 比如下面情况,如果我们去掉length === 0 这个判断，就会打印 false，然而我们都知道 arguments 是一个类数组对象，这里是应该返回 true 的
-```
+```js
 function a(){
     console.log(isArrayLike(arguments))
 }
 a();
 ```
 - lengths 属性是大于 0 的数字类型，并且obj[length - 1]必须存在(考虑到arr = [,,3]的情况)
-```
+```js
 function isArrayLike(obj) {
 
     // obj 必须有 length属性
@@ -226,14 +226,14 @@ function isArrayLike(obj) {
 ```
 ### 判断NAN
 判断一个数是不是NaN不能单纯地使用 === 这样来判断, 因为NaN不与任何数相等, 包括自身,注意在ES6的isNaN中只有值为数字类型使用NaN才会返回true
-```
+```js
 isNaN: function(value){
   return isNumber(value) && isNaN(value);
 }
 ```
 ### 判断DOM元素
 利用DOM对象特有的nodeType属性
-```
+```js
 isElement: function(obj){
   return !!(obj && obj.nodeType === 1);
     // 两次感叹号将值转化为布尔值
@@ -242,14 +242,14 @@ isElement: function(obj){
 ```
 ### 判断arguments对象
 低版本的浏览器中argument对象通过Object.prototype.toString判断后返回的是[object Object],所以需要兼容
-```
+```js
 isArguments: function(obj){
   return Object.prototype.toString.call(obj) === '[object Arguments]' || (obj != null && Object.hasOwnProperty.call(obj, 'callee'));
 }
 ```
 ## 深浅拷贝
 ### 深拷贝
-```
+```js
 var deepCopy = function(obj) {
     if (typeof obj !== 'object') return;
     var newObj = obj instanceof Array ? [] : {};
@@ -263,7 +263,7 @@ var deepCopy = function(obj) {
 
 ```
 ### 浅拷贝
-```
+```js
 var shallowCopy = function(obj) {
     // 只拷贝对象
     if (typeof obj !== 'object') return;
@@ -281,7 +281,7 @@ var shallowCopy = function(obj) {
 ## 扁平化
 ### 递归
 循环数组元素，如果还是一个数组，就递归调用该方法
-```
+```js
 var arr = [1, [2, [3, 4]]];
 
 function flatten(arr) {
@@ -302,7 +302,7 @@ console.log(flatten(arr))
 ```
 ### toString()
 如果数组的元素都是数字，可以使用该方法
-```
+```js
 var arr = [1, [2, [3, 4]]];
 
 function flatten(arr) {
@@ -314,7 +314,7 @@ function flatten(arr) {
 console.log(flatten(arr))
 ```
 ### reduce()
-```
+```js
 var arr = [1, [2, [3, 4]]];
 
 function flatten(arr) {
@@ -326,7 +326,7 @@ function flatten(arr) {
 console.log(flatten(arr))
 ```
 ### ...
-```
+```js
 // 扁平化一维数组
 var arr = [1, [2, [3, 4]]];
 console.log([].concat(...arr)); // [1, 2, [3, 4]]
@@ -347,7 +347,7 @@ console.log(flatten(arr))
 ```
 ## 柯里化
 ### 通用版
-```
+```js
 function curry(fn, args) {
     var length = fn.length;
     var args = args || [];
@@ -373,7 +373,7 @@ multi(2)(3,4);
 multi(2,3)(4);
 ```
 ### ES6
-```
+```js
 const curry = (fn, arr = []) => (...args) => (
   arg => arg.length === fn.length
     ? fn(...arg)
@@ -387,7 +387,7 @@ curryTest(1,2)(3,4) //返回10
 ```
 ## 防抖和节流
 ### 防抖
-```
+```js
 function debounce(fn, wait) {
     var timeout = null;
     return function() {
@@ -412,7 +412,7 @@ window.addEventListener('scroll', debounce(handle, 1000));
 - 浏览器窗口缩放，resize事件等。
 ### 节流
 #### 利用时间戳
-```
+```js
    var throttle = function(func, delay) {
             var prev = Date.now();
             return function() {
@@ -431,7 +431,7 @@ window.addEventListener('scroll', debounce(handle, 1000));
         window.addEventListener('scroll', throttle(handle, 1000));
 ```
 #### 利用定时器
-```
+```js
    var throttle = function(func, delay) {
             var timer = null;
             return function() {
@@ -453,7 +453,7 @@ window.addEventListener('scroll', debounce(handle, 1000));
 ## 模拟new
 - new产生的实例可以访问Constructor里的属性，也可以访问到Constructor.prototype中的属性，前者可以通过apply来实现，后者可以通过将实例的proto属性指向构造函数的prototype来实现
 - 我们还需要判断返回的值是不是一个对象，如果是一个对象，我们就返回这个对象，如果没有，我们该返回什么就返回什么
-```
+```js
 function New(){
     var obj=new Object();
     //取出第一个参数，就是我们要传入的构造函数；此外因为shift会修改原数组，所以arguments会被去除第一个参数
@@ -467,7 +467,7 @@ function New(){
 }
 ```
 
-```
+```js
 function Otaku(name,age){
 	this.name=name;
 	this.age=age;
@@ -489,7 +489,7 @@ console.log(person.strength)//60
 - 模拟的步骤是：将函数设为对象的属性—>执行该函数—>删除该函数
 - this参数可以传null，当为null的时候，视为指向window
 - 函数是可以有返回值的
-```
+```js
 Function.prototype.call2 = function(context) {
     var context=context||window
     context.fn = this;
@@ -511,7 +511,7 @@ bar.call2(foo, 'black', '18') // black 18 1
 ```
 ## 模拟apply
 apply()的实现和call()类似，只是参数形式不同
-```
+```js
 Function.prototype.apply2 = function(context = window) {
     context.fn = this
     let result;
@@ -526,7 +526,7 @@ Function.prototype.apply2 = function(context = window) {
 }
 ```
 ## 模拟bind
-```
+```js
 Function.prototype.bind2=function(context){
     var self=thisl
     var args=Array.prototype.slice.call(arguments,1);
@@ -539,7 +539,7 @@ Function.prototype.bind2=function(context){
 }
 ```
 ## 模拟instanceof
-```
+```js
 function instanceOf(left,right) {
 
     let proto = left.__proto__;
@@ -558,7 +558,7 @@ function instanceOf(left,right) {
 - undefined、任意函数以及symbol，会被忽略（出现在非数组对象的属性值中时），或者被转换成 null（出现在数组中时）。
 - 不可枚举的属性会被忽略
 - 如果一个对象的属性值通过某种间接的方式指回该对象本身，即循环引用，属性也会被忽略。
-```
+```js
 function jsonStringify(obj) {
     let type = typeof obj;
     if (type !== "object") {
@@ -591,7 +591,7 @@ jsonStringify({b: undefined}) // "{"b":"undefined"}"
 
 用来解析JSON字符串，构造由字符串描述的JavaScript值或对象。提供可选的reviver函数用以在返回之前对所得到的对象执行变换(操作)。
 ### 利用eval
-```
+```js
 function jsonParse(opt) {
     return eval('(' + opt + ')');
 }
@@ -605,7 +605,7 @@ jsonParse(jsonStringify({b: undefined}))
 避免在不必要的情况下使用 eval，eval() 是一个危险的函数， 他执行的代码拥有着执行者的权利。如果你用 eval()运行的字符串代码被恶意方（不怀好意的人）操控修改，您最终可能会在您的网页/扩展程序的权限下，在用户计算机上运行恶意代码
 ### 利用new Function()
 Function与eval有相同的字符串参数特性,eval 与 Function 都有着动态编译js代码的作用，但是在实际的编程中并不推荐使用。
-```
+```js
 var func = new Function(arg1, arg2, ..., functionBody)
 
 var jsonStr = '{ "age": 20, "name": "jack" }'

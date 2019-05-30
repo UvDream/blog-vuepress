@@ -28,7 +28,7 @@
 |rprop |Render Prop|
 |hoc |Higher Order Component|
 
-```
+```js
 imr - Import React
 import React from 'react';
 imrc - Import React, Component
