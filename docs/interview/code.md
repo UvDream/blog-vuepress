@@ -1,7 +1,7 @@
 # 常见代码
 ## 代码1
 
-```
+```js
 (function(){
 var a = b = 3;
 })();
@@ -22,7 +22,7 @@ var a=b
 
 ## 代码2
 
-```
+```js
 var myObject = {
     foo: "bar",
         func: function() {
@@ -39,14 +39,14 @@ myObject.func();
 ```
 
 以上代码输入什么
-```
+```js
 outer func: this.foo = bar
 outer func: self.foo = bar
 inner func: this.foo = undefined
 inner func: self.foo = bar
 ```
 ## 代码3
-```
+```js
 function foo1(){
     return {
     bar: "hello"
@@ -71,7 +71,7 @@ foo2()=undefined
 ```
 
 ## 代码4
-```
+```js
 (function() {
     console.log(1);
     setTimeout(function(){console.log(2)}, 1000);
@@ -80,11 +80,11 @@ foo2()=undefined
 })();
 ```
 执行以上代码,1-4如何排列
-```
+```js
 1,4,3,2
 ```
 ## 代码5
-```
+```js
 console.log(1 + "2" + "2");
 console.log(1 + +"2" + "2");
 console.log(1 + -"1" + "2");
@@ -93,7 +93,7 @@ console.log( "A" - "B" + "2");
 console.log( "A" - "B" + 2);
 ```
 执行以上代码会出现什么结果
-```
+```js
 "122"
 "32"
 "02"
@@ -114,7 +114,7 @@ NaN
 例6：“A” - “B”+2输出：NaN说明：在前面的例子中，“A” - “B”产生NaN。但是任何运算符应用于NaN和其他数字操作数仍然会产生NaN。
 ```
 ## 代码6
-```
+```js
 var b = 1;
 function outer(){
     var b = 2
@@ -131,7 +131,7 @@ outer();
 3
 
 ## 代码7
-```
+```js
 var x = 21;
 var girl = function () {
     console.log(x);
@@ -143,7 +143,7 @@ girl ();
 undefined
 为什么它不显示21的全局值？原因是当函数执行时，它检查是否存在本地x变量但尚未声明它，因此它不会查找全局变量。
 ## 代码8
-```
+```js
 (function () {
     try {
         throw new Error();
@@ -156,13 +156,13 @@ undefined
 })();
 ```
 以上代码输出什么
-```
+```js
 1
 undefined
 2
 ```
 var语句被挂起（没有它们的值初始化）到它所属的全局或函数作用域的顶部，即使它位于with或catch块内。但是，错误的标识符只在catch块内部可见。它相当于：
-```
+```js
 (function () {
     var x, y; // outer and hoisted
         try {

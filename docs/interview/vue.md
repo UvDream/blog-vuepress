@@ -62,7 +62,7 @@ eventBus
 
 ### Object.defineProperty
 首先我们想到的是Object.defineProperty,这是es5新增的一个api,它可以允许我们为对象的属性来设定getter和setter,从而我们可以劫持用户对对象属性的取值和赋值。比如以下代码:
-```cgo
+```js
 const obj = {
 };
 
@@ -85,7 +85,7 @@ console.log(obj.name);
 我们通过Object.defineProperty劫持了obj[name]的取值和赋值操作，因此我们就可以在这里做一些手脚啦，比如说，我们可以在obj[name]被赋值的时候触发更新页面操作。
 ### 发布订阅模式
 发布订阅模式是设计模式中比较常见的一种，其中有两个角色：发布者和订阅者。多个订阅者可以向同一发布者订阅一个事件，当事件发生的时候，发布者通知所有订阅该事件的订阅者。我们来看一个例子了解下。
-```cgo
+```js
 class Dep {
   constructor() {
     this.subs = [];
@@ -128,7 +128,7 @@ dep.notify(); //
 
 
 ## vuex几大属性
-```
+```js
 有五种，分别是 State、 Getter、Mutation 、Action、 Module
 ```
 ## state
@@ -161,7 +161,7 @@ Action 类似于 mutation，不同在于：
 独立开发。开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xml代码。
 ```
 ## vue常用指令
-```
+```js
 v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
 ```
 
@@ -200,7 +200,7 @@ v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
         - watcher.run()
         - updateComponent()
 
-```
+```js
 let data = {a: 1}
 // 数据响应性
 observe(data)
@@ -311,7 +311,7 @@ class Watcher {
     - 遍历patchs， 把需要更改的节点取出来
     - 局部更新dom
 
-```
+```js
 // diff算法的实现
 function diff(oldTree, newTree) {
 	 // 差异收集

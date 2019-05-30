@@ -11,7 +11,7 @@ XSS更偏向于代码实现（即写一段拥有跨站请求功能的JavaScript�
 
 ## 数组快速排序
 
-```
+```js
 function quickSort(arr){
             //如果数组<=1,则直接返回
             if(arr.length<=1){return arr;}
@@ -52,8 +52,7 @@ localStorage：始终有效，窗口或浏览器关闭也一直保存，因此�
 一言以蔽之：==先转换类型再比较，===先判断类型，如果不是同一类型直接为false。
 
 ===表示恒等于，比较的两边要绝对的相同
-```
-
+```js
 alert(0 == ""); // true
 
 alert(0 == false); // true
@@ -333,14 +332,14 @@ const prototype = Object.prototype
 - indexOf / lastIndexOf(value, fromIndex): 查找数组项，返回对应的下标
 - reduce / reduceRight(fn(prev, cur)， defaultPrev): 两两执行，prev 为上次化简函数的return值，cur 为当前值(从第二项开始)
 - 数组乱序：
-```
+```js
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 arr.sort(function () {
     return Math.random() - 0.5;
 });
 ```
 - 数组拆解: flat: [1,[2,3]] --> [1, 2, 3]
-```
+```js
 arr.prototype.flat = function() {
     this.toString().split(',').map(item => +item )
 }
@@ -371,7 +370,7 @@ Promise对象有以下两个特点。
 
 - （2）一旦状态改变，就不会再变，任何时候都可以得到这个结果。Promise对象的状态改变，只有两种可能：从pending变为fulfilled和从pending变为rejected。只要这两种情况发生，状态就凝固了，不会再变了，会一直保持这个结果，这时就称为 resolved（已定型）。如果改变已经发生了，你再对Promise对象添加回调函数，也会立即得到这个结果。这与事件（Event）完全不同，事件的特点是，如果你错过了它，再去监听，是得不到结果的。
 - 简单例子
-```
+```js
 function timeout(ms) {
   return new Promise((resolve, reject) => {
     setTimeout(resolve, ms, 'done');
@@ -386,7 +385,7 @@ timeout(100).then((value) => {
 ## 函数柯里化
 柯里化是函数式编程的一个重要技巧，将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术
 函数式编程另一个重要的函数 compose，能够将函数进行组合，而组合的函数只接受一个参数，所以如果有接受多个函数的需求并且需要用到 compose 进行函数组合，就需要使用柯里化对准备组合的函数进行部分求值，让它始终只接受一个参数
-```
+```js
 function curry(fn){
     if(fn.length <=1) return fn
     const generator=(...args)=>{
@@ -404,8 +403,6 @@ function curry(fn){
 let add=(a,b,c,d)=>a+b+c+d
 const curriedAdd=curry(add)
 add(5,6,7,8) //26
-```
-
 ```
 
  <Vssue title="interview-js" />
