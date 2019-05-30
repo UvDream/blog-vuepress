@@ -1,5 +1,5 @@
 # Css
-## 1.px，em，rem、vw、vh
+## px，em，rem、vw、vh
 1.px (pixel，像素)：  
 
    是一个虚拟长度单位，是计算机系统的数字化图像长度单位，如果px要换算成物理长度，需要指定精度DPI(Dots Per Inch，每英寸像素数)，在扫描打印时一般都有DPI可选。Windows系统默认是96dpi，Apple系统默认是72dpi。
