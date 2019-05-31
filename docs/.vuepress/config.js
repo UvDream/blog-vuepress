@@ -15,10 +15,7 @@ module.exports = {
             },
             {
                 text: '前端',
-                items: [{
-                        text: 'Web',
-                        link: '/web/'
-                    },
+                items: [
                     {
                         text: 'JavaScript',
                         link: '/javascript/'
@@ -55,14 +52,6 @@ module.exports = {
             },
         ],
         sidebar: {
-            '/web/': [{
-                title: "Web基础",
-                collapsable: false,
-                children: [
-                    "",
-                    "web1"
-                ]
-            }],
             '/javascript/': [{
                 title: "JavaScript",
                 collapsable: false,
