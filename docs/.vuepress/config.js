@@ -17,6 +17,10 @@ module.exports = {
                 text: '前端',
                 items: [
                     {
+                        text:"Web",
+                        link:'/web/'
+                    },
+                    {
                         text: 'JavaScript',
                         link: '/javascript/'
                     },
@@ -52,6 +56,16 @@ module.exports = {
             },
         ],
         sidebar: {
+            '/web/':[
+                {
+                    title:'Web',
+                    collapsable:false,
+                    children:[
+                        "",
+                        "css"
+                    ]
+                }
+            ],
             '/javascript/': [{
                 title: "JavaScript",
                 collapsable: false,
