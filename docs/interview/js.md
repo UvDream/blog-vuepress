@@ -185,7 +185,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 ## javascript 设计模式
 
-```
+```js
 创建型:
 
 
@@ -267,7 +267,7 @@ ES6的继承机制完全不同，实质上是先创建父类的实例对象this�
 
 ## 使用 typeof bar ===“object”来确定 bar,是否是一个对象时有什么潜在的缺陷？这个陷阱如何避免？
 
-```
+```js
 如果bar的值为null的话,这样的话判断依旧成立,故错误
 1.bar是个函数
 console.log((bar !== null) && ((typeof bar === "object") || (typeof bar === "function")));
@@ -279,7 +279,7 @@ console.log(Array.isArray(bar));
 ```
 
 ## 什么是NaN
-```
+```js
 Number.isNaN()
 ```
 ## 原型/构造函数/实例
@@ -287,17 +287,17 @@ Number.isNaN()
 - 原型(prototype): 一个简单的对象，用于实现对象的 属性继承。可以简单的理解成对象的爹。在 Firefox 和 Chrome 中，每个JavaScript对象中都包含一个__proto__ (非标准)的属性指向它爹(该对象的原型)，可obj.__proto__进行访问。
 - 构造函数: 可以通过new来 新建一个对象 的函数。
 - 实例: 通过构造函数和new创建出来的对象，便是实例。 实例通过__proto__指向原型，通过constructor指向构造函数。
-```
+```js
 //实例
 const dog = new Object()
 ```
 则此时， dog, 构造函数为Object，我们知道，构造函数拥有一个prototype的属性指向原型，因此原型为:
-```
+```js
 //原型
 const prototype = Object.prototype
 ```
 这里我们可以看出关系
-```
+```js
 实例.__proto__ === 原型
 
 原型.constructor === 构造函数
