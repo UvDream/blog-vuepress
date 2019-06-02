@@ -18,7 +18,7 @@ MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数�
 
 ###### MVVM
 ![MVVM](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020110.png)
-```
+```js
 类似MVP,Presenter 改名为 ViewModel
 ```
 ###### MVC

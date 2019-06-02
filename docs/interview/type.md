@@ -1,4 +1,4 @@
-# 基本数据类型:
+# 基本数据类型
 按值访问，可操作保存在变量中的实际的值。基本类型值指的是简单的数据段。
 ```js
 undefined、null、string、number、boolean、symbol（es6）
