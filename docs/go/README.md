@@ -13,6 +13,7 @@ Go是从2007年末由Robert Griesemer, Rob Pike, Ken Thompson主持开发，后�
 - 并发编程
 - 反射
 - 语言交互性
+
  <Vssue title="go" />
  
  
