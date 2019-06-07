@@ -28,33 +28,34 @@
 | test | Run Flutter unit tests for the current project.|
 | trace | Start and stop tracing for a running Flutter app.|
 | upgrade | Upgrade your copy of Flutter.|
+指令|作用
+|:--:|:---:|
+|analyze 分析项目的 Dart 代码.|
+|attach 附加到正在运行的应用程序.|
+|bash-completion 输出命令行 shell 完成设置脚本.|
+|build Flutter 构建命令.|
+|channel 列出或切换颤振通道。|
+|clean 删除 build/ directory.|
+|config 配置 Flutter 设置.|
+|create 创建一个 flutter 项目.|
+|devices 可使用的设备.|
+|doctor 诊断电脑环境配置缺少项.|
+|drive 运行当前项目的 Flutter Driver 测试.|
+|emulators 列出，启动和创建模拟器.|
+|format 格式化一个或多个 dart 文件.|
+|help 帮助.|
+|install 在连接的设备上安装 Flutter 应用程序.|
+|logs 显示运行 Flutter 应用程序的日志输出.
+|make-host-app-editable 将主机应用程序从生成的目录移动到非生成目录，以便开发人员可以编辑它们.|
+|packages 用于管理 Flutter 包的命令.|
+|precache 填充 Flutter 工具的二进制工件缓存.|
+|run 启动项目.|
+|screenshot 从连接的设备截取屏幕截图.|
+|stop 在连接的设备上停止 Flutter 应用.|
+|test 运行当前项目的 Flutter 单元测试.|
+|trace 启动和停止正在运行的 Flutter 应用程序的跟踪.|
+|upgrade 升级您的 Flutter 环境.|
 
-analyze 分析项目的 Dart 代码。
-attach 附加到正在运行的应用程序
-bash-completion 输出命令行 shell 完成设置脚本。
-build Flutter 构建命令。
-channel 列出或切换颤振通道。
-clean 删除 build/ directory.
-config 配置 Flutter 设置。
-create 创建一个 flutter 项目
-devices 可使用的设备
-doctor 诊断电脑环境配置缺少项
-drive 运行当前项目的 Flutter Driver 测试。
-emulators 列出，启动和创建模拟器。
-format 格式化一个或多个 dart 文件。
-help 帮助
-install 在连接的设备上安装 Flutter 应用程序。
-logs 显示运行 Flutter 应用程序的日志输出
-make-host-app-editable 将主机应用程序从生成的目录移动到非生成目录，以便开发人员可以编辑它们。
-packages 用于管理 Flutter 包的命令。
-precache 填充 Flutter 工具的二进制工件缓存。
-run 启动项目
-screenshot 从连接的设备截取屏幕截图。
-stop 在连接的设备上停止 Flutter 应用
-test 运行当前项目的 Flutter 单元测试。
-trace 启动和停止正在运行的 Flutter 应用程序的跟踪。
-upgrade 升级您的 Flutter 环境。
-
-```
+```sh
 source ~/.bash_profile
 ```
