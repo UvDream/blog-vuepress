@@ -103,6 +103,14 @@ module.exports = {
                     "http",
                     "catch"
                 ]
+            }],
+            '/flutter/':[{
+                title:'flutter',
+                collapsable:false,
+                children:[
+                    "",
+                    "flutter1"
+                ]
             }]
 
         },

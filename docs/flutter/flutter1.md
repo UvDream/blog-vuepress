@@ -2,8 +2,8 @@
 
 指令
 指令|作用
-:---:|:---:
-analyze               Analyze the project's Dart code.
+|:---:|:---:|
+|analyze |              Analyze the project's Dart code.|
 attach                   Attach to a running application.
 bash-completion          Output command line shell completion setup scripts.
 build                    Flutter build commands.
