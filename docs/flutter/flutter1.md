@@ -4,10 +4,10 @@
 指令|作用
 |:---:|:---:|
 |analyze |              Analyze the project's Dart code.|
-attach                   Attach to a running application.
-bash-completion          Output command line shell completion setup scripts.
-build                    Flutter build commands.
-channel                  List or switch flutter channels.
+|attach   |                Attach to a running application.|
+|bash-completion|          Output command line shell completion setup scripts.|
+|build  |                  Flutter build commands.|
+|channel |                 List or switch flutter channels.|
 clean                    Delete the build/ directory.
 config                   Configure Flutter settings.
 create                   Create a new Flutter project.
