@@ -140,18 +140,18 @@ dep.notify(); //
 ## getter
 ```
 1、getters 可以对State进行计算操作，它就是Store的计算属性
-2、 虽然在组件内也可以做计算属性，但是getters 可以在多组件之间复用
-3、 如果一个状态只在一个组件内使用，是可以不用getters
+2、虽然在组件内也可以做计算属性，但是getters 可以在多组件之间复用
+3、如果一个状态只在一个组件内使用，是可以不用getters
 ```
 ## mutation
 ```
-更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
+mutations定义的方法动态修改Vuex 的 store 中的状态或数据。
 ```
 ## action
 ```
-Action 类似于 mutation，不同在于：
- - Action 提交的是 mutation，而不是直接变更状态。
- - Action 可以包含任意异步操作
+action 类似于 mutation，不同在于：
+ - action 提交的是 mutation，而不是直接变更状态。
+ - action 可以包含任意异步操作
 ```
 ## vue优点
 ```
@@ -447,6 +447,14 @@ function diffList(oldList, newList, index, pathchs) {
 ```
 key的作用是为了在diff算法执行时更快的找到对应的节点，提高diff速度
 ```
+
+## vue-router 有哪几种导航守卫?
+- 全局守卫
+- 路由独享守卫
+- 路由组件内的守卫
+
+## Vue的路由实现：hash模式 和 history模式
+
 
  <Vssue title="interview-vue" />
 
