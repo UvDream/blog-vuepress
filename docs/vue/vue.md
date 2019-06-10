@@ -13,7 +13,7 @@ Vue
 
     |—  src 主要源码所在位置
 
-        |— compiler 模板解析的相关文件
+        |— compiler  //编译相关,包含所有编译相关的代码,包括把模板解析成ast语法树,ast语法树优化,代码生成等功能,编译的工作可以再构建时做(借助webpack,vue-loader等辅助插件),也可以在运行时做,使用包含构建功能的Vue.js
 
             |—codegen 根据ast生成render函数
 
@@ -21,7 +21,7 @@ Vue
 
             |—parser 模板解析
 
-        |—  core 核心代码
+        |—  core //核心代码,包括内置组件,全局API封装,Vue实例化,观察者,虚拟DOM,工具函数等等
 
             |— components 全局的组件，这里只有keep-alive
 
@@ -37,7 +37,7 @@ Vue
 
         |— entries 入口文件，也就是build文件夹下config.js中配置的入口文件。看源码可以从这里看起
 
-        |— platforms 平台相关的内容
+        |— platforms //不同平台支持
 
             |— web web端独有文件
 
@@ -51,12 +51,12 @@ Vue
 
             |— weex weex端独有文件
 
-        |— server 服务端渲染相关
+        |— server //服务端渲染,这部分代码跑在Nodejs
 
-        |— sfc
+        |— sfc  //.vue文件解析,解析成JavaScript的对象
 
             |— parser.js 包含了单文件 Vue 组件 (*.vue) 的解析逻辑。在 vue-template-compiler 包中被使用。
 
-        |—  shared 共享的工具方法
+        |—  shared //共享代码,定义的工具方法,这里定义的工具方法都是被浏览器端Vuejs和服务端Vue.js所共享
 
     |—  test 测试用例
