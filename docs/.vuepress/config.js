@@ -78,7 +78,8 @@ module.exports = {
                 title: "Vue",
                 collapsable: false,
                 children: [
-                    ""
+                    "",
+                    "vue1"
                 ]
             }],
             '/react/': [{
