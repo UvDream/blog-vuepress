@@ -9,5 +9,7 @@ Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组�
 
 Vue 学习起来非常简单
 :::
+## vue的MVVM
+![img](../public/img/mvvm.png)
  <Vssue title="vue" />
  

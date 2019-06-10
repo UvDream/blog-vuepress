@@ -145,10 +145,9 @@ dep.notify(); //
 ```
 ## mutation
 ```
-sequenceDiagram
-A->>B: How are you?
-B->>A: Great!
+更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
 ```
+## action
 ```
 Action 类似于 mutation，不同在于：
  - Action 提交的是 mutation，而不是直接变更状态。
@@ -352,7 +351,7 @@ function diffProps(oldProps, newProps) {
     // 遍历新旧属性列表
     // 查找删除项
     // 查找修改项
-    // 查找新增项
+    // 查找新增项mutation
     forin(olaProps, (k, v) => {
         if (!newProps.hasOwnProperty(k)) {
             propsPathchs.push({ type: 'remove', prop: k })
