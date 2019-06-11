@@ -1,4 +1,4 @@
-# vue
+# Vue
 ## Vue的MVVM
 ```
 MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数据更新dom也就跟着更新
@@ -29,8 +29,6 @@ MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数�
 3. Model 将新的数据发送到 View，用户得到反馈
 ```
 
-
-
 ## keep-live
 ```
 把切换出去的组件保留在缓存中，可以保留组件的状态或者避免重新渲染
@@ -42,8 +40,6 @@ prop  $emit
 同级组件之间通讯vuex
 2.兄弟组件
 eventBus
-
-
 ```
 ## vue生命周期的理解
 

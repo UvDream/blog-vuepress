@@ -76,7 +76,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     "",
-                    "vue1"
+                    "vue1",
+                    "vue2"
                 ]
             }],
             '/react/': [{
