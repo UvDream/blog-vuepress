@@ -99,6 +99,7 @@ module.exports = {
                     "css",
                     "js",
                     "vue",
+                    "react",
                     "code",
                     "type",
                     "http",
