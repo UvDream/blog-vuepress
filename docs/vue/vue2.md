@@ -46,3 +46,4 @@ DocumentFragment，文档片段接口，表示一个没有父级文件的最小�
 - 除此之外，虚拟DOM在使用Diff算法进行对比时，若存在key值，可以更高效更迅速。
 
 
+ <Vssue title="vue-dom" />
