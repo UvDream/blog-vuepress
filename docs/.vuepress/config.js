@@ -5,7 +5,7 @@ module.exports = {
     title: 'U世界的V梦想',
     description: '一切皆有可能!',
     base: "/blog-vuepress/",
-    port:"2222",
+    port: "2222",
     // theme: path.resolve(__dirname, '../../lib'),
     themeConfig: {
         //   导航栏
@@ -15,18 +15,17 @@ module.exports = {
             },
             {
                 text: '前端',
-                items: [
-                    {
-                        text:"Web",
-                        link:'/web/'
+                items: [{
+                        text: "Web",
+                        link: '/web/'
                     },
                     {
                         text: 'JavaScript',
                         link: '/javascript/'
                     },
                     {
-                        text:'Angular',
-                        link:'/angular/'
+                        text: 'Angular',
+                        link: '/angular/'
                     },
                     {
                         text: 'Vue',
@@ -37,7 +36,7 @@ module.exports = {
                         link: '/react/'
                     },
                     {
-                        text:'面试',
+                        text: '面试',
                         link: '/interview/'
                     }
                 ]
@@ -56,16 +55,14 @@ module.exports = {
             },
         ],
         sidebar: {
-            '/web/':[
-                {
-                    title:'Web',
-                    collapsable:false,
-                    children:[
-                        "",
-                        "css"
-                    ]
-                }
-            ],
+            '/web/': [{
+                title: 'Web',
+                collapsable: false,
+                children: [
+                    "",
+                    "css"
+                ]
+            }],
             '/javascript/': [{
                 title: "JavaScript",
                 collapsable: false,
@@ -91,10 +88,10 @@ module.exports = {
                     "vscode"
                 ]
             }],
-            '/interview/':[{
-                title:"面试",
-                collapsable:false,
-                children:[
+            '/interview/': [{
+                title: "面试",
+                collapsable: false,
+                children: [
                     "",
                     "css",
                     "js",
@@ -106,10 +103,10 @@ module.exports = {
                     "catch"
                 ]
             }],
-            '/flutter/':[{
-                title:'flutter',
-                collapsable:false,
-                children:[
+            '/flutter/': [{
+                title: 'flutter',
+                collapsable: false,
+                children: [
                     "",
                     "flutter1"
                 ]
@@ -122,6 +119,13 @@ module.exports = {
     plugins: [
         "@vuepress/back-to-top",
         "@vuepress/nprogress",
+        ["@vuepress/pwa", {
+            serviceWorker: true,
+            updatePopup: {
+                message: "New content is available.",
+                buttonText: "Refresh"
+            }
+        }],
         ['@vssue/vuepress-plugin-vssue', {
             platform: 'github',
             owner: 'UvDream',
