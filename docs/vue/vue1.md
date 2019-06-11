@@ -62,4 +62,16 @@
        |—  test 测试用例
 
 ```
+
+```
+├─ README.md
+├─ foo
+│  ├─ README.md
+│  ├─ one.md
+│  └─ two.md
+└─ bar
+   ├─ README.md
+   ├─ three.md
+   └─ four.md
+   ```
  <Vssue title="vue-file" />
