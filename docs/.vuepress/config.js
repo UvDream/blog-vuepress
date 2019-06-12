@@ -86,7 +86,8 @@ module.exports = {
                 children: [
                     "",
                     "props",
-                    "vscode"
+                    "vscode",
+                    "life"
                 ]
             }],
             '/interview/': [{

@@ -449,7 +449,18 @@ key的作用是为了在diff算法执行时更快的找到对应的节点，提�
 - 路由独享守卫
 - 路由组件内的守卫
 
-## Vue的路由实现：hash模式 和 history模式
+## Vue的路由实现
+hash模式 和 history模式
+
+## Vue为什么用function实现类,而不是ES6的class
+很多的mixin的函数调用,把Vue当参数传入,它的功能个都是给VUe的prototype上扩展一些方法,Vue按功能把这些扩展分散到多个模块中去实现,而不是一个模块实现所有,这种方式Class是很难实现的,这么做的好处是非常方便代码的维护和管理
+在Vue3中使用Function-base API
+对比Class API
+- 更灵活的逻辑复用能力
+- 更好的TypeScript类型推到支持
+- 更好的性能
+- Tree-shaking友好
+- 代码更容易被压缩
 
 
  <Vssue title="interview-vue" />
