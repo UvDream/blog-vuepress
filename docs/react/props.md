@@ -273,6 +273,40 @@ export default class Xiaojiejie extends Component {
   }
 }
 ```
+:::tip
+setSate是一个异步方法
+:::
+```js
+render(){
+  return(
+  <ul ref={(ul)=>{this.ul=ul}}>
+  ....
+  </ul>
+  )
+}
+addList() {
+      // setState异步方法
+        this.setState({
+            list: [...this.state.list, this.state.inputVal],
+            inputVal:''
+        })
+        console.log(this.ul.querySelectorAll('li').length)
+    }
+ ```
+这样打印的话长度始终少了一个,因为console.log已经执行了,setState才执行完,故长度少1
+> 解决办法
+```js
+addList() {
+      // setState异步方法
+        this.setState({
+            list: [...this.state.list, this.state.inputVal],
+            inputVal:''
+        },()=>{
+        console.log('长度',this.ul.querySelectorAll('li').length)
+        })
+    }
+```
+
 
 ## 父子组件传值
 
