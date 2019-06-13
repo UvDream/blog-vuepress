@@ -286,23 +286,15 @@ class Watcher {
 ## virtual dom 原理实现
 
 - 创建 dom 树
-
-
 - 树的diff，同层对比，输出patchs(listDiff/diffChildren/diffProps)
     - 没有新的节点，返回
-    - 
     - 新的节点tagName与key不变， 对比props，继续递归遍历子树
         - 对比属性(对比新旧属性列表):
             - 旧属性是否存在与新属性列表中
             - 都存在的是否有变化
             - 是否出现旧列表中没有的新属性
-            
         - tagName和key值变化了，则直接替换成新节点
-
-
-
 - 渲染差异
-
     - 遍历patchs， 把需要更改的节点取出来
     - 局部更新dom
 
