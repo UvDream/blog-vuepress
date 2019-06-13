@@ -87,7 +87,8 @@ module.exports = {
                     "",
                     "props",
                     "vscode",
-                    "life"
+                    "life",
+                    "other"
                 ]
             }],
             '/interview/': [{
