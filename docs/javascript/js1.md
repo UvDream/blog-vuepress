@@ -124,11 +124,10 @@ function unique (arr) {
 
 
 - typeof对六个基本数据类型Undefined、Null、Boolean、Number、String、Object（大写）返回的结果是
-undefined、object、boolean、number、string、object（小写），可以看到Null和Object 类型都返回了 object 字符串；typeof却能检测出函数类型；综上，typeof能检测出六种类型，但是不能检测出null类型和Object下细分的类型，如Array，Function，Date，RegExp,Error等。
-
+undefined、object、boolean、number、string、object（小写），可以看到Null和Object 类型都返回了 object 字符串；typeof却能检测出函数类型；综上，typeof能检测出六种类型，但是不能检测出null类型和Object下细分的类型，如Array，Function，Date，RegExp,Error等.
 
 - Object.prototype.toString的作用非常强大，它能检测出基本数据类型以及Object下的细分类型，甚至像
-Math,JSON,arguments它都能检测出它们的具体类型，它返回结果形式例如[object Number](注意最后的数据类型是大写).所以，Object.prototype.toString基本上能检测出所有的类型了，只不过有时需要考虑到兼容性低版本浏览器的问题。
+Math,JSON,arguments它都能检测出它们的具体类型，它返回结果形式例如[object Number](注意最后的数据类型是大写).所以，Object.prototype.toString基本上能检测出所有的类型了，只不过有时需要考虑到兼容性低版本浏览器的问题.
 ### 通用API
 ```js
     
@@ -176,7 +175,7 @@ console.log(isEmptyObject(1)); // true
 console.log(isEmptyObject('')); // true
 console.log(isEmptyObject(true)); // true
 ```
-我们可以看出isEmptyObject实际上判断的并不仅仅是空对象。但是既然jQuery是这样写，可能是因为考虑到实际开发中 isEmptyObject用来判断 {} 和 {a: 1} 是足够的吧。如果真的是只判断 {}，完全可以结合上篇写的 type函数筛选掉不适合的情况。
+我们可以看出isEmptyObject实际上判断的并不仅仅是空对象.但是既然jQuery是这样写，可能是因为考虑到实际开发中 isEmptyObject用来判断 {} 和 {a: 1} 是足够的吧.如果真的是只判断 {}，完全可以结合上篇写的 type函数筛选掉不适合的情况.
 
 ### 判断Window对象
 Window对象有一个window属性指向自身，可以利用这个特性来判断是否是Window对象
@@ -193,7 +192,7 @@ isArray = Array.isArray || function(array){
 }
 ```
 ### 判断类数组
-jquery实现的isArrayLike,数组和类数组都会返回true。所如果isArrayLike返回true，至少要满足三个条件之一：
+jquery实现的isArrayLike,数组和类数组都会返回true.所如果isArrayLike返回true，至少要满足三个条件之一：
 
 
 - 是数组
@@ -406,10 +405,10 @@ function handle() {
 window.addEventListener('scroll', debounce(handle, 1000));
 ```
 应用场景:
-- 搜索框输入查询，如果用户一直在输入中，没有必要不停地调用去请求服务端接口，等用户停止输入的时候，再调用，设置一个合适的时间间隔，有效减轻服务端压力。
+- 搜索框输入查询，如果用户一直在输入中，没有必要不停地调用去请求服务端接口，等用户停止输入的时候，再调用，设置一个合适的时间间隔，有效减轻服务端压力.
 - 表单验证
-- 按钮提交事件。
-- 浏览器窗口缩放，resize事件等。
+- 按钮提交事件.
+- 浏览器窗口缩放，resize事件等.
 ### 节流
 #### 利用时间戳
 ```js
@@ -554,10 +553,10 @@ function instanceOf(left,right) {
 ## 模拟JSON.stringify
 > JSON.stringify(value[, replacer [, space]])
 
-- Boolean | Number| String 类型会自动转换成对应的原始值。
-- undefined、任意函数以及symbol，会被忽略（出现在非数组对象的属性值中时），或者被转换成 null（出现在数组中时）。
+- Boolean | Number| String 类型会自动转换成对应的原始值.
+- undefined、任意函数以及symbol，会被忽略（出现在非数组对象的属性值中时），或者被转换成 null（出现在数组中时）.
 - 不可枚举的属性会被忽略
-- 如果一个对象的属性值通过某种间接的方式指回该对象本身，即循环引用，属性也会被忽略。
+- 如果一个对象的属性值通过某种间接的方式指回该对象本身，即循环引用，属性也会被忽略.
 ```js
 function jsonStringify(obj) {
     let type = typeof obj;
@@ -589,7 +588,7 @@ jsonStringify({b: undefined}) // "{"b":"undefined"}"
 ## 模拟JSON.parse
 > JSON.parse(text[, reviver])
 
-用来解析JSON字符串，构造由字符串描述的JavaScript值或对象。提供可选的reviver函数用以在返回之前对所得到的对象执行变换(操作)。
+用来解析JSON字符串，构造由字符串描述的JavaScript值或对象.提供可选的reviver函数用以在返回之前对所得到的对象执行变换(操作).
 ### 利用eval
 ```js
 function jsonParse(opt) {
@@ -602,9 +601,9 @@ jsonParse(jsonStringify([1, "false", false]))
 jsonParse(jsonStringify({b: undefined}))
 // Object { b: "undefined"}
 ```
-避免在不必要的情况下使用 eval，eval() 是一个危险的函数， 他执行的代码拥有着执行者的权利。如果你用 eval()运行的字符串代码被恶意方（不怀好意的人）操控修改，您最终可能会在您的网页/扩展程序的权限下，在用户计算机上运行恶意代码
+避免在不必要的情况下使用 eval，eval() 是一个危险的函数， 他执行的代码拥有着执行者的权利.如果你用 eval()运行的字符串代码被恶意方（不怀好意的人）操控修改，您最终可能会在您的网页/扩展程序的权限下，在用户计算机上运行恶意代码
 ### 利用new Function()
-Function与eval有相同的字符串参数特性,eval 与 Function 都有着动态编译js代码的作用，但是在实际的编程中并不推荐使用。
+Function与eval有相同的字符串参数特性,eval 与 Function 都有着动态编译js代码的作用，但是在实际的编程中并不推荐使用.
 ```js
 var func = new Function(arg1, arg2, ..., functionBody)
 

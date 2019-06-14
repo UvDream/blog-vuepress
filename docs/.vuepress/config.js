@@ -69,6 +69,7 @@ module.exports = {
                 children: [
                     "",
                     ['js1', '手写代码'],
+                    ["closure",'闭包']
                 ]
             }],
             '/vue/': [{
