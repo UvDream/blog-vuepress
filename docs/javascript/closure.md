@@ -61,3 +61,119 @@ f() //4
 这里面a并没有销毁,这是因为执行var f=func()的时候,f返回了一个匿名函数的引用,它可以访问到func()被调用的时候产生的环境,也就是a一直存在这个环境里,既然局部变量所在的环境还能被外界
 访问，这个局部变量就有了不被销毁的理由。在这里产生了一个闭包结构，局部变量的生命看起
 来被延续了.
+
+## 闭包的作用
+### 封装变量
+闭包可以帮助把一些不需要暴露在全局的变量封装成“私有变量”。假设有一个计算乘积的简单函数：
+```js
+var func=function(){
+    var a = 1; 
+    for ( var i = 0, l = arguments.length; i < l; i++ ){ 
+            a = a * arguments[i]; 
+    } 
+    return a;
+}
+console.log(func(1,2,3))
+```
+对于那些相同的参数,每次都进行计算是一种浪费,我们可以加入缓存机制提高这个函数的性能
+```js {1}
+var cache={}
+var func=function(){
+    debugger;
+    var args=Array.prototype.join.call(arguments,',')
+    if(cache[args]){
+        return cache[args];
+    }
+    var a = 1; 
+    for ( var i = 0, l = arguments.length; i < l; i++ ){ 
+            a = a * arguments[i]; 
+    } 
+    return cache[args]=a  //{1,2,3:6}
+}
+console.log(func(1,2,3))
+```
+此时cache是个全局变量,而且仅仅在func函数呗调用的时候才被使用,与其这样不如放进函数
+```js {3,4,5,6,7,8,9,10,11,12,13}
+  var func = (function () {
+        var cache = {}
+        return function () {
+            var args = Array.prototype.join.call(arguments, ',')
+            if (cache[args]) {
+                return cache[args];
+            }
+            var a = 1;
+            for (var i = 0, l = arguments.length; i < l; i++) {
+                a = a * arguments[i];
+            }
+            return cache[args] = a //{1,2,3:6}
+        }
+    })()
+    console.log(func(1, 2, 3))
+```
+如果一个大函数中有一些代码块能够独立出来,我们常常把这些函数封装在一些小函数里面,独立出来的函数有助于代码的复用
+```js {3,4,5,6,7,8,9}
+ var func = (function () {
+        var cache = {};
+        var calculate = function () { // 封闭 calculate 函数
+            var a = 1;
+            for (var i = 0, l = arguments.length; i < l; i++) {
+                a = a * arguments[i];
+            }
+            return a;
+        };
+        return function () {
+            var args = Array.prototype.join.call(arguments, ',');
+            if (args in cache) {
+                return cache[args];
+            }
+            return cache[args] = calculate.apply(null, arguments);
+        }
+    })();
+    console.log(func(1, 2, 3))
+```
+### 延长局部变量的寿命
+类似上面注意案例
+
+## 闭包和面向对象设计
+```js
+var extent = function () {
+    var value = 0;
+    return {
+        call: function () {
+            value++;
+            console.log(value);
+        }
+    }
+};
+var extent = extent();
+extent.call(); // 输出：1 
+extent.call(); // 输出：2 
+extent.call(); // 输出：3
+```
+如果使用面向对象写法
+```js
+ var extent = {
+    value: 0,
+    call: function () {
+        this.value++;
+        console.log(this.value);
+    }
+};
+extent.call(); // 输出：1 
+extent.call(); // 输出：2 
+extent.call(); // 输出：3
+```
+或者
+```js
+var Extent = function(){ 
+    this.value = 0; 
+}; 
+Extent.prototype.call = function(){ 
+    this.value++; 
+    console.log( this.value ); 
+}; 
+var extent = new Extent(); 
+extent.call(); 
+extent.call(); 
+extent.call();
+```

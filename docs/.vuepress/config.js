@@ -137,5 +137,8 @@ module.exports = {
             clientId: 'd75a9c8894c2a2034aa2',
             clientSecret: '0d3500776dd388c9af6c96a0179648fbf69394d1',
         }],
-    ]
+    ],
+	 markdown: {
+    lineNumbers: true
+  }
 }
