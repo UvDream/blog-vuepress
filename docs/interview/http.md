@@ -62,3 +62,6 @@ keep-alive的优点：
 - 报告错误无需关闭TCP连
 ## 为什么有了HTTP为什么还要HTTPS？
 https是安全版的http，因为http协议的数据都是明文进行传输的，所以对于一些敏感信息的传输就很不安全，HTTPS就是为了解决HTTP的不安全而生的。
+
+
+<Vssue title="interview-http" />
