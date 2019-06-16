@@ -1,33 +1,41 @@
 # Vue
+## 什么是渐进式
+简单的来说就是把框架分层,还有一种理解,如果你有一个现成的服务端应用,也就是非单页应用,可以将Vuejs作为该应用的一部分嵌入其中,带来更多的丰富的交互体验
 ## Vue的MVVM
-```
 MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数据更新dom也就跟着更新
+
 1、M就是Model模型层，存的一个数据对象.
+
 2、V就是View视图层，所有的html节点在这一层.
+
 3、VM就是ViewModel，它通过data属性连接Model模型层，通过el属性连接View视图层
-```
+
 ###### MVC
 ![MVC](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020105.png)
-```
+
 1. View 传送指令到 Controller
+
 2. Controller 完成业务逻辑后，要求 Model 改变状态
+
 3. Model 将新的数据发送到 View，用户得到反馈
-```
+
 
 ## keep-live
-```
-把切换出去的组件保留在缓存中，可以保留组件的状态或者避免重新渲染
-```
-## 组件之间通讯
-```
-1.父子组件
-prop  $emit
-同级组件之间通讯vuex
-2.兄弟组件
-eventBus
-```
-## vue生命周期的理解
 
+把切换出去的组件保留在缓存中，可以保留组件的状态或者避免重新渲染
+
+## 组件之间通讯
+1.父子组件
+
+prop  $emit
+
+同级组件之间通讯vuex
+
+2.兄弟组件
+
+eventBus
+
+## vue生命周期的理解
 创建前/后，载入前/后，更新前/后，销毁前/后
 它的生命周期中有多个事件钩子，让我们在控制整个Vue实例的过程时更容易形成好的逻辑.
 
@@ -40,7 +48,6 @@ eventBus
 - beforeDestory() 和 destoryed() 前者是销毁前执行（实例仍然完全可用），后者则是销毁后执行
 
 ## vue响应式原理
-
 ### Object.defineProperty
 首先我们想到的是Object.defineProperty,这是es5新增的一个api,它可以允许我们为对象的属性来设定getter和setter,从而我们可以劫持用户对对象属性的取值和赋值.比如以下代码:
 ```js
@@ -113,33 +120,32 @@ dep.notify(); //
 有五种，分别是 State、 Getter、Mutation 、Action、 Module
 ```
 ## state
-```
 1、Vuex就是一个仓库，仓库里面放了很多对象.其中state就是数据源存放地，对应于与一般Vue对象里面的data
+
 2、state里面存放的数据是响应式的，Vue组件从store中读取数据，若是store中的数据发生改变，依赖这个数据的组件也会发生更新
+
 3、它通过mapState把全局的 state 和 getters 映射到当前组件的 computed 计算属性中
-```
+
 ## getter
-```
 1、getters 可以对State进行计算操作，它就是Store的计算属性
+
 2、虽然在组件内也可以做计算属性，但是getters 可以在多组件之间复用
+
 3、如果一个状态只在一个组件内使用，是可以不用getters
-```
+
 ## mutation
-```
 mutations定义的方法动态修改Vuex 的 store 中的状态或数据.
-```
+
 ## action
-```
 action 类似于 mutation，不同在于：
  - action 提交的是 mutation，而不是直接变更状态.
  - action 可以包含任意异步操作
-```
+
 ## vue优点
-```
 低耦合.视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的"View"上，当View变化的时候Model可以不变，当Model变化的时候View也可以不变.
 可重用性.你可以把一些视图逻辑放在一个ViewModel里面，让很多view重用这段视图逻辑.
 独立开发.开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xml代码.
-```
+
 ## vue常用指令
 ```js
 v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
@@ -159,7 +165,6 @@ v-if v-show v-bind(:) v-for v-model  v-text v-html v-on(@)
 
 
 ## 数据响应(数据劫持)
-
 看完生命周期后，里面的watcher等内容其实是数据响应中的一部分.数据响应的实现由两部分构成: 观察者( watcher ) 和 依赖收集器( Dep )，其核心是 defineProperty这个方法，它可以 重写属性的 get 与 set 方法，从而完成监听数据的改变.
 
 - Observe (观察者)观察 props 与 state
