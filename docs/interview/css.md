@@ -65,14 +65,14 @@
 
 :before 和 :after 这两个伪元素，是在CSS2.1里新出现的.起初，伪元素的前缀使用的是单冒号语法，但随着Web的进化，在CSS3的规范里，伪元素的语法被修改成使用双冒号，成为::before ::after
 ### 怎么让Chrome支持小于12px 的文字？
-```angular2
+```css
 p{font-size:10px;-webkit-transform:scale(0.8);} //0.8是缩放比例
 ```
 ### 让页面里的字体变清晰，变细用CSS怎么做？
 -webkit-font-smoothing在window系统下没有起作用，但是在IOS设备上起作用-webkit-font-smoothing：antialiased是最佳的，灰度平滑.
 
 ### position:fixed;在android下无效怎么处理？
-```
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 ```
 
