@@ -2,7 +2,7 @@
 # Vue源码结构
 
 ```
-       ├─  build  打包相关的配置文件，其中最重要的是config.js。主要是根据不同的入口，打包为不同的文件。
+       ├─  build  打包相关的配置文件，其中最重要的是config.js.主要是根据不同的入口，打包为不同的文件.
        │
        ├─  dist 打包之后文件所在位置
        │
@@ -36,7 +36,7 @@
        |   |    |
        |   |    └─vdom 虚拟dom相关
        |   |
-       |   ├─ entries 入口文件，也就是build文件夹下config.js中配置的入口文件。看源码可以从这里看起
+       |   ├─ entries 入口文件，也就是build文件夹下config.js中配置的入口文件.看源码可以从这里看起
        |   |
        |   ├─ platforms 平台相关的内容
        |   |    |
@@ -64,7 +64,7 @@
        |   |
        |   ├─ sfc
        |   |   |
-       |   |   └─parser.js 包含了单文件 Vue 组件 (*.vue) 的解析逻辑。在 vue-template-compiler 包中被使用。
+       |   |   └─parser.js 包含了单文件 Vue 组件 (*.vue) 的解析逻辑.在 vue-template-compiler 包中被使用.
        |   |
        |   └─  shared 共享的工具方法
        |   

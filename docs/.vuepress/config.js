@@ -69,6 +69,8 @@ module.exports = {
                 children: [
                     "",
                     ['js1', '手写代码'],
+                    ['closure','闭包'],
+                    ['design','设计模式']
                 ]
             }],
             '/vue/': [{
@@ -87,7 +89,8 @@ module.exports = {
                     "",
                     "props",
                     "vscode",
-                    "life"
+                    "life",
+                    "other"
                 ]
             }],
             '/interview/': [{
@@ -135,5 +138,8 @@ module.exports = {
             clientId: 'd75a9c8894c2a2034aa2',
             clientSecret: '0d3500776dd388c9af6c96a0179648fbf69394d1',
         }],
-    ]
+    ],
+	 markdown: {
+    lineNumbers: true
+  }
 }

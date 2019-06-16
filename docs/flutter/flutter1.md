@@ -34,7 +34,7 @@
 |attach |附加到正在运行的应用程序.|
 |bash-completion| 输出命令行 shell 完成设置脚本.|
 |build| Flutter 构建命令.|
-|channel| 列出或切换颤振通道。|
+|channel| 列出或切换颤振通道.|
 |clean |删除 build/ directory.|
 |config| 配置 Flutter 设置.|
 |create| 创建一个 flutter 项目.|
