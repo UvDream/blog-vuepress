@@ -6,21 +6,6 @@ MVVM全称是Model-View-ViewModel,Vue是以数据驱动的,一旦dom创建,数�
 2、V就是View视图层，所有的html节点在这一层.
 3、VM就是ViewModel，它通过data属性连接Model模型层，通过el属性连接View视图层
 ```
-###### MVP
-![MVP](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020109.png)
-```
-1. 各部分之间的通信，都是双向的.
-
-2. View 与 Model 不发生联系，都通过 Presenter 传递.
-
-3. View 非常薄，不部署任何业务逻辑，称为"被动视图"（Passive View），即没有任何主动性，而 Presenter非常厚，所有逻辑都部署在那里.
-```
-
-###### MVVM
-![MVVM](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020110.png)
-```js
-类似MVP,Presenter 改名为 ViewModel
-```
 ###### MVC
 ![MVC](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015020105.png)
 ```
