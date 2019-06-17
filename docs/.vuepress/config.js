@@ -99,8 +99,9 @@ module.exports = {
                 children: [
                     "",
                     "css",
-                    "js",
+                    "javascript",
                     "vue",
+                    "typescript",
                     "react",
                     "code",
                     "type",

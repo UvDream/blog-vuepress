@@ -1,4 +1,4 @@
-# js
+# Javascript
 ## 前端安全,理解 xss 和 csrf
 XSS：跨站脚本攻击
 
