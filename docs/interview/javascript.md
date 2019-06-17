@@ -368,6 +368,12 @@ let add=(a,b,c,d)=>a+b+c+d
 const curriedAdd=curry(add)
 add(5,6,7,8) //26
 ```
+## jsonp原理
+（1）首先是利用script标签的src属性来实现跨域
+
+（2）通过将前端方法作为参数传递到服务器端，然后由服务器端注入参数之后再返回，实现服务器端向客户端通信
+
+（3）由于使用script标签的src属性，因此只支持get方法
 ## javascript 设计模式
 
 ```js
