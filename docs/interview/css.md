@@ -1,6 +1,6 @@
 # Css
 ## 盒模型
-盒模型基本成了面试必问的问题，有W3C的盒模型和IE浏览器下的盒模型，盒模型从外到里包括：margin、border、padding、content。
+盒模型基本成了面试必问的问题，有W3C的盒模型和IE浏览器下的盒模型，盒模型从外到里包括：`margin、border、padding、content`.
 :::tip
 (1)W3C盒模型的宽度 = content的宽度
 
@@ -8,42 +8,42 @@
 :::
 
 ## CSS 的选择符种类
-- 标签选择器（如：body,div,p,ul,li）
-- 类选择器（如：class=”head”,class=”head_logo”）
-- ID选择器（如：id=”name”,id=”name_txt”）
-- 全局选择器（如：*号）
-- 组合选择器（如：.head .head_logo,注意两选择器用空格键分开）
-- 继承选择器（如：div p,注意两选择器用空格键分开）
-- 伪类选择器（如：就是链接样式,a元素的伪类，4种不同的状态：link、visited、active、hover。）
-- 字符串匹配的属性选择符(^ $ *三种，分别对应开始、结尾、包含)
+- 标签选择器（如：`body,div,p,ul,li`）
+- 类选择器（如：`class=”head”,class=”head_logo”`）
+- ID选择器（如：`id=”name”,id=”name_txt”`）
+- 全局选择器（如：`*`号）
+- 组合选择器（如：`.head .head_logo`,注意两选择器用空格键分开）
+- 继承选择器（如：`div p`,注意两选择器用空格键分开）
+- 伪类选择器（如：就是链接样式,`a`元素的伪类，4种不同的状态：`link、visited、active、hover`.）
+- 字符串匹配的属性选择符(`^ $ *`三种，分别对应开始、结尾、包含)
 ## CSS优先级算法
 - 元素选择符： 1
 - class选择符： 10
 - id选择符：100
 - 元素标签：1000
 
-!important声明的样式优先级最高，如果冲突再进行计算.
+`!important`声明的样式优先级最高，如果冲突再进行计算.
 
 如果优先级相同，则选择最后出现的样式.
 
 继承得到的样式的优先级最低.
 
 ## CSS3新增伪类有那些?
-- p:first-of-type 选择属于其父元素的首个元素
-- p:last-of-type 选择属于其父元素的最后元素
-- p:only-of-type 选择属于其父元素唯一的元素
-- p:only-child 选择属于其父元素的唯一子元素
-- p:nth-child(2) 选择属于其父元素的第二个子元素
-- :enabled :disabled 表单控件的禁用状态.
-- :checked 单选框或复选框被选中.
+- `p:first-of-type` 选择属于其父元素的首个元素
+- `p:last-of-type` 选择属于其父元素的最后元素
+- `p:only-of-type` 选择属于其父元素唯一的元素
+- `p:only-child` 选择属于其父元素的唯一子元素
+- `p:nth-child(2)` 选择属于其父元素的第二个子元素
+- `:enabled :disabled` 表单控件的禁用状态.
+- `:checked`单选框或复选框被选中.
 
 ## CSS3新特性
-- RGBA和透明度
-- background-image background-origin(content-box/padding-box/border-box) background-size background-repeat
-- word-wrap（对长的不可分割单词换行）word-wrap：break-word
-- 文字阴影：text-shadow： 5px 5px 5px #FF0000;（水平阴影，垂直阴影，模糊距离，阴影颜色）
-- font-face属性：定义自己的字体
-- 圆角（边框半径）：border-radius 属性用于创建圆角
+- `RGBA`和透明度
+- `background-image background-origin(content-box/padding-box/border-box) background-size background-repeat`
+- `word-wrap`（对长的不可分割单词换行）`word-wrap：break-word`
+- 文字阴影：`text-shadow： 5px 5px 5px #FF0000;`（水平阴影，垂直阴影，模糊距离，阴影颜色）
+- `font-face`属性：定义自己的字体
+- 圆角（边框半径）：`border-radius` 属性用于创建圆角
 - 边框图片：border-image: url(border.png) 30 30 round盒阴影：box-shadow: 10px 10px 5px #888888
 - 媒体查询：定义两套css，当浏览器的尺寸变化时会采用不同的属性
 
