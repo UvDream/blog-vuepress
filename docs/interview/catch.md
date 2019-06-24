@@ -81,28 +81,28 @@ Last-Modified/If-Modified-Since
 `lIf-Modified-Since`：当资源过期时（使用`Cache-Control`标识的`max-age`），发现资源具有`Last-Modified`声明，则再次向web服务器请求时带上头If-Modified-Since，表示请求时间.web服务器收到请求后发现有头`If-Modified-Since`则与被请求资源的最后修改时间进行比对.若最后修改时间较新，说明资源又被改动过，则响应整片资源内容（写在响应消息包体内），`HTTP` 200；若最后修改时间较旧，说明资源无新修改，则响应`HTTP` 304 (无需包体，节省浏览)，告知浏览器继续使用所保存的`cache`.
 
 既生`Last-Modified`何生Etag？
-你可能会觉得使用Last-Modified已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要Etag（实体标识）呢？HTTP1.1中Etag的出现主要是为了解决几个Last-Modified比较难解决的问题：
-1.Last-Modified标注的最后修改只能精确到秒级，如果某些文件在1秒钟以内，被修改多次的话，它将不能准确标注文件的修改时间
-2.如果某些文件会被定期生成，当有时内容并没有任何变化，但Last-Modified却改变了，导致文件没法使用缓存
+你可能会觉得使用`Last-Modified`已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要`Etag`（实体标识）呢？`HTTP1.1`中`Etag`的出现主要是为了解决几个`Last-Modified`比较难解决的问题：
+1.`Last-Modified`标注的最后修改只能精确到秒级，如果某些文件在1秒钟以内，被修改多次的话，它将不能准确标注文件的修改时间
+2.如果某些文件会被定期生成，当有时内容并没有任何变化，但`Last-Modified`却改变了，导致文件没法使用缓存
 3.有可能存在服务器没有准确获取文件修改时间，或者与代理服务器时间不一致等情形
-Etag是服务器自动生成或者由开发者生成的对应资源在服务器端的唯一标识符，能够更加准确的控制缓存.Last-Modified与ETag是可以一起使用的，服务器会优先验证ETag，一致的情况下，才会继续比对Last-Modified，最后才决定是否返回304.
+`Etag`是服务器自动生成或者由开发者生成的对应资源在服务器端的唯一标识符，能够更加准确的控制缓存.`Last-Modified`与`ETag`是可以一起使用的，服务器会优先验证`ETag`，一致的情况下，才会继续比对`Last-Modified`，最后才决定是否返回304.
 
 ### cache-control指令使用
-说了那么多cache-control的指令，那么如何选择使用哪些指令呢？
+说了那么多`cache-control`的指令，那么如何选择使用哪些指令呢？
 
 ![img](../public/img/catch10.png)
 
 ### 另外的缓存方式：LocalStorage和sessionStorage
-除了开头提到的那么多缓存方式以外，还有一种我们都熟悉的缓存方式，LocalStorage和sessionStorage（好像是两种23333）.
-LocalStorage是一种本地存储的公共资源，域名下很多应用共享这份资源会有风险；LocalStorage是以页面域名划分的，如果有多个等价域名之间的LocalStorage不互通，则会造成缓存多份浪费.
-LocalStorage在PC上的兼容性不太好，而且当网络速度快、协商缓存响应快时使用localStorage的速度比不上304.并且不能缓存css文件.而移动端由于网速慢，使用localStorage要快于304.
-而相对LocalStorage来说，SessionStorage的数据只存储到特定的会话中，不属于持久化的存储，所以关闭浏览器会清除数据.和localstorage具有相同的方法.
+除了开头提到的那么多缓存方式以外，还有一种我们都熟悉的缓存方式，`LocalStorage`和`sessionStorage`（好像是两种23333）.
+`LocalStorage`是一种本地存储的公共资源，域名下很多应用共享这份资源会有风险；`LocalStorage`是以页面域名划分的，如果有多个等价域名之间的`LocalStorage`不互通，则会造成缓存多份浪费.
+`LocalStorage`在`PC`上的兼容性不太好，而且当网络速度快、协商缓存响应快时使用`localStorage`的速度比不上304.并且不能缓存`css`文件.而移动端由于网速慢，使用`localStorage`要快于304.
+而相对`LocalStorage`来说，`SessionStorage`的数据只存储到特定的会话中，不属于持久化的存储，所以关闭浏览器会清除数据.和`localstorage`具有相同的方法.
 在前端开发中缓存是必不可少的，那么使用怎样的缓存方式更高效、让我们项目的性能更优，还是需要我们仔细斟酌.
 
 ## 如何启用Web缓存
 ### 启用缓存
 了解了Web缓存的基本原理和重要性，接下来的问题就是如何在项目里使用.
- 对于使用nginx或者apache做为Web前端的系统，有相应的指令达成目的，资料很多，比如可以参考NGINX下配置CACHE-CONTROL头部.
+ 对于使用`nginx`或者`apache`做为`Web`前端的系统，有相应的指令达成目的，资料很多，比如可以参考`NGINX`下配置`CACHE-CONTROL`头部.
  对于使用高版本Tomcat的项目，没有必要自造轮子，官方实现的ExpiresFilter已经可以满足日常的使用，具体方法可以参考ExpiresFilter官方文档和Tomcat性能调优 通过ExpiresFilter设置资源缓存.
  对于使用低版本Tomcat的项目来说，虽然没有官方的过滤器可用，但可以自定义过滤器来实现缓存，具体方法可以参考tomcat中Cache-Control 的配置和使用Cache-Control和gzip提升tomcat应用性能(整理)，代码和配置都比较简单，很好理解.
 
