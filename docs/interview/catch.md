@@ -72,15 +72,15 @@ c、一些资源的最后修改时间改变了，但是内容没改变，使用`
 
 `Etag/If-None-Match`
 `Etag/If-None-Match`也要配合`Cache-Control`使用.
-lEtag：web服务器响应请求时，告诉浏览器当前资源在服务器的唯一标识（生成规则由服务器觉得）.Apache中，ETag的值，默认是对文件的索引节（INode），大小（Size）和最后修改时间（MTime）进行Hash后得到的.
-lIf-None-Match：当资源过期时（使用Cache-Control标识的max-age），发现资源具有Etage声明，则再次向web服务器请求时带上头If-None-Match（Etag的值）.web服务器收到请求后发现有头If-None-Match则与被请求资源的相应校验串进行比对，决定返回200或304.
+`lEtag：web`服务器响应请求时，告诉浏览器当前资源在服务器的唯一标识（生成规则由服务器觉得）`.Apache`中，`ETag`的值，默认是对文件的索引节（`INode`），大小（`Size`）和最后修改时间（`MTime`）进行Hash后得到的.
+`lIf-None-Match`：当资源过期时（使用`Cache-Control`标识的`max-age`），发现资源具有`Etage`声明，则再次向`web`服务器请求时带上头`If-None-Match`（`Etag`的值）`.web`服务器收到请求后发现有头`If-None-Match`则与被请求资源的相应校验串进行比对，决定返回200或304.
 
 Last-Modified/If-Modified-Since
-Last-Modified/If-Modified-Since要配合Cache-Control使用.
-lLast-Modified：标示这个响应资源的最后修改时间.web服务器在响应请求时，告诉浏览器资源的最后修改时间.
-lIf-Modified-Since：当资源过期时（使用Cache-Control标识的max-age），发现资源具有Last-Modified声明，则再次向web服务器请求时带上头If-Modified-Since，表示请求时间.web服务器收到请求后发现有头If-Modified-Since则与被请求资源的最后修改时间进行比对.若最后修改时间较新，说明资源又被改动过，则响应整片资源内容（写在响应消息包体内），HTTP 200；若最后修改时间较旧，说明资源无新修改，则响应HTTP 304 (无需包体，节省浏览)，告知浏览器继续使用所保存的cache.
+`Last-Modified/If-Modified-Since`要配合`Cache-Control`使用.
+`lLast-Modified`：标示这个响应资源的最后修改时间.web服务器在响应请求时，告诉浏览器资源的最后修改时间.
+`lIf-Modified-Since`：当资源过期时（使用`Cache-Control`标识的`max-age`），发现资源具有`Last-Modified`声明，则再次向web服务器请求时带上头If-Modified-Since，表示请求时间.web服务器收到请求后发现有头`If-Modified-Since`则与被请求资源的最后修改时间进行比对.若最后修改时间较新，说明资源又被改动过，则响应整片资源内容（写在响应消息包体内），`HTTP` 200；若最后修改时间较旧，说明资源无新修改，则响应`HTTP` 304 (无需包体，节省浏览)，告知浏览器继续使用所保存的`cache`.
 
-既生Last-Modified何生Etag？
+既生`Last-Modified`何生Etag？
 你可能会觉得使用Last-Modified已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要Etag（实体标识）呢？HTTP1.1中Etag的出现主要是为了解决几个Last-Modified比较难解决的问题：
 1.Last-Modified标注的最后修改只能精确到秒级，如果某些文件在1秒钟以内，被修改多次的话，它将不能准确标注文件的修改时间
 2.如果某些文件会被定期生成，当有时内容并没有任何变化，但Last-Modified却改变了，导致文件没法使用缓存
