@@ -110,7 +110,7 @@ module.exports = {
                 ]
             }],
             '/flutter/': [{
-                title: 'flutter',
+                title: 'Flutter',
                 collapsable: false,
                 children: [
                     "",
