@@ -114,7 +114,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     "",
-                    "flutter1"
+                    "flutter1",
+                    "dio"
                 ]
             }]
 
