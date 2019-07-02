@@ -10,19 +10,6 @@ dependencies:
 ```
 ## 一个极简的示例
 ```dart
-import 'package:dio/dio.dart';
-void getHttp() async {
-  try {
-    Response response = await Dio().get("http://www.baidu.com");
-    print(response);
-  } catch (e) {
-    print(e);
-  }
-}
-```
-
-## flutter get请求
-```dart {62,63,64,65,66,67,68,69,70,71,72,73,74}
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 class HomePage extends StatefulWidget {
@@ -40,7 +27,8 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text("美好人间"),
         ),
-        body: Container(
+        body:SingleChildScrollView(
+        child:Container(
           child: Column(
             children: <Widget>[
               TextField(
@@ -64,6 +52,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+        )
       ),
     );
   }
@@ -99,6 +88,9 @@ class _HomePageState extends State<HomePage> {
   }
 }
 ```
+:::warning
+键盘弹出出现界面超出的问题SingleChildScrollView即可解决
+:::
 > 效果如下
 
 ![img](../public/img/dio-get.png)
