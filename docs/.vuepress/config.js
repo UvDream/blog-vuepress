@@ -115,6 +115,7 @@ module.exports = {
                 children: [
                     "",
                     "flutter1",
+                    "vscode",
                     "dio"
                 ]
             }]
