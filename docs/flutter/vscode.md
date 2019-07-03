@@ -1,1 +1,35 @@
 # Awesome Flutter Snippets
+
+
+| 快捷输入   | 扩展                 | 说明                                                                                                                                                                             |
+| ---------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `statelessW`    | Stateless Widget         | 创建无状态小部件                                                                                                                                                             |
+| `statefulW`    | Stateful Widget          | 创建有状态小部件                                                                                                                                                            |
+| `build`      | Build Method             | 描述窗口小部件表示的用户界面部分。                                                                                                                     |
+| `initS`     | InitState                | 将此对象插入树中时调用。 框架将为它创建的每个State对象调用此方法一次。                                                 |
+| `dis`      | Dispose                  | 永久地从树中删除此对象时调用。 当此State对象永远不会再次构建时，框架将调用此方法。                                           |
+| `reassemble`     | Reassemble               | Called whenever the application is reassembled during debugging, for example during hot reload.                                                                                         |
+| `didChangeD`      | didChangeDependencies    | Called when a dependency of this State object changes                                                                                                                                   |
+| `didUpdateW`      | didUpdateWidget          | Called whenever the widget configuration changes.                                                                                                                                       |
+| `customClipper`       | Custom Clipper           | Used for creating custom shapes                                                                                                                                                         |
+| `customPainter`       | Custom Painter           | Used for creating custom paint                                                                                                                                                          |
+| `listViewB`      | ListView.Builder         | Creates a scrollable, linear array of widgets that are created on demand.Providing a non-null `itemCount` improves the ability of the `ListView` to estimate the maximum scroll extent. |
+| `customScrollV`      | Custom ScrollView        | Creates a `ScrollView` that creates custom scroll effects using slivers. If the `primary` argument is true, the `controller` must be null.                                              |
+| `streamBldr`      | Stream Builder           | Creates a new `StreamBuilder` that builds itself based on the latest snapshot of interaction with the specified `stream`                                                                |
+| `animatedBldr`    | Animated Builder         | Creates an Animated Builder. The widget specified to `child` is passed to the `builder`                                                                                                 |
+| `statefulBldr` | Stateful Builder         | Creates a widget that both has state and delegates its build to a callback. Useful for rebuilding specific sections of the widget tree.                                                 |
+| `oriantationBldr`  | Orientation Builder      | Creates a builder which allows for the orientation of the device to be specified and referenced                                                                                         |
+| `layoutBldr`  | Layout Builder           | Similar to the `Builder` widget except that the framework calls the builder function at layout time and provides the parent widget's constraints.                                       |
+| `singleChildSV`     | Single Child Scroll View | Creates a scroll view with a single child                                                                                                                                               |
+| `futureBldr`   | Future Builder           | Creates a Future Builder. This builds itself based on the latest snapshot of interaction with a Future.                                                                                 |
+| `nosm`   | No Such Method           | This method is invoked when a non-existent method or property is accessed. |
+| `inheritedW`   | Inherited Widget          | Class used to propagate information down the widget tree. |
+| `mounted`   | Mounted  | Whether this State object is currently in a tree. |
+| `snk`   | Sink  | A Sink is the input of a stream. |
+| `strm`   | Stream  | A source of asynchronous data events. A stream can be of any data type. |
+| `toStr`   | To String  | Returns a string representation of this object. |
+| `debugP`   | Debug Print  | Prints a message to the console, which you can access using the flutter tool's `logs` command (flutter logs). |
+| `importM`    | Material Package | Import Material package.
+| `importC`    | Cupertino Package | Import Cupertino package.
+| `mateapp`    | Material App | Create a new Material App.
+| `cupeapp`    | Cupertino Package | Create a New Cupertino App.
