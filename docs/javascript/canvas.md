@@ -122,10 +122,8 @@ ctx6.stroke();
 
 :::tip
 // 1.色彩样式
-/\*\*
-_ fillStyle = color:设置图形的填充颜色
-_ strokeStyle = color:设置图形轮廓的颜色
-\*/
+- fillStyle = color:设置图形的填充颜色
+- strokeStyle = color:设置图形轮廓的颜色
 :::
 
 ```js
