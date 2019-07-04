@@ -70,7 +70,8 @@ module.exports = {
                     "",
                     ['js1', '手写代码'],
                     ['closure','闭包'],
-                    ['design','设计模式']
+                    ['design','设计模式'],
+                    ['canvas','canvas']
                 ]
             }],
             '/vue/': [{
