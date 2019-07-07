@@ -8,8 +8,8 @@
 | `build`           | Build Method             | 描述窗口小部件表示的用户界面部分。                                                                                                                                                      |
 | `initS`           | InitState                | 将此对象插入树中时调用。 框架将为它创建的每个 State 对象调用此方法一次。                                                                                                                |
 | `dis`             | Dispose                  | 永久地从树中删除此对象时调用。 当此 State 对象永远不会再次构建时，框架将调用此方法。                                                                                                    |
-| `reassemble`      | Reassemble               | Called whenever the application is reassembled during debugging, for example during hot reload.                                                                                         |
-| `didChangeD`      | didChangeDependencies    | Called when a dependency of this State object changes                                                                                                                                   |
+| `reassemble`      | Reassemble               | 在调试期间重新组装应用程序时调用，例如在热重新加载期间                                                                                        |
+| `didChangeD`      | didChangeDependencies    | 在此State对象的依赖项更改时调用                                                                                                                                   |
 | `didUpdateW`      | didUpdateWidget          | Called whenever the widget configuration changes.                                                                                                                                       |
 | `customClipper`   | Custom Clipper           | Used for creating custom shapes                                                                                                                                                         |
 | `customPainter`   | Custom Painter           | Used for creating custom paint                                                                                                                                                          |
