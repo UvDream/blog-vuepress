@@ -1,6 +1,6 @@
-# Flutter 指令
+# Flutter
 
-指令
+## 指令
 指令|作用
 |:---:|:---:|
 |analyze | Analyze the project's Dart code.|
