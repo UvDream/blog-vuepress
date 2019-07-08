@@ -117,7 +117,8 @@ module.exports = {
                     "",
                     "flutter1",
                     "vscode",
-                    "dio"
+                    "dio",
+                    "plugin"
                 ]
             }]
 
