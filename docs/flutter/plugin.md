@@ -5,3 +5,6 @@
 |flutter_swiper|[github](https://github.com/best-flutter/flutter_swiper "flutter_swiper")|flutter轮播图|
 |url_launcher|[github](https://github.com/flutter/plugins/tree/master/packages/url_launcher "url_launcher")|打开url,拨打电话|
 |flutter_screen|[github](https://github.com/clovisnicolas/flutter_screen "flutter_screen")
+
+
+ <Vssue title="flutter-plugin" />

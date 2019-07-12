@@ -9,9 +9,6 @@ module.exports = {
     // theme: path.resolve(__dirname, '../../lib'),
     
     themeConfig: {
-        serviceWorker: {
-            updatePopup: true 
-        },
         // 默认是 false, 设置为 true 来启用
         editLinks: true,
         // 默认为 "Edit this page"
@@ -140,9 +137,10 @@ module.exports = {
         "@vuepress/nprogress",
         ["@vuepress/pwa", {
             serviceWorker: true,
+            updatePopup: true,
             updatePopup: {
-                message: "New content is available.",
-                buttonText: "Refresh"
+                message: "有新内容更新!",
+                buttonText: "刷新"
             }
         }],
         ['@vssue/vuepress-plugin-vssue', {
