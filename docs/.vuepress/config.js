@@ -126,7 +126,7 @@ module.exports = {
 
         },
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated'
+        lastUpdated: '最后更新时间'
     },
     plugins: [
         '@vuepress/back-to-top',
