@@ -293,3 +293,5 @@ ctx9.arc(100, 100, 50, 0, Math.PI * 2, true);
 ctx9.arc(100, 100, 20, 0, Math.PI * 2, true);
 ctx9.fill("evenodd");
 ```
+
+ <Vssue title="canvas" />

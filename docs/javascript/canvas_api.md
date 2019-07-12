@@ -111,3 +111,4 @@
 | createEvent() | -                              |
 | getContext()  | -                              |
 | toDataURL()   | -                              |
+ <Vssue title="canvas-api" />
