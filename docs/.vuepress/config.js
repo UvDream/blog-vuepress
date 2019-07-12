@@ -9,10 +9,6 @@ module.exports = {
     // theme: path.resolve(__dirname, '../../lib'),
     
     themeConfig: {
-        // 默认是 false, 设置为 true 来启用
-        editLinks: true,
-        // 默认为 "Edit this page"
-        editLinkText: '帮助我们改善此页面！',
         //   导航栏
         nav: [{
                 text: '首页',
@@ -133,9 +129,9 @@ module.exports = {
         lastUpdated: 'Last Updated'
     },
     plugins: [
-        "@vuepress/back-to-top",
-        "@vuepress/nprogress",
-        ["@vuepress/pwa", {
+        '@vuepress/back-to-top',
+        '@vuepress/nprogress',
+        ['@vuepress/pwa',{
             serviceWorker: true,
             updatePopup: true,
             updatePopup: {
