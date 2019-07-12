@@ -7,10 +7,15 @@ module.exports = {
     base: "/blog-vuepress/",
     port: "2222",
     // theme: path.resolve(__dirname, '../../lib'),
-    serviceWorker: {
-        updatePopup: true 
-    },
+    
     themeConfig: {
+        serviceWorker: {
+            updatePopup: true 
+        },
+        // 默认是 false, 设置为 true 来启用
+        editLinks: true,
+        // 默认为 "Edit this page"
+        editLinkText: '帮助我们改善此页面！',
         //   导航栏
         nav: [{
                 text: '首页',
@@ -128,7 +133,7 @@ module.exports = {
 
         },
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated',
+        lastUpdated: 'Last Updated'
     },
     plugins: [
         "@vuepress/back-to-top",
