@@ -7,6 +7,9 @@ module.exports = {
     base: "/blog-vuepress/",
     port: "2222",
     // theme: path.resolve(__dirname, '../../lib'),
+    serviceWorker: {
+        updatePopup: true 
+    },
     themeConfig: {
         //   导航栏
         nav: [{
