@@ -51,6 +51,10 @@ module.exports = {
                 link: '/flutter/'
             },
             {
+                text:'规范',
+                link:'/specification/'
+            },
+            {
                 text: 'Github',
                 link: 'https://github.com/UvDream'
             },
@@ -96,6 +100,16 @@ module.exports = {
                     "other"
                 ]
             }],
+            '/specification/':[
+                {
+                title:"规范",
+                collapsable: false,
+                children:[
+                    "",
+                    "git"
+                ]
+                }
+            ],
             '/interview/': [{
                 title: "面试",
                 collapsable: false,
