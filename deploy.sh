@@ -8,7 +8,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m '文档'
+git commit -m '[docs] 更新文档'
 
 git push -f git@github.com:UvDream/blog-vuepress.git master:gh-pages
 
