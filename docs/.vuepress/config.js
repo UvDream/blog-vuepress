@@ -134,7 +134,8 @@ module.exports = {
                     "flutter1",
                     "vscode",
                     "dio",
-                    "plugin"
+                    "plugin",
+                    "iconfont"
                 ]
             }]
 
