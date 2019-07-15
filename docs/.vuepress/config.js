@@ -102,7 +102,7 @@ module.exports = {
             }],
             '/specification/':[
                 {
-                title:"规范",
+                title:"代码规范",
                 collapsable: false,
                 children:[
                     "",
