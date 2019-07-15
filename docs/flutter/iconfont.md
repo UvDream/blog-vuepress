@@ -37,7 +37,7 @@
           - asset: assets/fonts/iconfont.ttf
 ```
 
-- 到这一步基本工作已经完成,可以使用了
+- 6.到这一步基本工作已经完成,可以使用了
 
 ```dart
 child: Icon(
