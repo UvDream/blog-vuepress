@@ -3,3 +3,4 @@
 ```html
 <div className={this.state.isShow?'show':'hide'}>这是标题</div>
 ```
+ <Vssue title="react-other" />

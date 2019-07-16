@@ -23,3 +23,4 @@ shouldComponentUpdate(nextProps,nextState){
 
 ## 模拟接口平台
 [easy-mock](https://www.easy-mock.com/ "easy-mock")
+ <Vssue title="life" />
