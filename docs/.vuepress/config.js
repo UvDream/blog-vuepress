@@ -158,8 +158,8 @@ module.exports = {
             platform: 'github',
             owner: 'UvDream',
             repo: 'blog-vuepress',
-            clientId: 'd75a9c8894c2a2034aa212',
-            clientSecret: '0d3500776dd388c9af6c96a0179648fbf69394d1',
+            clientId: '1ea5b28de21b18dec3ee',
+            clientSecret: '44ab2b53a57aacf09f894f50da5e954ff02dd949',
         }],
     ],
 	 markdown: {
