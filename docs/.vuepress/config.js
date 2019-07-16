@@ -158,7 +158,7 @@ module.exports = {
             platform: 'github',
             owner: 'UvDream',
             repo: 'blog-vuepress',
-            clientId: 'd75a9c8894c2a2034aa21',
+            clientId: 'd75a9c8894c2a2034aa212',
             clientSecret: '0d3500776dd388c9af6c96a0179648fbf69394d1',
         }],
     ],
