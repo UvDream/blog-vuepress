@@ -135,7 +135,8 @@ module.exports = {
                     "vscode",
                     "dio",
                     "plugin",
-                    "iconfont"
+                    "iconfont",
+                    "state"
                 ]
             }]
 
