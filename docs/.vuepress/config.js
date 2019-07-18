@@ -48,7 +48,16 @@ module.exports = {
             },
             {
                 text: 'Flutter',
-                link: '/flutter/'
+                items:[
+                    {
+                        text:'基础',
+                        link:'/flutter/'
+                    },
+                    {
+                        text:'深入',
+                        link:'/flutter-deep/'
+                    }
+                ]
             },
             {
                 text:'规范',
@@ -136,7 +145,8 @@ module.exports = {
                     "dio",
                     "plugin",
                     "iconfont",
-                    "state"
+                    "state",
+                    "model"
                 ]
             }]
 
