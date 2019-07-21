@@ -82,11 +82,11 @@ module.exports = {
                 collapsable: false,
                 children: [
                     "",
-                    ['js1', '手写代码'],
-                    ['closure','闭包'],
-                    ['design','设计模式'],
-                    ['canvas','Canvas'],
-                    ['canvas_api','Canvas-Api']
+                    'js1',
+                    'closure',
+                    'design',
+                    'canvas',
+                    'canvas_api',
                 ]
             }],
             '/vue/': [{
