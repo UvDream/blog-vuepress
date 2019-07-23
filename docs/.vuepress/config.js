@@ -146,7 +146,7 @@ module.exports = {
         {
           title: "Flutter插件",
           collapsable: false,
-          children: [""]
+          children: ["", "shared_preferences"]
         }
       ]
     },
