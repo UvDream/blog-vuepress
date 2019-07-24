@@ -1,5 +1,6 @@
 ---
 home: true
+# heroImage: /public/img/logo.png
 actionText: 快速阅读→
 actionLink: /web/
 features:
