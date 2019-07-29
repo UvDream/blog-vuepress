@@ -138,7 +138,8 @@ module.exports = {
             "dio",
             "iconfont",
             "state",
-            "model"
+            "model",
+            "other"
           ]
         }
       ],
