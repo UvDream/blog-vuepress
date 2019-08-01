@@ -4,7 +4,7 @@
 
 图片圆角不能像 web 端一样,元素外面包裹,设置外面元素的圆角实现!
 
-![img](../public/img-border.png)
+![img](../public/img/img-border.png)
 
 ```dart
 child: ClipRRect(
@@ -26,3 +26,5 @@ Scaffold(
      body: _buildVerticalLayout()
 );
 ```
+
+<Vssue title="flutter-other" />
