@@ -27,4 +27,24 @@ Scaffold(
 );
 ```
 
+## 好用的占位图
+
+- 默认效果http://temp.im/ + 尺寸
+
+```
+http://temp.im/640x260
+```
+
+- 背景色 http://temp.im/ + 尺寸 + 背景色
+
+```
+http://temp.im/640x260/ccc
+```
+
+- 字体颜色 http://temp.im/ + 尺寸 + 背景色 +字体颜色
+
+```
+http://temp.im/640x260/ff5a5f/fff
+```
+
 <Vssue title="flutter-other" />
