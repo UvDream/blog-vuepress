@@ -16,3 +16,13 @@ child: ClipRRect(
     ),
   )
 ```
+
+## 登录页键盘弹出页面溢出警告
+
+```dart
+Scaffold(
+     resizeToAvoidBottomInset: false,
+     backgroundColor: Colors.white,
+     body: _buildVerticalLayout()
+);
+```
