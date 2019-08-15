@@ -1,6 +1,6 @@
 # Flare 动画
 
-<img src="../public/img/flare.png" width="200">
+<img src="../public/img/flutter/flutter-flare1.gif" width="200">
 
 如上:
 
