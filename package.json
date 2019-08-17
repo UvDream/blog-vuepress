@@ -24,6 +24,7 @@
   "dependencies": {
     "@vuepress/shared-utils": "^1.0.0-alpha.0",
     "less": "3.9.0",
-    "semver": "^6.0.0"
+    "semver": "^6.0.0",
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
