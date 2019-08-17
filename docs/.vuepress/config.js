@@ -1,3 +1,11 @@
+/*
+ * @Author: wangzhongjie
+ * @Date: 2019-07-22 13:41:35
+ * @LastEditors: wangzhongjie
+ * @LastEditTime: 2019-08-15 14:32:07
+ * @Description:配置
+ * @Email: UvDream@163.com
+ */
 const path = require("path");
 
 module.exports = {
@@ -138,7 +146,9 @@ module.exports = {
             "dio",
             "iconfont",
             "state",
-            "model"
+            "model",
+            "flare",
+            "other"
           ]
         }
       ],
@@ -146,7 +156,7 @@ module.exports = {
         {
           title: "Flutter插件",
           collapsable: false,
-          children: ["", "shared_preferences"]
+          children: ["", "shared_preferences", "provider"]
         }
       ]
     },
