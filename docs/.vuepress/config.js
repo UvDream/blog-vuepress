@@ -164,6 +164,7 @@ module.exports = {
     lastUpdated: "最后更新时间"
   },
   plugins: [
+    "vuepress-plugin-cat",
     "@vuepress/back-to-top",
     "@vuepress/nprogress",
     [
