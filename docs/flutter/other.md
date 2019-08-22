@@ -47,4 +47,58 @@ http://temp.im/640x260/ccc
 http://temp.im/640x260/ff5a5f/fff
 ```
 
+## 解决 FutureBuilder 重复请求的问题
+
+```dart {9,14,47-51}
+class SongListPage extends StatefulWidget {
+  final String songListId;
+  SongListPage(this.songListId);
+  @override
+  _SongListPageState createState() => _SongListPageState();
+}
+
+class _SongListPageState extends State<SongListPage> {
+  AsyncMemoizer _memoizer = AsyncMemoizer();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: FutureBuilder(
+        future: _getDetail(context),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.waiting) {
+            return NestedScrollView(
+              headerSliverBuilder: _sliverBuilder,
+              body: BottomList(),
+            );
+          } else {
+            return Scaffold(
+              appBar: AppBar(
+                title: Text(''),
+                elevation: 0,
+              ),
+              body: Center(
+                child: Text('数据加载中!'),
+              ),
+            );
+          }
+        },
+      ),
+    );
+  }
+
+  List<Widget> _sliverBuilder(BuildContext context, bool innerBoxIsScrolled) {
+    return <Widget>[
+      TopArea()
+    ];
+  }
+
+  _getDetail(BuildContext context) {
+    return _memoizer.runOnce(() async {
+      return await Provider.of<SongDetailProvider>(context)
+          .getSongDetail(widget.songListId);
+    });
+  }
+}
+```
+
 <Vssue title="flutter-other" />
