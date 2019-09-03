@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2019-09-03 22:15:52
+ * @LastEditTime: 2019-09-03 22:20:19
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -107,7 +107,7 @@ module.exports = {
         {
           title: "React",
           collapsable: false,
-          children: ["", "props", "vscode", "life", "other"]
+          children: ["", "props", "vscode", "life", "other", "redux"]
         }
       ],
       "/specification/": [
