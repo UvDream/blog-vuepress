@@ -1806,6 +1806,11 @@ vue@^2.5.21:
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
 
+vuepress-plugin-cat@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-cat/-/vuepress-plugin-cat-1.0.3.tgz#efbac43981ae4dee55c8726b347b7ba272052654"
+  integrity sha512-1tronr8K/02Qn7M/+cOa5zYGfY/qlWLAqJjpT3FKYX4BsHEn9KEDnjJ7t9SyCPKpV68e8IP6XJvPZYTQ0Qs90w==
+
 vuepress-plugin-flowchart@^1.4.3:
   version "1.4.3"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-flowchart/download/vuepress-plugin-flowchart-1.4.3.tgz#1692807257c9ba02f764ced0caf930c627f65bdb"
