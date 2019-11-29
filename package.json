@@ -17,8 +17,12 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
     "@vuepress/plugin-nprogress": "^1.0.0-alpha.48",
     "@vuepress/plugin-pwa": "^1.0.0-rc.1",
+    "css-loader": "^3.2.0",
     "less-loader": "^5.0.0",
     "lru-cache": "^5.1.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
     "vuepress-plugin-flowchart": "^1.4.3"
   },
   "dependencies": {
