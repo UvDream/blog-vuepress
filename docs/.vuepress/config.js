@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2019-11-29 13:54:39
+ * @LastEditTime: 2019-11-29 14:50:42
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -95,7 +95,7 @@ module.exports = {
         {
           title: "Web",
           collapsable: false,
-          children: ["", "css"]
+          children: ["", "css", "console"]
         }
       ],
       "/javascript/": [
