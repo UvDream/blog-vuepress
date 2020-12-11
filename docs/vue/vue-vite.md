@@ -47,7 +47,7 @@ cd vite-ts-vue
 npm install     // 安装项目依赖
 npm i -S typescript vue-router@next // 集成 TypeScript vue-router 
 npm i -D eslint eslint-plugin-vue   // 集成 eslint 
-npm i less--save-dev   // 集成css预编译less
+npm i less --save-dev   // 集成css预编译less
 npm run dev 
 ```
 
@@ -156,7 +156,7 @@ createApp(App).use(router).mount('#app')
 
 在`src`目录下创建`shim.d.ts`、`source.d.ts`
 
-> shim.d.ts`
+> shim.d.ts
 
 ```js
 declare module '*.vue' {
