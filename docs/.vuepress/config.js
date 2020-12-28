@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2019-11-29 14:50:42
+ * @LastEditTime: 2020-12-27 21:21:31
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -173,32 +173,6 @@ module.exports = {
     sidebarDepth: 2,
     lastUpdated: "最后更新时间"
   },
-  plugins: [
-    "vuepress-plugin-cat",
-    "@vuepress/back-to-top",
-    "@vuepress/nprogress",
-    [
-      "@vuepress/pwa",
-      {
-        serviceWorker: true,
-        updatePopup: true,
-        updatePopup: {
-          message: "有新内容更新!",
-          buttonText: "刷新"
-        }
-      }
-    ],
-    [
-      "@vssue/vuepress-plugin-vssue",
-      {
-        platform: "github",
-        owner: "UvDream",
-        repo: "blog-vuepress",
-        clientId: "1ea5b28de21b18dec3ee",
-        clientSecret: "44ab2b53a57aacf09f894f50da5e954ff02dd949"
-      }
-    ]
-  ],
   markdown: {
     lineNumbers: true
   }

@@ -1,34 +1,13 @@
 {
-  "name": "learn",
+  "name": "vuepress",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "publish": "bash deploy.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "wzj",
   "license": "MIT",
   "devDependencies": {
-    "@vssue/api-github-v3": "^0.9.0",
-    "@vssue/vuepress-plugin-vssue": "^0.9.1",
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
-    "@vuepress/plugin-nprogress": "^1.0.0-alpha.48",
-    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
-    "css-loader": "^3.2.0",
-    "less-loader": "^5.0.0",
-    "lru-cache": "^5.1.1",
-    "vue-html-loader": "^1.2.4",
-    "vue-loader": "^15.7.1",
-    "vue-style-loader": "^4.1.2",
-    "vuepress-plugin-flowchart": "^1.4.3"
+    "vuepress": "^1.7.1"
   },
-  "dependencies": {
-    "@vuepress/shared-utils": "^1.0.0-alpha.0",
-    "less": "3.9.0",
-    "semver": "^6.0.0",
-    "vuepress-plugin-cat": "^1.0.3"
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   }
 }
