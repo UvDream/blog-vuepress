@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.7.1"
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "vuepress": "^1.7.1",
+    "vuepress-plugin-fulltext-search": "^2.1.0",
+    "vuepress-plugin-one-click-copy": "^1.0.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",

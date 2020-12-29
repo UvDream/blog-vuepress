@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2020-12-27 21:21:31
+ * @LastEditTime: 2020-12-29 17:13:43
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -44,6 +44,10 @@ module.exports = {
           {
             text: "React",
             link: "/react/"
+          },
+          {
+            text: "Vue-Next",
+            link: "/vue-next/"
           },
           {
             text: "面试",
@@ -112,6 +116,13 @@ module.exports = {
           children: ["", "vue1", "vue2"]
         }
       ],
+      "/vue-next/": [
+        {
+          title: "Vue-next",
+          collapsable: false,
+          children: ["","vue-vite","vue-api"]
+        }
+      ],
       "/react/": [
         {
           title: "React",
@@ -175,5 +186,11 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true
-  }
+  },
+  plugins: ['@vuepress/back-to-top','fulltext-search',['one-click-copy',{
+    copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], 
+    copyMessage: '代码拷贝成功', 
+    duration: 3000, 
+    showInMobile: false 
+  }]]
 };
