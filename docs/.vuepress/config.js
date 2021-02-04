@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2020-12-29 17:13:43
+ * @LastEditTime: 2021-02-03 11:24:54
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -99,7 +99,7 @@ module.exports = {
         {
           title: "Web",
           collapsable: false,
-          children: ["", "css", "console"]
+          children: ["", "css", "kuayu","proxy","webpack","emoji"]
         }
       ],
       "/javascript/": [
