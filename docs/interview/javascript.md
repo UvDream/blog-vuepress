@@ -156,6 +156,9 @@ e、任何其他组合（array 数组等）,都[不相等].
 
 ## 哪些操作会导致内存泄漏
 
+<details>
+<summary>答案</summary>
+
 1. setTimeout 的第一个参数使用字符串而非函数的话,会引发内存泄漏.
 2. 闭包
 3. 控制台日志
@@ -169,30 +172,43 @@ e、任何其他组合（array 数组等）,都[不相等].
 
 可用 chrome 中的 timeline 进行内存标记,可视化查看内存的变化情况,找出异常点.
 
+</details>
+
 ## 面向对象过程的三大基本特征
 
-```
+<details>
+<summary>答案</summary>
 继承,多态,封装
-```
+</details>
 
 ## 如何判断一个变量是对象还是数组
 
-```js
+<details>
+<summary>答案</summary>
+<pre><code>
 prototype.toString.call(),
   这个方法兼容性最好,
   千万不要使用typeof,
   都会返回object;
-```
+</code></pre>
+</details>
 
 ## ES5 和 ES6 中继承有啥区别
 
+<details>
+<summary>答案</summary>
 ES5 的继承时通过 prototype 或构造函数机制来实现.ES5 的继承实质上是先创建子类的实例对象,然后再将父类的方法添加到 this 上（Parent.apply(this)）.
 
 ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this（所以必须先调用父类的 super()方法）,然后再用子类的构造函数修改 this.
 
 具体的：ES6 通过 class 关键字定义类,里面有构造方法,类之间通过 extends 关键字实现继承.子类必须在 constructor 方法中调用 super 方法,否则新建实例报错.因为子类没有自己的 this 对象,而是继承了父类的 this 对象,然后对其进行加工.如果不调用 super 方法,子类得不到 this 对象
 
+</details>
+
 ## 值类型和引用类型的区别
+
+<details>
+<summary>答案</summary>
 
 （1）值类型：
 
@@ -216,7 +232,12 @@ ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this�
 
 4.使用 new()方法构造出的对象是引用型
 
+</details>
+
 ## 前端如何对页面性能进行优化
+
+<details>
+<summary>答案</summary>
 
 1.减少 http 请求
 
@@ -252,9 +273,13 @@ ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this�
 
 17.避免使用 CSSimport 引用加载 CSS
 
+</details>
+
 ## 使用 typeof bar ===“object”来确定 bar,是否是一个对象时有什么潜在的缺陷？这个陷阱如何避免？
 
-```js
+<details>
+<summary>答案</summary>
+<pre><code>
 如果bar的值为null的话,这样的话判断依旧成立,故错误
 1.bar是个函数
 console.log((bar !== null) && ((typeof bar === "object") || (typeof bar === "function")));
@@ -263,35 +288,45 @@ console.log((bar !== null) && (typeof bar === "object") && (toString.call(bar) !
 
 ES5
 console.log(Array.isArray(bar));
-```
+</code></pre>
+
+</details>
 
 ## 什么是 NaN
 
-```js
+<details>
+<summary>答案</summary>
+<pre><code>
 Number.isNaN();
-```
+</code></pre>
+</details>
 
 ## 原型/构造函数/实例
+
+<details>
+<summary>答案</summary>
 
 - 原型(prototype): 一个简单的对象,用于实现对象的 属性继承.可以简单的理解成对象的爹.在 Firefox 和 Chrome 中,每个 JavaScript 对象中都包含一个**proto** (非标准)的属性指向它爹(该对象的原型),可 obj.**proto**进行访问.
 - 构造函数: 可以通过 new 来 新建一个对象 的函数.
 - 实例: 通过构造函数和 new 创建出来的对象,便是实例. 实例通过**proto**指向原型,通过 constructor 指向构造函数.
 
-```js
+<pre><code>
+
 //实例
 const dog = new Object();
-```
+</code></pre>
 
 则此时, dog, 构造函数为 Object,我们知道,构造函数拥有一个 prototype 的属性指向原型,因此原型为:
 
-```js
+<pre><code>
 //原型
 const prototype = Object.prototype;
-```
+</code></pre>
 
 这里我们可以看出关系
 
-```js
+<pre><code>
+
 实例.__proto__ === 原型;
 
 原型.constructor === 构造函数;
@@ -299,19 +334,27 @@ const prototype = Object.prototype;
 构造函数.prototype === 原型;
 
 实例.constructorr === 构造函数;
-```
+</code></pre>
 
 ![image](https://user-gold-cdn.xitu.io/2019/2/14/168e9d9b940c4c6f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
+</details>
+
 ## 原型链
+
+<details>
+<summary>答案</summary>
 
 原型链是由原型对象组成,每个对象都有 **proto** 属性,指向了创建该对象的构造函数的原型,**proto** 将对象连接起来组成了原型链.是一个用来实现继承和共享属性的有限的对象链.
 
 - 属性查找机制: 当查找对象的属性时,如果实例对象自身不存在该属性,则沿着原型链往上一级查找,找到时则输出,不存在时,则继续沿着原型链往上一级查找,直至最顶级的原型对象 Object.prototype,如还是没找到,则输出 undefined；
 - 属性修改机制: 只会修改实例对象本身的属性,如果不存在,则进行添加该属性,如果需要修改原型的属性时,则可以用: b.prototype.x = 2；但是这样会造成所有继承于该对象的实例的属性发生改变.
+  </details>
 
 ## 数组
 
+<details>
+<summary>答案</summary>
 - map: 遍历数组,返回回调返回值组成的新数组
 - forEach: 无法 break,可以用 try/catch 中 throw new Error 来停止
 - filter: 过滤
@@ -328,43 +371,51 @@ const prototype = Object.prototype;
 - reduce / reduceRight(fn(prev, cur), defaultPrev): 两两执行,prev 为上次化简函数的 return 值,cur 为当前值(从第二项开始)
 - 数组乱序：
 
-```js
+<pre><code>
+
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 arr.sort(function() {
   return Math.random() - 0.5;
 });
-```
+</code></pre>
 
 - 数组拆解: flat: [1,[2,3]] --> [1, 2, 3]
 
-```js
+<pre><code>
+
 arr.prototype.flat = function() {
   this.toString()
     .split(",")
     .map((item) => +item);
 };
-```
+</code></pre>
+</details>
 
 ## 从输入 url 到展示
 
+<details>
+<summary>答案</summary>
 - DNS 解析
 - TCP 三次握手
 - 发送请求,分析 url,设置请求报文(头,主体)
 - 服务器返回请求的文件 (html)
 - 浏览器渲染
 
-  - HTML parser --> DOM Tree
-    - 标记化算法,进行元素状态的标记
-    - dom 树构建
-  - CSS parser --> Style Tree
-    - 解析 css 代码,生成样式树
-  - attachment --> Render Tree
-    - 结合 dom 树 与 style 树,生成渲染树
-  - layout: 布局
-  - GPU painting: 像素绘制页面
+- HTML parser --> DOM Tree
+  - 标记化算法,进行元素状态的标记
+  - dom 树构建
+- CSS parser --> Style Tree
+  - 解析 css 代码,生成样式树
+- attachment --> Render Tree
+  - 结合 dom 树 与 style 树,生成渲染树
+- layout: 布局
+- GPU painting: 像素绘制页面
+  </details>
 
 ## promise
 
+<details>
+<summary>答案</summary>
 Promise 是异步编程的一种解决方案,比传统的解决方案——回调函数和事件——更合理和更强大.
 Promise 对象有以下两个特点.
 
@@ -373,7 +424,7 @@ Promise 对象有以下两个特点.
 - （2）一旦状态改变,就不会再变,任何时候都可以得到这个结果.Promise 对象的状态改变,只有两种可能：从 pending 变为 fulfilled 和从 pending 变为 rejected.只要这两种情况发生,状态就凝固了,不会再变了,会一直保持这个结果,这时就称为 resolved（已定型）.如果改变已经发生了,你再对 Promise 对象添加回调函数,也会立即得到这个结果.这与事件（Event）完全不同,事件的特点是,如果你错过了它,再去监听,是得不到结果的.
 - 简单例子
 
-```js
+<pre><code>
 function timeout(ms) {
   return new Promise((resolve, reject) => {
     setTimeout(resolve, ms, "done");
@@ -383,7 +434,8 @@ function timeout(ms) {
 timeout(100).then((value) => {
   console.log(value);
 });
-```
+</code></pre>
+</details>
 
 ## For of 和 for (let i = 0; i < ...) 哪种写法性能更高？为什么？
 
