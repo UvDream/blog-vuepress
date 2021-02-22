@@ -450,10 +450,12 @@ for > for-of > for-in
 
 ## 函数柯里化
 
+<details>
+<summary>答案</summary>
 柯里化是函数式编程的一个重要技巧,将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术
 函数式编程另一个重要的函数 compose,能够将函数进行组合,而组合的函数只接受一个参数,所以如果有接受多个函数的需求并且需要用到 compose 进行函数组合,就需要使用柯里化对准备组合的函数进行部分求值,让它始终只接受一个参数
 
-```js
+<pre><code>
 function curry(fn) {
   if (fn.length <= 1) return fn;
   const generator = (...args) => {
@@ -471,21 +473,26 @@ function curry(fn) {
 let add = (a, b, c, d) => a + b + c + d;
 const curriedAdd = curry(add);
 add(5, 6, 7, 8); //26
-```
+</code></pre>
+</details>
 
 ## jsonp 原理
 
+<details>
+<summary>答案</summary>
 （1）首先是利用 script 标签的 src 属性来实现跨域
 
 （2）通过将前端方法作为参数传递到服务器端,然后由服务器端注入参数之后再返回,实现服务器端向客户端通信
 
 （3）由于使用 script 标签的 src 属性,因此只支持 get 方法
 
+</details>
+
 ## javascript 设计模式
 
-```js
+<details>
+<summary>答案</summary>
 创建型:
-
 
 1.抽象工厂模式（Abstract Factory）
 
@@ -496,7 +503,6 @@ add(5, 6, 7, 8); //26
 4.原型模式（Prototype）
 
 5.单例模式（Singleton）
-
 
 结构型：
 
@@ -513,7 +519,6 @@ add(5, 6, 7, 8); //26
 6.享元模式（Flyweight）
 
 7.代理模式（Proxy）
-
 
 行为：
 
@@ -539,6 +544,6 @@ add(5, 6, 7, 8); //26
 
 11.访问者模式（Visitor）
 
-```
+</details>
 
  <Vssue title="interview-js" />
