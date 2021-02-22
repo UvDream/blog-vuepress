@@ -2,6 +2,8 @@
 
 ## 前端安全,理解 xss 和 csrf
 
+<details>
+<summary>答案</summary>
 XSS：跨站脚本攻击
 
 它允许用户将恶意代码植入到提供给其他用户使用的页面中,可以简单的理解为一种 javascript 代码注入.
@@ -25,9 +27,13 @@ CSRF 防御措施：
 
 其他的一些攻击方法还有 HTTP 劫持、界面操作劫持
 
+</details>
+
 ## 数组快速排序
 
-```js
+<details>
+<summary>答案</summary>
+<pre><code>
 function quickSort(arr) {
   //如果数组<=1,则直接返回
   if (arr.length <= 1) {
@@ -40,37 +46,43 @@ function quickSort(arr) {
   var left = [];
   var right = [];
 
-  //比基准小的放在left,比基准大的放在right
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] <= pivot) {
-      left.push(arr[i]);
-    } else {
-      right.push(arr[i]);
-    }
-  }
-  //递归
-  return quickSort(left).concat([pivot], quickSort(right));
+//比基准小的放在 left,比基准大的放在 right
+for (var i = 0; i < arr.length; i++) {
+if (arr[i] <= pivot) {
+left.push(arr[i]);
+} else {
+right.push(arr[i]);
 }
-```
+}
+//递归
+return quickSort(left).concat([pivot], quickSort(right));
+}
+
+</pre></code></details>
 
 ## cookie,sessionStorage 和 localStorage 的区别
 
-```
-cookie在浏览器和服务器间来回传递. sessionStorage和localStorage不会
-sessionStorage和localStorage的存储空间更大；
-sessionStorage和localStorage有更多丰富易用的接口；
-sessionStorage和localStorage各自独立的存储空间；
-sessionStorage：仅在当前浏览器窗口关闭前有效,自然也就不可能持久保持；
-localStorage：始终有效,窗口或浏览器关闭也一直保存,因此用作持久数据
-```
+<details>
+<summary>答案</summary>
+- cookie在浏览器和服务器间来回传递. sessionStorage和localStorage不会
+- sessionStorage和localStorage的存储空间更大；
+- sessionStorage和localStorage有更多丰富易用的接口；
+- sessionStorage和localStorage各自独立的存储空间；
+- sessionStorage：仅在当前浏览器窗口关闭前有效,自然也就不可能持久保持；
+- localStorage：始终有效,窗口或浏览器关闭也一直保存,因此用作持久数据
+</details>
 
 ## javascript 中= =和= = =的区别
+
+<details>
+<summary>答案</summary>
 
 一言以蔽之：==先转换类型再比较,===先判断类型,如果不是同一类型直接为 false.
 
 ===表示恒等于,比较的两边要绝对的相同
 
-```js
+<pre>
+<code>
 alert(0 == ""); // true
 
 alert(0 == false); // true
@@ -82,7 +94,8 @@ alert(0 === ""); // false
 alert(0 === false); // false
 
 alert("" === false); // false
-```
+</code>
+</pre>
 
 先说 ===,这个比较简单,具体比较规则如下：
 
@@ -114,7 +127,12 @@ d、如果一个是对象,另一个是数值或字符串,把对象转换成基�
 
 e、任何其他组合（array 数组等）,都[不相等].
 
+</details>
+
 ## 闭包
+
+<details>
+<summary>答案</summary>
 
 闭包是指在 JavaScript 中,内部函数总是可以访问其所在的外部函数中声明的参数和变量,即使在其外部函数被返回了之后.然后闭包可以把一个局部变量传递到外部供其他函数或是变量使用,也可以把一个变量长时间的保留在系统的内存中
 
@@ -134,6 +152,7 @@ e、任何其他组合（array 数组等）,都[不相等].
 2. 即使外部函数已经返回,当前函数仍然可以引用在外部函数所定义的变量
 3. 闭包可以更新外部变量的值
 4. 用闭包模拟私有方法
+   </details>
 
 ## 哪些操作会导致内存泄漏
 
