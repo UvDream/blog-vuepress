@@ -1,9 +1,11 @@
-# Javascript
+通过 Object.prototype.toString.call()做判断# Javascript
 
 ## 前端安全,理解 xss 和 csrf
 
 <details>
+
 <summary>答案</summary>
+
 XSS：跨站脚本攻击
 
 它允许用户将恶意代码植入到提供给其他用户使用的页面中,可以简单的理解为一种 javascript 代码注入.
@@ -32,49 +34,78 @@ CSRF 防御措施：
 ## 数组快速排序
 
 <details>
+
 <summary>答案</summary>
+
 <pre><code>
+
 function quickSort(arr) {
+
   //如果数组<=1,则直接返回
+
   if (arr.length <= 1) {
+
     return arr;
+
   }
+
   var pivotIndex = Math.floor(arr.length / 2);
+
   //找基准,并把基准从原数组删除
+
   var pivot = arr.splice(pivotIndex, 1)[0];
+
   //定义左右数组
+
   var left = [];
+
   var right = [];
 
+
 //比基准小的放在 left,比基准大的放在 right
+
 for (var i = 0; i < arr.length; i++) {
+
 if (arr[i] <= pivot) {
+
 left.push(arr[i]);
+
 } else {
+
 right.push(arr[i]);
+
 }
+
 }
+
 //递归
+
 return quickSort(left).concat([pivot], quickSort(right));
+
 }
+
 
 </pre></code></details>
 
 ## cookie,sessionStorage 和 localStorage 的区别
 
 <details>
+
 <summary>答案</summary>
-- cookie在浏览器和服务器间来回传递. sessionStorage和localStorage不会
-- sessionStorage和localStorage的存储空间更大；
-- sessionStorage和localStorage有更多丰富易用的接口；
-- sessionStorage和localStorage各自独立的存储空间；
+
+- cookie 在浏览器和服务器间来回传递. sessionStorage 和 localStorage 不会
+- sessionStorage 和 localStorage 的存储空间更大；
+- sessionStorage 和 localStorage 有更多丰富易用的接口；
+- sessionStorage 和 localStorage 各自独立的存储空间；
 - sessionStorage：仅在当前浏览器窗口关闭前有效,自然也就不可能持久保持；
 - localStorage：始终有效,窗口或浏览器关闭也一直保存,因此用作持久数据
+
 </details>
 
 ## javascript 中= =和= = =的区别
 
 <details>
+
 <summary>答案</summary>
 
 一言以蔽之：==先转换类型再比较,===先判断类型,如果不是同一类型直接为 false.
@@ -82,19 +113,28 @@ return quickSort(left).concat([pivot], quickSort(right));
 ===表示恒等于,比较的两边要绝对的相同
 
 <pre>
+
 <code>
+
 alert(0 == ""); // true
+
 
 alert(0 == false); // true
 
+
 alert("" == false); // true
+
 
 alert(0 === ""); // false
 
+
 alert(0 === false); // false
 
+
 alert("" === false); // false
+
 </code>
+
 </pre>
 
 先说 ===,这个比较简单,具体比较规则如下：
@@ -132,6 +172,7 @@ e、任何其他组合（array 数组等）,都[不相等].
 ## 闭包
 
 <details>
+
 <summary>答案</summary>
 
 闭包是指在 JavaScript 中,内部函数总是可以访问其所在的外部函数中声明的参数和变量,即使在其外部函数被返回了之后.然后闭包可以把一个局部变量传递到外部供其他函数或是变量使用,也可以把一个变量长时间的保留在系统的内存中
@@ -152,11 +193,13 @@ e、任何其他组合（array 数组等）,都[不相等].
 2. 即使外部函数已经返回,当前函数仍然可以引用在外部函数所定义的变量
 3. 闭包可以更新外部变量的值
 4. 用闭包模拟私有方法
+
    </details>
 
 ## 哪些操作会导致内存泄漏
 
 <details>
+
 <summary>答案</summary>
 
 1. setTimeout 的第一个参数使用字符串而非函数的话,会引发内存泄漏.
@@ -177,26 +220,39 @@ e、任何其他组合（array 数组等）,都[不相等].
 ## 面向对象过程的三大基本特征
 
 <details>
+
 <summary>答案</summary>
+
 继承,多态,封装
+
 </details>
 
 ## 如何判断一个变量是对象还是数组
 
 <details>
+
 <summary>答案</summary>
+
 <pre><code>
+
 prototype.toString.call(),
+
   这个方法兼容性最好,
+
   千万不要使用typeof,
+
   都会返回object;
+
 </code></pre>
+
 </details>
 
 ## ES5 和 ES6 中继承有啥区别
 
 <details>
+
 <summary>答案</summary>
+
 ES5 的继承时通过 prototype 或构造函数机制来实现.ES5 的继承实质上是先创建子类的实例对象,然后再将父类的方法添加到 this 上（Parent.apply(this)）.
 
 ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this（所以必须先调用父类的 super()方法）,然后再用子类的构造函数修改 this.
@@ -208,6 +264,7 @@ ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this�
 ## 值类型和引用类型的区别
 
 <details>
+
 <summary>答案</summary>
 
 （1）值类型：
@@ -237,6 +294,7 @@ ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this�
 ## 前端如何对页面性能进行优化
 
 <details>
+
 <summary>答案</summary>
 
 1.减少 http 请求
@@ -278,16 +336,26 @@ ES6 的继承机制完全不同,实质上是先创建父类的实例对象 this�
 ## 使用 typeof bar ===“object”来确定 bar,是否是一个对象时有什么潜在的缺陷？这个陷阱如何避免？
 
 <details>
+
 <summary>答案</summary>
+
 <pre><code>
+
 如果bar的值为null的话,这样的话判断依旧成立,故错误
+
 1.bar是个函数
+
 console.log((bar !== null) && ((typeof bar === "object") || (typeof bar === "function")));
+
 2.bar是个数组
+
 console.log((bar !== null) && (typeof bar === "object") && (toString.call(bar) !== "[object Array]"));
 
+
 ES5
+
 console.log(Array.isArray(bar));
+
 </code></pre>
 
 </details>
@@ -295,45 +363,62 @@ console.log(Array.isArray(bar));
 ## 什么是 NaN
 
 <details>
+
 <summary>答案</summary>
+
 <pre><code>
+
 Number.isNaN();
+
 </code></pre>
+
 </details>
 
 ## 原型/构造函数/实例
 
 <details>
+
 <summary>答案</summary>
 
-- 原型(prototype): 一个简单的对象,用于实现对象的 属性继承.可以简单的理解成对象的爹.在 Firefox 和 Chrome 中,每个 JavaScript 对象中都包含一个`__proto__` (非标准)的属性指向它爹(该对象的原型),可 obj.`__proto__`进行访问.
+- 原型(prototype): 一个简单的对象,用于实现对象的 属性继承.可以简单的理解成对象的爹.在 Firefox 和 Chrome 中,每个 JavaScript 对象中都包含一个**proto** (非标准)的属性指向它爹(该对象的原型),可 obj.**proto**进行访问.
 - 构造函数: 可以通过 new 来 新建一个对象 的函数.
-- 实例: 通过构造函数和 new 创建出来的对象,便是实例. 实例通过`__proto__`指向原型,通过 constructor 指向构造函数.
+- 实例: 通过构造函数和 new 创建出来的对象,便是实例. 实例通过**proto**指向原型,通过 constructor 指向构造函数.
 
 <pre><code>
 
+
 //实例
+
 const dog = new Object();
+
 </code></pre>
 
 则此时, dog, 构造函数为 Object,我们知道,构造函数拥有一个 prototype 的属性指向原型,因此原型为:
 
 <pre><code>
+
 //原型
+
 const prototype = Object.prototype;
+
 </code></pre>
 
 这里我们可以看出关系
 
 <pre><code>
 
+
 实例.__proto__ === 原型;
+
 
 原型.constructor === 构造函数;
 
+
 构造函数.prototype === 原型;
 
+
 实例.constructorr === 构造函数;
+
 </code></pre>
 
 ![image](https://user-gold-cdn.xitu.io/2019/2/14/168e9d9b940c4c6f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
@@ -343,18 +428,22 @@ const prototype = Object.prototype;
 ## 原型链
 
 <details>
+
 <summary>答案</summary>
 
-原型链是由原型对象组成,每个对象都有 `__proto__` 属性,指向了创建该对象的构造函数的原型, `__proto__` 将对象连接起来组成了原型链.是一个用来实现继承和共享属性的有限的对象链.
+原型链是由原型对象组成,每个对象都有 **proto** 属性,指向了创建该对象的构造函数的原型,**proto** 将对象连接起来组成了原型链.是一个用来实现继承和共享属性的有限的对象链.
 
 - 属性查找机制: 当查找对象的属性时,如果实例对象自身不存在该属性,则沿着原型链往上一级查找,找到时则输出,不存在时,则继续沿着原型链往上一级查找,直至最顶级的原型对象 Object.prototype,如还是没找到,则输出 undefined；
 - 属性修改机制: 只会修改实例对象本身的属性,如果不存在,则进行添加该属性,如果需要修改原型的属性时,则可以用: b.prototype.x = 2；但是这样会造成所有继承于该对象的实例的属性发生改变.
+
   </details>
 
 ## 数组
 
 <details>
+
 <summary>答案</summary>
+
 - map: 遍历数组,返回回调返回值组成的新数组
 - forEach: 无法 break,可以用 try/catch 中 throw new Error 来停止
 - filter: 过滤
@@ -373,113 +462,175 @@ const prototype = Object.prototype;
 
 <pre><code>
 
+
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 arr.sort(function() {
+
   return Math.random() - 0.5;
+
 });
+
 </code></pre>
 
 - 数组拆解: flat: [1,[2,3]] --> [1, 2, 3]
 
 <pre><code>
 
+
 arr.prototype.flat = function() {
+
   this.toString()
+
     .split(",")
+
     .map((item) => +item);
+
 };
+
 </code></pre>
+
 </details>
 
 ## 从输入 url 到展示
 
 <details>
+
 <summary>答案</summary>
+
 - DNS 解析
 - TCP 三次握手
 - 发送请求,分析 url,设置请求报文(头,主体)
 - 服务器返回请求的文件 (html)
 - 浏览器渲染
-
 - HTML parser --> DOM Tree
+
   - 标记化算法,进行元素状态的标记
   - dom 树构建
+
 - CSS parser --> Style Tree
+
   - 解析 css 代码,生成样式树
+
 - attachment --> Render Tree
+
   - 结合 dom 树 与 style 树,生成渲染树
+
 - layout: 布局
 - GPU painting: 像素绘制页面
+
   </details>
 
 ## promise
 
 <details>
+
 <summary>答案</summary>
+
 Promise 是异步编程的一种解决方案,比传统的解决方案——回调函数和事件——更合理和更强大.
+
 Promise 对象有以下两个特点.
 
 - （1）对象的状态不受外界影响.Promise 对象代表一个异步操作,有三种状态：pending（进行中）、fulfilled（已成功）和 rejected（已失败）.只有异步操作的结果,可以决定当前是哪一种状态,任何其他操作都无法改变这个状态.这也是 Promise 这个名字的由来,它的英语意思就是“承诺”,表示其他手段无法改变.
-
 - （2）一旦状态改变,就不会再变,任何时候都可以得到这个结果.Promise 对象的状态改变,只有两种可能：从 pending 变为 fulfilled 和从 pending 变为 rejected.只要这两种情况发生,状态就凝固了,不会再变了,会一直保持这个结果,这时就称为 resolved（已定型）.如果改变已经发生了,你再对 Promise 对象添加回调函数,也会立即得到这个结果.这与事件（Event）完全不同,事件的特点是,如果你错过了它,再去监听,是得不到结果的.
 - 简单例子
 
 <pre><code>
+
 function timeout(ms) {
+
   return new Promise((resolve, reject) => {
+
     setTimeout(resolve, ms, "done");
+
   });
+
 }
 
+
 timeout(100).then((value) => {
+
   console.log(value);
+
 });
+
 </code></pre>
+
 </details>
 
 ## For of 和 for (let i = 0; i < ...) 哪种写法性能更高？为什么？
 
 <details>
+
 <summary>答案</summary>
+
 for > for-of > for-in
+
 `for-in`循环除了遍历数组元素以外,还会遍历自定义属性。
+
 `for-of`循环不会循环对象的`key`，只会循环出数组的`value`，因此`for-of`不能循环遍历普通对象。
-`for-of`和`for-in`的`key`是`String`类型，有转换过程，开销比较大，但是`for`循环的i是`Number`类型，开销较小。
+
+`for-of`和`for-in`的`key`是`String`类型，有转换过程，开销比较大，但是`for`循环的 i 是`Number`类型，开销较小。
+
 不过`for-of`语法在内存占用上也有一定的优势。
+
 </details>
 
 ## 函数柯里化
 
 <details>
+
 <summary>答案</summary>
+
 柯里化是函数式编程的一个重要技巧,将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术
+
 函数式编程另一个重要的函数 compose,能够将函数进行组合,而组合的函数只接受一个参数,所以如果有接受多个函数的需求并且需要用到 compose 进行函数组合,就需要使用柯里化对准备组合的函数进行部分求值,让它始终只接受一个参数
 
 <pre><code>
+
 function curry(fn) {
+
   if (fn.length <= 1) return fn;
+
   const generator = (...args) => {
+
     if (fn.length === args.length) {
+
       return fn(...args);
+
     } else {
+
       return (...args) => {
+
         return generator(...args, ...args2);
+
       };
+
     }
+
   };
+
   return generator;
+
 }
 
+
 let add = (a, b, c, d) => a + b + c + d;
+
 const curriedAdd = curry(add);
+
 add(5, 6, 7, 8); //26
+
 </code></pre>
+
 </details>
 
 ## jsonp 原理
 
 <details>
+
 <summary>答案</summary>
+
 （1）首先是利用 script 标签的 src 属性来实现跨域
 
 （2）通过将前端方法作为参数传递到服务器端,然后由服务器端注入参数之后再返回,实现服务器端向客户端通信
@@ -491,7 +642,9 @@ add(5, 6, 7, 8); //26
 ## javascript 设计模式
 
 <details>
+
 <summary>答案</summary>
+
 创建型:
 
 1.抽象工厂模式（Abstract Factory）
@@ -546,4 +699,14 @@ add(5, 6, 7, 8); //26
 
 </details>
 
- <Vssue title="interview-js" />
+## js 判断数组的方法
+
+<details>
+
+<summary>答案</summary>
+- 通过Object.prototype.toString.call()做判断
+- `obj.__proto__` === Array.prototype;
+- Array.isArrray()
+- obj instanceof Array
+- Array.prototype.isPrototypeOf(obj)
+</details>
