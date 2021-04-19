@@ -12,6 +12,6 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "cloudbase framework deploy"
+    "deploy": "tcb framework deploy"
   }
 }

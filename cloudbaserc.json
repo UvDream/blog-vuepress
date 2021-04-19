@@ -12,7 +12,7 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "docs/.vuepress/dist",
-          "cloudPath": "/vuepress"
+          "cloudPath": "/blog-vuepress"
         }
       }
     }
