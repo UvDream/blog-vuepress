@@ -10,7 +10,7 @@
       "vuepress": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
-          "buildCommand": "npm run build",
+          "buildCommand": "npm run docs:build",
           "outputPath": "docs/.vuepress/dist",
           "cloudPath": "/blog-vuepress"
         }
