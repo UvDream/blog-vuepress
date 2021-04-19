@@ -2,14 +2,14 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-04-19 10:19:32
+ * @LastEditTime: 2021-04-19 10:25:17
  * @Description:配置
  * @Email: UvDream@163.com
  */
 const path = require("path");
 
 module.exports = {
-  base:"./",
+  base: "/blog-vuepress/",
   title: "U世界的V梦想",
   description: "一切皆有可能!",
   // theme: path.resolve(__dirname, '../../lib'),
