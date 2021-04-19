@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "envId": "uvdream-8gylllos8fdf5ee1",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "functionRoot": "./functions",
+  "functions": [],
+  "framework": {
+    "name": "vuepress-app",
+    "plugins": {
+      "vuepress": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run build",
+          "outputPath": "docs/.vuepress/dist",
+          "cloudPath": "/vuepress"
+        }
+      }
+    }
+  }
+}
