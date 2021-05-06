@@ -112,7 +112,7 @@ module.exports = {
         {
           title: "Web",
           collapsable: false,
-          children: ["", "nrm"],
+          children: ["", "nrm","package"],
         },
       ],
       "/web/": [
