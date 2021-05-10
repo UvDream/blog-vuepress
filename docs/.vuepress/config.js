@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-04-19 10:25:17
+ * @LastEditTime: 2021-05-10 10:36:04
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -105,14 +105,14 @@ module.exports = {
         {
           title: "Web",
           collapsable: false,
-          children: [""],
+          children: ["", "base-type"],
         },
       ],
       "/nodejs/": [
         {
           title: "Web",
           collapsable: false,
-          children: ["", "nrm","package"],
+          children: ["", "nrm", "package"],
         },
       ],
       "/web/": [
