@@ -2,140 +2,160 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-02-03 11:24:54
+ * @LastEditTime: 2021-05-10 10:36:04
  * @Description:配置
  * @Email: UvDream@163.com
  */
 const path = require("path");
 
 module.exports = {
-  base: "blog",
+  base: "/blog-vuepress/",
   title: "U世界的V梦想",
   description: "一切皆有可能!",
-  base: "/blog-vuepress/",
-  port: "2222",
   // theme: path.resolve(__dirname, '../../lib'),
   themeConfig: {
     //   导航栏
     nav: [
       {
         text: "首页",
-        link: "/"
+        link: "/",
       },
       {
         text: "前端",
         items: [
           {
             text: "Web",
-            link: "/web/"
+            link: "/web/",
           },
           {
             text: "JavaScript",
-            link: "/javascript/"
+            link: "/javascript/",
           },
           {
             text: "Angular",
-            link: "/angular/"
+            link: "/angular/",
           },
           {
             text: "Vue",
-            link: "/vue/"
+            link: "/vue/",
           },
           {
             text: "React",
-            link: "/react/"
+            link: "/react/",
           },
           {
             text: "Vue-Next",
-            link: "/vue-next/"
+            link: "/vue-next/",
+          },
+          {
+            text: "Nodejs",
+            link: "/nodejs/",
+          },
+          {
+            text: "Typescript",
+            link: "/typescript/",
           },
           {
             text: "面试",
-            link: "/interview/"
-          }
-        ]
+            link: "/interview/",
+          },
+        ],
       },
       {
         text: "Go",
         items: [
           {
             text: "介绍",
-            link: "/go/"
+            link: "/go/",
           },
           {
             text: "40天",
-            link: "/go-40/"
-          }
-        ]
+            link: "/go-40/",
+          },
+        ],
       },
       {
         text: "Flutter",
         items: [
           {
             text: "基础",
-            link: "/flutter/"
+            link: "/flutter/",
           },
           {
             text: "插件",
-            link: "/flutter-plugin/"
+            link: "/flutter-plugin/",
           },
           {
             text: "深入",
-            link: "/flutter-deep/"
-          }
-        ]
+            link: "/flutter-deep/",
+          },
+        ],
       },
       {
         text: "规范",
-        link: "/specification/"
+        link: "/specification/",
       },
       {
         text: "Github",
-        link: "https://github.com/UvDream"
-      }
+        link: "https://github.com/UvDream",
+      },
     ],
     sidebar: {
+      "/typescript/": [
+        {
+          title: "Web",
+          collapsable: false,
+          children: ["", "base-type"],
+        },
+      ],
+      "/nodejs/": [
+        {
+          title: "Web",
+          collapsable: false,
+          children: ["", "nrm", "package"],
+        },
+      ],
       "/web/": [
         {
           title: "Web",
           collapsable: false,
-          children: ["", "css", "kuayu","proxy","webpack","emoji"]
-        }
+          children: ["", "css", "kuayu", "proxy", "webpack", "emoji"],
+        },
       ],
       "/javascript/": [
         {
           title: "JavaScript",
           collapsable: false,
-          children: ["", "js1", "closure", "design", "canvas", "canvas_api"]
-        }
+          children: ["", "js1", "closure", "design", "canvas", "canvas_api"],
+        },
       ],
       "/vue/": [
         {
           title: "Vue",
           collapsable: false,
-          children: ["", "vue1", "vue2"]
-        }
+          children: ["", "vue1", "vue2"],
+        },
       ],
       "/vue-next/": [
         {
           title: "Vue-next",
           collapsable: false,
-          children: ["","vue-vite","vue-api"]
-        }
+          children: ["", "vue-vite", "vue-api"],
+        },
       ],
       "/react/": [
         {
           title: "React",
           collapsable: false,
-          children: ["", "props", "vscode", "life", "other", "redux"]
-        }
+          children: ["", "props", "vscode", "life", "other", "redux"],
+        },
       ],
       "/specification/": [
         {
           title: "代码规范",
           collapsable: false,
-          children: ["", "git"]
-        }
+          children: ["", "git"],
+        },
       ],
       "/interview/": [
         {
@@ -151,9 +171,9 @@ module.exports = {
             "code",
             "type",
             "http",
-            "catch"
-          ]
-        }
+            "catch",
+          ],
+        },
       ],
       "/flutter/": [
         {
@@ -169,28 +189,38 @@ module.exports = {
             "model",
             "flare",
             "build",
-            "other"
-          ]
-        }
+            "other",
+          ],
+        },
       ],
       "/flutter-plugin/": [
         {
           title: "Flutter插件",
           collapsable: false,
-          children: ["", "shared_preferences", "provider"]
-        }
-      ]
+          children: ["", "shared_preferences", "provider"],
+        },
+      ],
     },
     sidebarDepth: 2,
-    lastUpdated: "最后更新时间"
+    lastUpdated: "最后更新时间",
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
-  plugins: ['@vuepress/back-to-top','fulltext-search',['one-click-copy',{
-    copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], 
-    copyMessage: '代码拷贝成功', 
-    duration: 3000, 
-    showInMobile: false 
-  }]]
+  plugins: [
+    "@vuepress/back-to-top",
+    "fulltext-search",
+    [
+      "one-click-copy",
+      {
+        copySelector: [
+          'div[class*="language-"] pre',
+          'div[class*="aside-code"] aside',
+        ],
+        copyMessage: "代码拷贝成功",
+        duration: 3000,
+        showInMobile: false,
+      },
+    ],
+  ],
 };
