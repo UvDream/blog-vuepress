@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-05-10 10:36:04
+ * @LastEditTime: 2021-06-01 22:06:18
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -105,7 +105,7 @@ module.exports = {
         {
           title: "Web",
           collapsable: false,
-          children: ["", "base-type"],
+          children: ["", "base-type", "类型推断和兼容"],
         },
       ],
       "/nodejs/": [
