@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-07-22 13:41:35
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-02-03 11:24:54
+ * @LastEditTime: 2021-07-23 10:04:37
  * @Description:配置
  * @Email: UvDream@163.com
  */
@@ -40,6 +40,10 @@ module.exports = {
           {
             text: "Vue",
             link: "/vue/"
+          },
+          {
+            text:"Vite",
+            link:"/vite/"
           },
           {
             text: "React",
