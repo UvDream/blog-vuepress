@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2021-07-23 10:04:03
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-07-23 14:16:13
+ * @LastEditTime: 2021-07-23 14:24:17
  * @Description:vite前序
  * @Email: UvDream@163.com
 -->
@@ -81,7 +81,7 @@ npm install vite或者yarn add vite
 
 利用`vscode`调试功能,打断点进行代码流程查看
 
-- 第一步先去 vite 源码打个断点
+- 第一步先去 `vite` 源码打个断点
 
 ![断点](https://pic.baixiongz.com/uploads/2021/07/23/6ef0c77f0aac2.png)
 
@@ -95,7 +95,7 @@ npm install vite或者yarn add vite
 
 #### 谷歌浏览器
 
-- 打开谷歌浏览器 `nodejs` 调试工具 1.打开谷歌浏览器,输入`chrome://inspect/#devices` 2.下载`nim`扩展工具
+- 打开谷歌浏览器 `nodejs` 调试工具 1.打开谷歌浏览器,输入`chrome://inspect/#devices` 2.下载`NIM`扩展工具
 - 修改`package.json`
 
 ```sh
@@ -103,9 +103,13 @@ npm install vite或者yarn add vite
 ```
 
 - 运行
-  ![运行](https://pic.baixiongz.com/uploads/2021/07/23/b35d96b7f386f.png)
+
+![运行](https://pic.baixiongz.com/uploads/2021/07/23/b35d96b7f386f.png)
+
 - 浏览器
-  ![浏览器](https://pic.baixiongz.com/uploads/2021/07/23/e70ffe0a27362.png)
-- 如果安装`nim`插件会自动打开调试工具
+
+![浏览器](https://pic.baixiongz.com/uploads/2021/07/23/e70ffe0a27362.png)
+
+- 如果安装`NIM`插件会自动打开调试工具
 
 > 比较推荐 vscode 调试
