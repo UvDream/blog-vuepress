@@ -1,0 +1,107 @@
+{
+  "main": {
+    "id": "f2223ce7c888e821",
+    "type": "split",
+    "children": [
+      {
+        "id": "a448db134a45a4aa",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9b210d2459f6067c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4950958bf781f285",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53f1362ec6dd9c59",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7153541f8ab7dcaa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310
+  },
+  "right": {
+    "id": "e65bcb5b80a2af54",
+    "type": "split",
+    "children": [
+      {
+        "id": "a63e7f5b8c5284c3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1f70735625369be",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "01465071e35a79d5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a448db134a45a4aa",
+  "lastOpenFiles": [
+    "docs/javascript/设计模式.md",
+    "未命名.md",
+    "docs/javascript/canvas.md",
+    "docs/interview/catch.md",
+    "docs/README.md",
+    "docs/config.md",
+    "docs/web/webpack.md",
+    "docs/web/README.md",
+    "docs/web/proxy.md",
+    "docs/web/kuayu.md"
+  ]
+}
