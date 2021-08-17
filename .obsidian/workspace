@@ -6,13 +6,27 @@
       {
         "id": "a448db134a45a4aa",
         "type": "leaf",
+        "dimension": 82.9032258064516,
         "state": {
           "type": "markdown",
           "state": {
             "file": "docs/javascript/设计模式.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "f25843cfdf6c80ac"
+      },
+      {
+        "id": "c9a691321d0b2618",
+        "type": "leaf",
+        "dimension": 17.096774193548388,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "docs/javascript/设计模式.md"
+          }
+        },
+        "group": "f25843cfdf6c80ac"
       }
     ],
     "direction": "vertical"
