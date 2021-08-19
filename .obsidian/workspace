@@ -4,9 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "a448db134a45a4aa",
+        "id": "506473d4920662fc",
         "type": "leaf",
-        "dimension": 82.9032258064516,
         "state": {
           "type": "markdown",
           "state": {
@@ -14,19 +13,19 @@
             "mode": "source"
           }
         },
-        "group": "f25843cfdf6c80ac"
+        "group": "2c542c3c2546d2fa"
       },
       {
-        "id": "c9a691321d0b2618",
+        "id": "5cbe2595dc73aaf1",
         "type": "leaf",
-        "dimension": 17.096774193548388,
         "state": {
-          "type": "outline",
+          "type": "markdown",
           "state": {
-            "file": "docs/javascript/设计模式.md"
+            "file": "docs/javascript/设计模式.md",
+            "mode": "preview"
           }
         },
-        "group": "f25843cfdf6c80ac"
+        "group": "2c542c3c2546d2fa"
       }
     ],
     "direction": "vertical"
@@ -111,11 +110,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a448db134a45a4aa",
+  "active": "5cbe2595dc73aaf1",
   "lastOpenFiles": [
     "docs/javascript/设计模式.md",
-    "未命名.md",
     "docs/javascript/canvas.md",
+    "未命名.md",
     "docs/interview/catch.md",
     "docs/README.md",
     "docs/config.md",
