@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/javascript/设计模式.md",
+            "file": "docs/config.md",
             "mode": "source"
           }
         },
@@ -21,8 +21,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/javascript/设计模式.md",
-            "mode": "preview"
+            "file": "docs/config.md",
+            "mode": "source"
           }
         },
         "group": "2c542c3c2546d2fa"
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/javascript/设计模式.md",
+                "file": "docs/config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/javascript/设计模式.md"
+                "file": "docs/config.md"
               }
             }
           }
@@ -109,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5cbe2595dc73aaf1",
+  "active": "506473d4920662fc",
   "lastOpenFiles": [
+    "docs/config.md",
+    "未命名.md",
+    "docs/web/proxy.md",
     "docs/javascript/设计模式.md",
     "docs/javascript/canvas.md",
-    "未命名.md",
     "docs/interview/catch.md",
     "docs/README.md",
-    "docs/config.md",
     "docs/web/webpack.md",
     "docs/web/README.md",
-    "docs/web/proxy.md",
     "docs/web/kuayu.md"
   ]
 }
