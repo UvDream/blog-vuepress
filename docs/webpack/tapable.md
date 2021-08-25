@@ -32,5 +32,34 @@ new SyncHook([arg1,arg2,...])
 > hooks接受一个数组,参数为执行的回调时间所需要的参数名
 
 ```ts
+  
 
+import { SyncHook } from "tapable";
+
+
+const hook = new SyncHook(['name', 'sex'])
+
+
+hook.tap('printName', (name: string) => {
+
+ console.log('我的名字是' + name);
+
+})
+
+
+hook.tap("printSex", (name: string, sex: string) => {
+
+ console.log("我的性别是", sex);
+
+})
+
+
+hook.call("张三", "男")
+
+```
+> 结果
+```ts
+我的名字是张三
+
+我的性别是 男
 ```
