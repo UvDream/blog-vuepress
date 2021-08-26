@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/webpack/tapable.md",
+            "file": "docs/typescript/types自动生成.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/webpack/tapable.md",
+            "file": "docs/typescript/types自动生成.md",
             "mode": "preview"
           }
         },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "自动生成",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/webpack/tapable.md",
+                "file": "docs/typescript/types自动生成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +99,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/webpack/tapable.md"
+                "file": "docs/typescript/types自动生成.md"
               }
             }
           }
@@ -109,8 +110,9 @@
     "direction": "horizontal",
     "width": 209
   },
-  "active": "111f367d8e99bbf3",
+  "active": "5cbe2595dc73aaf1",
   "lastOpenFiles": [
+    "docs/typescript/types自动生成.md",
     "docs/webpack/tapable.md",
     "docs/webpack/README.md.md",
     "docs/webpack/未命名.md",
@@ -119,7 +121,6 @@
     "docs/web/proxy.md",
     "docs/javascript/设计模式.md",
     "docs/javascript/canvas.md",
-    "docs/interview/catch.md",
-    "docs/README.md"
+    "docs/interview/catch.md"
   ]
 }
