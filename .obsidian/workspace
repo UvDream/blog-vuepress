@@ -4,28 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5cbe2595dc73aaf1",
+        "id": "93e3603d920cbb24",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/typescript/types自动生成.md",
+            "file": "draw/index.md",
             "mode": "source"
           }
-        },
-        "group": "a544ea773c362fb5"
-      },
-      {
-        "id": "111f367d8e99bbf3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/typescript/types自动生成.md",
-            "mode": "preview"
-          }
-        },
-        "group": "a544ea773c362fb5"
+        }
       }
     ],
     "direction": "vertical"
@@ -61,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/typescript/types自动生成.md",
+                "file": "draw/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/typescript/types自动生成.md"
+                "file": "draw/index.md"
               }
             }
           }
@@ -110,8 +96,9 @@
     "direction": "horizontal",
     "width": 209
   },
-  "active": "5cbe2595dc73aaf1",
+  "active": "93e3603d920cbb24",
   "lastOpenFiles": [
+    "draw/index.md",
     "docs/typescript/types自动生成.md",
     "docs/webpack/tapable.md",
     "docs/webpack/README.md.md",
@@ -120,7 +107,6 @@
     "未命名.md",
     "docs/web/proxy.md",
     "docs/javascript/设计模式.md",
-    "docs/javascript/canvas.md",
-    "docs/interview/catch.md"
+    "docs/javascript/canvas.md"
   ]
 }
