@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "148d9fe6d06e08af",
+        "id": "d3adff206e6bf68e",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -12,20 +12,7 @@
             "file": "docs/typescript/`extends` `implements` 区别.md",
             "mode": "source"
           }
-        },
-        "group": "1b19223695c9a9b2"
-      },
-      {
-        "id": "730b19d5a389a629",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/typescript/`extends` `implements` 区别.md",
-            "mode": "preview"
-          }
-        },
-        "group": "1b19223695c9a9b2"
+        }
       }
     ],
     "direction": "vertical"
@@ -65,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 237
   },
   "right": {
     "id": "e65bcb5b80a2af54",
@@ -132,17 +119,17 @@
     "direction": "horizontal",
     "width": 209
   },
-  "active": "730b19d5a389a629",
+  "active": "d3adff206e6bf68e",
   "lastOpenFiles": [
     "docs/typescript/`extends` `implements` 区别.md",
+    "docs/typescript/class.md",
+    "docs/typescript/base-type.md",
+    "docs/typescript/README.md",
+    "docs/typescript/未命名.md",
     "未命名.md",
     "draw/index.md",
     "docs/typescript/types自动生成.md",
     "docs/webpack/tapable.md",
-    "docs/webpack/README.md.md",
-    "docs/webpack/未命名.md",
-    "docs/config.md",
-    "docs/web/proxy.md",
-    "docs/javascript/设计模式.md"
+    "docs/webpack/README.md.md"
   ]
 }
