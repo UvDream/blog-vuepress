@@ -185,3 +185,55 @@ console.log(grid2.calcPosition({ x: 10, y: 10 }));
 ![static](https://pic.baixiongz.com/uploads/2021/08/27/11a6d0b5cc701.png)
 ### 抽象类
 > 抽象类不允许被实例化
+- 错误
+```ts
+abstract class Animal {
+  public name;
+  public constructor(name) {
+    this.name = name;
+  }
+  public abstract sayHi();
+}
+
+let a = new Animal('猴子');
+```
+![error](https://pic.baixiongz.com/uploads/2021/08/27/2439c382a74b3.png)
+- 错误
+```ts
+abstract class Animal {
+  public name;
+  public constructor(name) {
+    this.name = name;
+  }
+  public abstract sayHi();
+}
+
+class Cat extends Animal {
+  public eat() {
+    console.log(`${this.name} is eating.`);
+  }
+}
+
+let cat = new Cat('小猫');
+```
+
+![](https://pic.baixiongz.com/uploads/2021/08/27/0555e2b73933d.png)
+- 正确
+
+```ts
+abstract class Animal {
+  public name;
+  public constructor(name) {
+    this.name = name;
+  }
+  public abstract sayHi();
+}
+
+class Cat extends Animal {
+  public sayHi() {
+    console.log(小猫的名字是 ${this.name}`);
+  }
+}
+
+let cat = new Cat('小猫');
+```

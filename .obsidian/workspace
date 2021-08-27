@@ -22,7 +22,7 @@
           "type": "markdown",
           "state": {
             "file": "docs/typescript/class.md",
-            "mode": "preview"
+            "mode": "source"
           }
         },
         "group": "a34f87c182be4cc2"
@@ -135,6 +135,7 @@
   "active": "e6cd5aa4dfd33fc7",
   "lastOpenFiles": [
     "docs/typescript/class.md",
+    "docs/typescript/Pasted image 20210827140032.png",
     "docs/typescript/`extends` `implements` 区别.md",
     "docs/typescript/base-type.md",
     "docs/typescript/README.md",
@@ -142,7 +143,6 @@
     "未命名.md",
     "draw/index.md",
     "docs/typescript/types自动生成.md",
-    "docs/webpack/tapable.md",
-    "docs/webpack/README.md.md"
+    "docs/webpack/tapable.md"
   ]
 }
