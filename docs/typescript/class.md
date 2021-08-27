@@ -135,3 +135,53 @@ let web = new Web("前端")
 web.name = "嘻嘻"
 ```
 ![error](https://pic.baixiongz.com/uploads/2021/08/27/2b8707762c67e.png)
+### 存取器
+> 用另外一个条件来限制你是否能够更改属性
+
+```ts
+let passCode = "passcode"
+
+class EditPassword {
+ private _fullName: string;
+ get fullName(): string {
+ 	return this._fullName
+ }
+ set fullName(newName: string) {
+	 if (passCode && passCode == 'passcode') {
+		this._fullName = newName;
+	 } else {
+		console.log("错误");
+	 }
+ }
+}
+
+let edit = new EditPassword()
+
+edit.fullName = "张三"
+
+console.log(edit.fullName);
+```
+![提示](https://pic.baixiongz.com/uploads/2021/08/27/7f4b433f3e755.png)
+### `static`
+```ts
+class Grid {
+ constructor(public scle: number) {}
+ static origin = { x: 0, y: 0 }
+ calcPosition(point: { x: number, y: number }) {
+	 let x = point.x - Grid.origin.x
+	 let y = point.y - Grid.origin.y
+	 return x * y / this.scle
+ }
+}
+
+let grid1 = new Grid(1)
+
+let grid2 = new Grid(2)
+
+console.log(grid1.calcPosition({ x: 10, y: 10 }));
+
+console.log(grid2.calcPosition({ x: 10, y: 10 }));
+```
+![static](https://pic.baixiongz.com/uploads/2021/08/27/11a6d0b5cc701.png)
+### 抽象类
+> 抽象类不允许被实例化
