@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/typescript/`extends` `implements` 区别.md",
+            "file": "docs/typescript/class.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "a59d75c341109e6b"
+      },
+      {
+        "id": "434cb4bdf2b95870",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/typescript/class.md",
+            "mode": "preview"
+          }
+        },
+        "group": "a59d75c341109e6b"
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/typescript/`extends` `implements` 区别.md",
+                "file": "docs/typescript/class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/typescript/`extends` `implements` 区别.md"
+                "file": "docs/typescript/class.md"
               }
             }
           },
@@ -95,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/typescript/`extends` `implements` 区别.md",
+                "file": "docs/typescript/class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,8 +134,8 @@
   },
   "active": "d3adff206e6bf68e",
   "lastOpenFiles": [
-    "docs/typescript/`extends` `implements` 区别.md",
     "docs/typescript/class.md",
+    "docs/typescript/`extends` `implements` 区别.md",
     "docs/typescript/base-type.md",
     "docs/typescript/README.md",
     "docs/typescript/未命名.md",
