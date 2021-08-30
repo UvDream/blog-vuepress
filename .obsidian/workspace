@@ -7,11 +7,8 @@
         "id": "e6cd5aa4dfd33fc7",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/typescript/class.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "a34f87c182be4cc2"
       },
@@ -81,7 +78,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/typescript/class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +93,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/typescript/class.md"
-              }
+              "state": {}
             }
           },
           {
@@ -108,7 +102,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/typescript/class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
