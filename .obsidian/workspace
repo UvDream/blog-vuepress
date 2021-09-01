@@ -7,8 +7,11 @@
         "id": "da8a134b5d5cda12",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/README.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -80,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/README.md"
+              }
             }
           },
           {
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,6 +121,7 @@
   },
   "active": "da8a134b5d5cda12",
   "lastOpenFiles": [
+    "docs/README.md",
     "docs/typescript/class.md",
     "docs/typescript/Pasted image 20210827140032.png",
     "docs/typescript/`extends` `implements` 区别.md",
@@ -122,7 +130,6 @@
     "docs/typescript/未命名.md",
     "未命名.md",
     "draw/index.md",
-    "docs/typescript/types自动生成.md",
-    "docs/webpack/tapable.md"
+    "docs/typescript/types自动生成.md"
   ]
 }
