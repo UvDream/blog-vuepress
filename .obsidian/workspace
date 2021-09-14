@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/README.md",
+            "file": "docs/javascript/设计模式.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/javascript/设计模式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/README.md"
+                "file": "docs/javascript/设计模式.md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/javascript/设计模式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,6 +121,7 @@
   },
   "active": "da8a134b5d5cda12",
   "lastOpenFiles": [
+    "docs/javascript/设计模式.md",
     "docs/README.md",
     "docs/typescript/class.md",
     "docs/typescript/Pasted image 20210827140032.png",
@@ -129,7 +130,6 @@
     "docs/typescript/README.md",
     "docs/typescript/未命名.md",
     "未命名.md",
-    "draw/index.md",
-    "docs/typescript/types自动生成.md"
+    "draw/index.md"
   ]
 }
