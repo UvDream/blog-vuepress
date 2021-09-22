@@ -4,28 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "da8a134b5d5cda12",
+        "id": "386ff1186b1224f8",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/javascript/设计模式.md",
-            "mode": "source"
-          }
-        },
-        "group": "6666a2f2706cab68"
-      },
-      {
-        "id": "0dcb896d3f8fbca9",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/javascript/设计模式.md",
-            "mode": "preview"
-          }
-        },
-        "group": "6666a2f2706cab68"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/javascript/设计模式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/javascript/设计模式.md"
-              }
+              "state": {}
             }
           },
           {
@@ -108,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/javascript/设计模式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +113,7 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "da8a134b5d5cda12",
+  "active": "386ff1186b1224f8",
   "lastOpenFiles": [
     "docs/javascript/设计模式.md",
     "docs/README.md",
