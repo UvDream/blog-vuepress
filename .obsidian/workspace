@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "386ff1186b1224f8",
+        "id": "d46dd21a0f3f76c5",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/go/README.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/go/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -80,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/go/README.md"
+              }
             }
           },
           {
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/go/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,17 +120,17 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "386ff1186b1224f8",
+  "active": "d46dd21a0f3f76c5",
   "lastOpenFiles": [
+    "docs/go/README.md",
+    "docs/flutter-plugin/shared_preferences.md",
+    "docs/flutter-plugin/README.md",
+    "docs/flutter-plugin/provider.md",
+    "docs/angular/README.md",
+    "pages/contents.md",
     "docs/javascript/设计模式.md",
     "docs/README.md",
     "docs/typescript/class.md",
-    "docs/typescript/Pasted image 20210827140032.png",
-    "docs/typescript/`extends` `implements` 区别.md",
-    "docs/typescript/base-type.md",
-    "docs/typescript/README.md",
-    "docs/typescript/未命名.md",
-    "未命名.md",
-    "draw/index.md"
+    "docs/typescript/Pasted image 20210827140032.png"
   ]
 }
