@@ -4,15 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d46dd21a0f3f76c5",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/go/README.md",
-            "mode": "source"
+        "id": "1e39bbcba233488c",
+        "type": "split",
+        "children": [
+          {
+            "id": "d46dd21a0f3f76c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/web/common-css.md",
+                "mode": "source"
+              }
+            },
+            "group": "a009a0a9cb903c3a"
+          },
+          {
+            "id": "5a6d4bf166110428",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/web/common-css.md",
+                "mode": "preview"
+              }
+            },
+            "group": "a009a0a9cb903c3a"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -68,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/go/README.md",
+                "file": "docs/web/common-css.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/go/README.md"
+                "file": "docs/web/common-css.md"
               }
             }
           },
@@ -95,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/go/README.md",
+                "file": "docs/web/common-css.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,15 +142,15 @@
   },
   "active": "d46dd21a0f3f76c5",
   "lastOpenFiles": [
+    "docs/web/common-css.md",
+    "docs/web/未命名.md",
+    "docs/web/css.md",
     "docs/go/README.md",
     "docs/flutter-plugin/shared_preferences.md",
     "docs/flutter-plugin/README.md",
     "docs/flutter-plugin/provider.md",
     "docs/angular/README.md",
     "pages/contents.md",
-    "docs/javascript/设计模式.md",
-    "docs/README.md",
-    "docs/typescript/class.md",
-    "docs/typescript/Pasted image 20210827140032.png"
+    "docs/javascript/设计模式.md"
   ]
 }
