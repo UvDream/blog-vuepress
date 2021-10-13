@@ -4,35 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "1e39bbcba233488c",
-        "type": "split",
-        "children": [
-          {
-            "id": "d46dd21a0f3f76c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/web/common-css.md",
-                "mode": "source"
-              }
-            },
-            "group": "a009a0a9cb903c3a"
-          },
-          {
-            "id": "5a6d4bf166110428",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/web/common-css.md",
-                "mode": "preview"
-              }
-            },
-            "group": "a009a0a9cb903c3a"
-          }
-        ],
-        "direction": "horizontal"
+        "id": "c9a8d9c515409d36",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -88,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/web/common-css.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/web/common-css.md"
-              }
+              "state": {}
             }
           },
           {
@@ -115,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/web/common-css.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +113,7 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "5a6d4bf166110428",
+  "active": "c9a8d9c515409d36",
   "lastOpenFiles": [
     "docs/web/common-css.md",
     "docs/web/未命名.md",
