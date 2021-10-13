@@ -9,5 +9,6 @@
   "showLineNumber": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "promptDelete": false
 }
