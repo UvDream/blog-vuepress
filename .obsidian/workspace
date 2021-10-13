@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6a135ab2e6055d4f",
+        "id": "fe28b3b3b3f8d434",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -113,8 +113,9 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "6a135ab2e6055d4f",
+  "active": "fe28b3b3b3f8d434",
   "lastOpenFiles": [
+    "docs/angular/README.md",
     "node_modules/is-windows/README.md",
     "docs/web/common-css.md",
     "docs/web/未命名.md",
@@ -123,7 +124,6 @@
     "docs/flutter-plugin/shared_preferences.md",
     "docs/flutter-plugin/README.md",
     "docs/flutter-plugin/provider.md",
-    "docs/angular/README.md",
     "pages/contents.md"
   ]
 }
