@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "c9a8d9c515409d36",
+        "id": "6a135ab2e6055d4f",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -113,8 +113,9 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "c9a8d9c515409d36",
+  "active": "6a135ab2e6055d4f",
   "lastOpenFiles": [
+    "node_modules/is-windows/README.md",
     "docs/web/common-css.md",
     "docs/web/未命名.md",
     "docs/web/css.md",
@@ -123,7 +124,6 @@
     "docs/flutter-plugin/README.md",
     "docs/flutter-plugin/provider.md",
     "docs/angular/README.md",
-    "pages/contents.md",
-    "docs/javascript/设计模式.md"
+    "pages/contents.md"
   ]
 }
