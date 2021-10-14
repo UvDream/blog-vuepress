@@ -121,6 +121,7 @@
   },
   "active": "3f45197a417cf700",
   "lastOpenFiles": [
+    "docs/angular/思维导图测试.md",
     "docs/angular/未命名思维导图.md",
     "未命名.md",
     "docs/angular/README.md",
@@ -129,7 +130,6 @@
     "node_modules/is-windows/README.md",
     "docs/web/common-css.md",
     "docs/web/未命名.md",
-    "docs/web/css.md",
-    "docs/go/README.md"
+    "docs/web/css.md"
   ]
 }
