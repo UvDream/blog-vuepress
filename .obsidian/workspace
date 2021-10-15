@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "3f45197a417cf700",
+        "id": "a1f6bd6441c5eb32",
         "type": "leaf",
         "state": {
           "type": "mindmapview",
           "state": {
-            "file": "docs/angular/思维导图测试.md"
+            "file": "docs/git/README.md"
           }
         }
       }
@@ -67,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/angular/思维导图测试.md",
+                "file": "docs/git/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/angular/思维导图测试.md"
+                "file": "docs/git/README.md"
               }
             }
           },
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/angular/思维导图测试.md",
+                "file": "docs/git/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,17 +119,17 @@
     "width": 209,
     "collapsed": true
   },
-  "active": "3f45197a417cf700",
+  "active": "a1f6bd6441c5eb32",
   "lastOpenFiles": [
+    "docs/git/README.md",
+    "README.md.md",
+    "docs/git/未命名思维导图.md",
+    "未命名.md",
     "docs/angular/思维导图测试.md",
     "docs/angular/未命名思维导图.md",
-    "未命名.md",
     "docs/angular/README.md",
     "docs/config.md",
     "docs/notes/Untitled.md",
-    "node_modules/is-windows/README.md",
-    "docs/web/common-css.md",
-    "docs/web/未命名.md",
-    "docs/web/css.md"
+    "node_modules/is-windows/README.md"
   ]
 }

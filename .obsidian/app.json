@@ -10,5 +10,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
   "showFrontmatter": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
