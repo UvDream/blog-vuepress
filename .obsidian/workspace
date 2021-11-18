@@ -7,9 +7,10 @@
         "id": "a1f6bd6441c5eb32",
         "type": "leaf",
         "state": {
-          "type": "mindmapview",
+          "type": "markdown",
           "state": {
-            "file": "docs/git/README.md"
+            "file": "docs/typescript/types自动生成.md",
+            "mode": "source"
           }
         }
       }
@@ -67,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/git/README.md",
+                "file": "docs/typescript/types自动生成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/git/README.md"
+                "file": "docs/typescript/types自动生成.md"
               }
             }
           },
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/git/README.md",
+                "file": "docs/typescript/types自动生成.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,6 +122,8 @@
   },
   "active": "a1f6bd6441c5eb32",
   "lastOpenFiles": [
+    "docs/typescript/types自动生成.md",
+    "docs/typescript/类型推断和兼容.md",
     "docs/git/README.md",
     "README.md.md",
     "docs/git/未命名思维导图.md",
@@ -128,8 +131,6 @@
     "docs/angular/思维导图测试.md",
     "docs/angular/未命名思维导图.md",
     "docs/angular/README.md",
-    "docs/config.md",
-    "docs/notes/Untitled.md",
-    "node_modules/is-windows/README.md"
+    "docs/config.md"
   ]
 }
