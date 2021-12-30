@@ -11,5 +11,7 @@
   "attachmentFolderPath": "./",
   "showFrontmatter": true,
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "legacyEditor": false,
+  "livePreview": true
 }
