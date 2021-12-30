@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>extends implements 区别 | U世界的V梦想</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="一切皆有可能!">
+    
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.63182871.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.4535e051.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/2.778d2fa8.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/60.9adbe0fa.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.d2b18a5d.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.c2d489b2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.4405f014.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.9897f59c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.bd933c2d.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.b0808ff0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.d977dc29.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.0e4d2fe0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.fbba2dc7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.6cd03d48.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.5898904d.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.79a4fd7b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6270f2a9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.2b3b355d.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.42539ec5.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.77342626.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.266c57d2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.25e504ac.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.aa83c90e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/29.26de06d7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/3.edfa3065.js"><link rel="prefetch" href="/blog-vuepress/assets/js/30.3f3a8c9b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/31.6438b674.js"><link rel="prefetch" href="/blog-vuepress/assets/js/32.6e8407a9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/33.2c741ffe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/34.15377d40.js"><link rel="prefetch" href="/blog-vuepress/assets/js/35.6729fb04.js"><link rel="prefetch" href="/blog-vuepress/assets/js/36.3e108a72.js"><link rel="prefetch" href="/blog-vuepress/assets/js/37.52a93f38.js"><link rel="prefetch" href="/blog-vuepress/assets/js/38.773d206b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/39.97bc89c9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.6e64dfe5.js"><link rel="prefetch" href="/blog-vuepress/assets/js/40.d25f8604.js"><link rel="prefetch" href="/blog-vuepress/assets/js/41.42d8ab6b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/42.4608b0fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/43.cb86f1ad.js"><link rel="prefetch" href="/blog-vuepress/assets/js/44.510d49f7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/45.8a507cdc.js"><link rel="prefetch" href="/blog-vuepress/assets/js/46.b696780b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/47.fbad42a2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/48.56383b2f.js"><link rel="prefetch" href="/blog-vuepress/assets/js/49.bc1afbab.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.6a73d504.js"><link rel="prefetch" href="/blog-vuepress/assets/js/50.15325e66.js"><link rel="prefetch" href="/blog-vuepress/assets/js/51.d51be4fd.js"><link rel="prefetch" href="/blog-vuepress/assets/js/52.08dcc486.js"><link rel="prefetch" href="/blog-vuepress/assets/js/53.bce9f1f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/54.555f6feb.js"><link rel="prefetch" href="/blog-vuepress/assets/js/55.d61972d7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/56.eadd87e6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/57.071c3d42.js"><link rel="prefetch" href="/blog-vuepress/assets/js/58.84bc7479.js"><link rel="prefetch" href="/blog-vuepress/assets/js/59.3a4ae366.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.624a029c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/61.66e032c4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/62.c290c2de.js"><link rel="prefetch" href="/blog-vuepress/assets/js/63.b0b456e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/64.aecf211c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/65.8c5d3171.js"><link rel="prefetch" href="/blog-vuepress/assets/js/66.e4469d2f.js"><link rel="prefetch" href="/blog-vuepress/assets/js/67.de4ff045.js"><link rel="prefetch" href="/blog-vuepress/assets/js/68.1d85caf0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/69.bec2392a.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.7c77f53c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/70.2961552c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/71.cde0e6cc.js"><link rel="prefetch" href="/blog-vuepress/assets/js/72.0bee0552.js"><link rel="prefetch" href="/blog-vuepress/assets/js/73.3014aed3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/74.e255eaf9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/75.b667279c.js"><link rel="prefetch" href="/blog-vuepress/assets/js/76.0d6de82e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/77.56abc049.js"><link rel="prefetch" href="/blog-vuepress/assets/js/78.c6531637.js"><link rel="prefetch" href="/blog-vuepress/assets/js/8.2b17cdb3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.8488f879.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.63182871.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog-vuepress/" class="home-link router-link-active"><!----> <span class="site-name">U世界的V梦想</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog-vuepress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/web/" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vue-next/" class="nav-link">
+  Vue-Next
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/typescript/" class="nav-link router-link-active">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/interview/" class="nav-link">
+  面试
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Go" class="dropdown-title"><span class="title">Go</span> <span class="arrow down"></span></button> <button type="button" aria-label="Go" class="mobile-dropdown-title"><span class="title">Go</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/go/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/go-40/" class="nav-link">
+  40天
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flutter" class="dropdown-title"><span class="title">Flutter</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flutter" class="mobile-dropdown-title"><span class="title">Flutter</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter-plugin/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter-deep/" class="nav-link">
+  深入
+</a></li></ul></div></div><div class="nav-item"><a href="/blog-vuepress/specification/" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="https://github.com/UvDream" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog-vuepress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/web/" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vite/" class="nav-link">
+  Vite
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/vue-next/" class="nav-link">
+  Vue-Next
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/typescript/" class="nav-link router-link-active">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/interview/" class="nav-link">
+  面试
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Go" class="dropdown-title"><span class="title">Go</span> <span class="arrow down"></span></button> <button type="button" aria-label="Go" class="mobile-dropdown-title"><span class="title">Go</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/go/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/go-40/" class="nav-link">
+  40天
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Flutter" class="dropdown-title"><span class="title">Flutter</span> <span class="arrow down"></span></button> <button type="button" aria-label="Flutter" class="mobile-dropdown-title"><span class="title">Flutter</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter-plugin/" class="nav-link">
+  插件
+</a></li><li class="dropdown-item"><!----> <a href="/blog-vuepress/flutter-deep/" class="nav-link">
+  深入
+</a></li></ul></div></div><div class="nav-item"><a href="/blog-vuepress/specification/" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="https://github.com/UvDream" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Web</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog-vuepress/typescript/" aria-current="page" class="sidebar-link">TypeScript</a></li><li><a href="/blog-vuepress/typescript/base-type.html" class="sidebar-link">基本类型</a></li><li><a href="/blog-vuepress/typescript/类型推断和兼容.html" class="sidebar-link">类型推断</a></li><li><a href="/blog-vuepress/typescript/types自动生成.html" class="sidebar-link">/typescript/types自动生成.html</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="extends-implements-区别"><a href="#extends-implements-区别" class="header-anchor">#</a> <code>extends</code> <code>implements</code> 区别</h1> <h2 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h2> <ul><li>extends</li></ul> <blockquote><p>继承,一个新的接口或者<a href="/blog-vuepress/typescript/class.html">类</a>,从父<a href="/blog-vuepress/typescript/class.html">类</a>或者接口继承所有属性和方法,不可以重写属性,但是可以重写方法</p></blockquote> <ul><li>implements</li></ul> <blockquote><p>实现,一个新的<a href="/blog-vuepress/typescript/class.html">类</a>,从父<a href="/blog-vuepress/typescript/class.html">类</a>或者接口实现所有的属性和方法,同时可以重写属性和方法,包含一些新的功能</p></blockquote> <h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+
+ name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// implements 是对某个接口实现.必须满足接口的[类](./class.md)型规范</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Man</span> <span class="token keyword">implements</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+
+ <span class="token keyword">public</span> name <span class="token operator">=</span> <span class="token string">&quot;222&quot;</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">public</span> age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">//extends是对某个[类](./class.md)的继承，可获取父[类](./class.md)的所有的静态属性</span>
+
+<span class="token keyword">class</span> <span class="token class-name">OldMan</span> <span class="token keyword">extends</span> <span class="token class-name">Man</span> <span class="token punctuation">{</span>
+
+ <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+ <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> oldMan <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OldMan</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>oldMan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h2 id="注意"><a href="#注意" class="header-anchor">#</a> 注意</h2> <ul><li><p>接口不能实现接口或者<a href="/blog-vuepress/typescript/class.html">类</a></p></li> <li><p>即<a href="/blog-vuepress/typescript/class.html">类</a>可以实现接口或者<a href="/blog-vuepress/typescript/class.html">类</a></p></li> <li><p>接口可以继承接口或者<a href="/blog-vuepress/typescript/class.html">类</a></p></li> <li><p><a href="/blog-vuepress/typescript/class.html">类</a>不可以继承接口,只能继承<a href="/blog-vuepress/typescript/class.html">类</a></p></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">8/27/2021, 2:36:27 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog-vuepress/assets/js/app.4535e051.js" defer></script><script src="/blog-vuepress/assets/js/2.778d2fa8.js" defer></script><script src="/blog-vuepress/assets/js/60.9adbe0fa.js" defer></script>
+  </body>
+</html>
