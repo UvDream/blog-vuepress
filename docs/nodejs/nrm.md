@@ -1,7 +1,7 @@
 # nrm
 
 ## 介绍
-
+ 
 `nrm`(`npm registry manager `)是`npm`的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 `npm `源间切换
 
 ## 安装
